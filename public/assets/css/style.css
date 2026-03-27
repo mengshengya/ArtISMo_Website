@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    font-family: "Futura Extra Bold", Futura, "Trebuchet MS", Arial, sans-serif;
+    background-color: #edf0f7ee;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.page-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 28px 40px;
+}
+
+.page-title {
+    margin: 20px 0 45px 0;
+    font-size: clamp(25px, 3vw, 35px);
+    font-weight: 700;
+    color: #222222;
+    line-height: 1.15;
+    text-align: center;
+}
+
+.sub-nav {
+    width: 220px;
+    position: sticky;
+    top: 20px;
+    padding-right: 20px;
+    border-right: 2px solid #ffffff;
+    flex-shrink: 0;
+}
+
+.sub-nav ul {
+    margin: 0;
+    padding: 6px 0;
+    font-size: clamp(20px, 3vw, 35px);
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.sub-nav li {
+    width: 100%;
+    text-align: center;
+}
+
+.sub-nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 4px 0;
+    transition: color 0.2s ease, font-weight 0.2s ease;
+}
+
+.sub-nav a:visited {
+    color: #000000;
+}
+
+.sub-nav a:hover,
+.sub-nav a.active {
+    color: #2a9bc4;
+    font-weight: 700;
+}
+
+.main-page {
+    flex: 1;
+    min-width: 0;
+    padding-left: 6px;
+}
+
+.page-section {
+    margin-bottom: 28px;
+    scroll-margin-top: 30px;
+}
+
+.page-section h2 {
+    margin: 0 0 18px;
+    font-size: 24px;
+}
+
+.page-section h3 {
+    margin: 35px 0 14px;
+    font-size: 21px;
+}
+
+.page-section p {
+    margin: 0 0 12px;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.page-image {
+    margin: 35px auto 15px;
+    text-align: center;
+    padding: 15px 90px;
+}
+
+.page-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.page-image p {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #00000097;
+}
+
+.page-video {
+    margin: 35px auto 15px;
+    text-align: center;
+    padding: 15px 90px;
+}
+
+.page-video video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.page-video p {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #00000097;
+}
+
+.page-image-group {
+    margin: 35px auto 15px;
+    text-align: center;
+    padding: 15px 40px;
+}
+
+.page-image-group .image-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.page-image-group .image-row img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.page-image-group p {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #00000097;
+}
+
+
+@media (max-width: 980px) {
+    .page-content {
+        padding: 20px;
+    }
+
+    .abstract-layout {
+        flex-direction: column;
+    }
+
+    .sub-nav {
+        width: 100%;
+        position: static;
+        padding-right: 0;
+        padding-bottom: 12px;
+        border-right: none;
+        border-bottom: 2px solid #ffffff;
+    }
+
+    .sub-nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .sub-nav li {
+        width: auto;
+    }
+
+    .main-page {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .page-image {
+        padding: 10px 50px;
+    }
+}
+
+/* abstract page */
+.abstract-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+/* milestones page */
+.milestones-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+.milestones-layout .sub-nav{
+    width: 350px;
+}
+
+
+/* publication page */
+.publication-layout{
+    display: flex;
+    padding: 0 100px;
+}
+
+.publication-list {
+    margin: 0;
+    padding-left: 1.4rem;
+}
+
+.publication-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.publication-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid #cfcfcf;
+    border-radius: 50%;
+    color: #333;
+    font-size: 13px;
+    line-height: 1;
+    margin-top: 2px;
+    transition: 0.2s ease;
+}
+
+.publication-icon:hover {
+    color: #0056b3;
+    border-color: #0056b3;
+    background: #f5f9ff;
+}
+
+.publication-content {
+    flex: 1;
+    line-height: 1.75;
+}
+
+.publication-content em {
+    font-style: italic;
+}
+
+.publication-empty {
+    color: #666;
+}
+
+/* event page */
+.event-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+}

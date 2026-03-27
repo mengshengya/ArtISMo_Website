@@ -2,7 +2,7 @@
   "builds": [
     {
       "src": "public/**/*.php",
-      "use": "vercel-community/php"
+      "use": "vercel-php@0.6.1"
     },
     {
       "src": "public/assets/**",

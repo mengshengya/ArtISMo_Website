@@ -18,6 +18,12 @@
 - Renamed the logo asset to use lowercase `logo.png`.
 - Replaced temporary event section IDs with stable anchors: `workshop-2` and `other-events`.
 - Styled publication titles with the site accent light blue and bold weight.
+- Removed the empty `Validation & System Integration` milestone section.
+- Added linked work description content to the `Resilient Platoon Applications` milestone section.
+- Renamed the English resilient platoon demo video title and caption.
+- Added a second YouTube demo to the `Resilient Platoon Applications` milestone section.
+- Renamed the second resilient platoon demo video title and caption.
+- Split the `Resilient Platoon Applications` content into shorter web sections with scenario-specific video explanations.
 
 ### Verified
 - Checked that page content for abstract, milestones, and events is now loaded from `src/content/`.
@@ -26,3 +32,9 @@
 - Checked asset path consistency.
 - Checked case-sensitive asset references.
 - Checked publication title markup and CSS changes with `git diff --check`.
+- Checked that the removed milestone section no longer appears in content search.
+- Checked the resilient platoon content link and wording.
+- Checked the updated English resilient platoon video title and caption.
+- Checked the additional resilient platoon YouTube URL.
+- Checked the updated second resilient platoon video title and caption.
+- Checked the revised resilient platoon text structure and video explanations.

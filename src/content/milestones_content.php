@@ -25,26 +25,84 @@ return [
         ],
         'blocks' => [
             [
+                'type' => 'html',
+                'text' => [
+                    'en' => '<p>This <a href="https://doi.org/10.1016/j.conengprac.2026.107008" target="_blank" rel="noopener noreferrer">work</a> presents a co-design framework for distributed observers and controllers that preserves the string stability of vehicle platoons under external disturbances.</p>',
+                ],
+            ],
+            [
+                'type' => 'paragraph',
+                'text' => [
+                    'en' => 'Instead of requiring each distributed controller to know the desired inter-vehicle spacing, each vehicle is equipped with a distributed observer that provides a broader perception of the platoon state. Using locally measurable outputs and inter-vehicle communication, the observers estimate the tracking errors of all vehicles relative to a global desired trajectory. These estimates are then used directly to generate the control signals.',
+                ],
+            ],
+            [
+                'type' => 'paragraph',
+                'text' => [
+                    'en' => 'The observer design also avoids requiring access to the private control inputs of all vehicles. Each vehicle estimates the inputs of the other vehicles from its own estimated states. To coordinate observer and controller performance, string stability and observer robustness are combined into a single weighted performance index, while the coupling terms are decoupled with Young’s inequality to enable simultaneous design.',
+                ],
+            ],
+            [
+                'type' => 'paragraph',
+                'text' => [
+                    'en' => 'The approach is validated in Quanser Interactive Labs (QLabs) using four 1/10-scale QCar2 vehicles. The validation scenarios include constant-speed cruising on smooth and wavy roads, as well as start-stop maneuvers. The results show that the platoon maintains string stability and avoids collisions despite uneven terrain and rapid velocity changes.',
+                ],
+            ],
+            [
+                'type' => 'heading',
+                'text' => [
+                    'en' => 'Wave-road disturbance test',
+                ],
+            ],
+            [
                 'type' => 'youtube',
                 'url' => 'https://youtu.be/n3M1J4P6dlQ?si=q5tv1sALv1Eirxkx',
                 'title' => [
-                    'en' => 'Resilient Platoon Applications video',
+                    'en' => 'QCar performance on a wavy road',
                     'fr' => 'Vidéo sur les applications robustes au pelotonnage',
                 ],
                 'caption' => [
-                    'en' => 'Resilient Platoon Applications demo.',
+                    'en' => 'QCar platoon response on a wavy road.',
                     'fr' => 'Démonstration des applications robustes au pelotonnage.',
                 ],
             ],
+            [
+                'type' => 'html',
+                'text' => [
+                    'en' => '<p>The wave road introduces external disturbances that create visible fluctuations in the observer estimates. During the traversal, the position-related estimation error remains within &plusmn;0.1 m, the velocity error within &plusmn;0.05 m/s, and the acceleration error within &plusmn;0.05 m/s<sup>2</sup>. At the beginning and end of the wavy section, the estimates quickly converge back to the true values once the leader leaves the wave road, even while some followers are still on it. This is because the distributed observer also uses information from neighboring vehicles that are less affected by the disturbance, helping the platoon reach consensus faster.</p>',
+                ],
+            ],
+            [
+                'type' => 'paragraph',
+                'text' => [
+                    'en' => 'The true vehicle states show that the wave road inevitably induces oscillations in the vehicle dynamics. With the help of the distributed observers, the platoon rapidly restores equilibrium when entering and leaving the undulating section. The velocity and acceleration profiles also show that the oscillation amplitudes progressively attenuate from the leading vehicle to the trailing vehicle, confirming that string stability is preserved under road-induced disturbances.',
+                ],
+            ],
+            [
+                'type' => 'heading',
+                'text' => [
+                    'en' => 'Start-stop maneuver test',
+                ],
+            ],
+            [
+                'type' => 'youtube',
+                'url' => 'https://youtu.be/6kKLBh-5lrU',
+                'title' => [
+                    'en' => 'QCar performance under start-stop maneuvers',
+                    'fr' => 'Démonstration supplémentaire des applications robustes au pelotonnage',
+                ],
+                'caption' => [
+                    'en' => 'QCar platoon response under start-stop maneuvers.',
+                    'fr' => 'Démonstration supplémentaire des applications robustes au pelotonnage.',
+                ],
+            ],
+            [
+                'type' => 'paragraph',
+                'text' => [
+                    'en' => 'During the start-stop phase, the distributed observer shows larger estimation errors because the design assumes zero leader acceleration. A larger leader acceleration leads to a larger mismatch. Even under this condition, the controller maintains weak string stability of the platoon: the acceleration oscillations decrease from the first follower to the last follower, which supports the effectiveness and robustness of the proposed method.',
+                ],
+            ],
         ],
-    ],
-    [
-        'id' => 'validation-integration',
-        'title' => [
-            'en' => 'Validation & System Integration',
-            'fr' => 'Validation expérimentale et intégration système',
-        ],
-        'blocks' => [],
     ],
     [
         'id' => 'experimental-platform',

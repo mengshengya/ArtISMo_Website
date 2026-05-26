@@ -15,8 +15,16 @@
   ],
   "routes": [
     {
+      "src": "/",
+      "dest": "/public/abstract.php"
+    },
+    {
       "src": "/assets/(.*)",
       "dest": "/public/assets/$1"
+    },
+    {
+      "src": "/(abstract|team|milestones|publication|event)\\.php",
+      "dest": "/public/$1.php"
     },
     {
       "src": "/(.*)",

@@ -3,8 +3,8 @@
 $teamMembers = [
     [
         'name' => 'Ali ZEMOUCHE',
-        'description' => 'Associate Prof.',
-        'photo' => 'assets\img\team\Zemouche.jpg',
+        'description' => 'Prof.',
+        'photo' => 'assets/img/team/Zemouche.jpg',
         'link' => 'http://w3.cran.univ-lorraine.fr/ali.zemouche/?q=content/curriculum-vitae',
         'details' => [
             'Institution' => 'CRAN',
@@ -17,7 +17,7 @@ $teamMembers = [
     [
         'name' => 'Marouane ALMA',
         'description' => 'Associate Prof.',
-        'photo' => 'assets\img\team\marouan.jpg',
+        'photo' => 'assets/img/team/marouan.jpg',
         'link' => 'https://www.cran.univ-lorraine.fr/detailindividupublic/?appel=annuaire&codetheme=06&codeindividu=00394&codelangue=FR',
         'details' => [
             'Institution' => 'CRAN',
@@ -30,7 +30,7 @@ $teamMembers = [
     [
         'name' => 'Cedric DELATTRE',
         'description' => 'Associate Prof.',
-        'photo' => 'assets\img\team\Cedric.webp',
+        'photo' => 'assets/img/team/Cedric.webp',
         'link' => 'https://www.cran.univ-lorraine.fr/detailindividupublic/?appel=annuaire&codetheme=06&codeindividu=00104&codelangue=FR',
         'details' => [
             'Institution' => 'CRAN',
@@ -43,7 +43,7 @@ $teamMembers = [
     [
         'name' => 'Hugues RAFARALAHY',
         'description' => 'Associate Prof.',
-        'photo' => 'assets\img\team\Hugues.jpg',
+        'photo' => 'assets/img/team/Hugues.jpg',
         'link' => 'https://www.cran.univ-lorraine.fr/detailindividupublic/?appel=annuaire&codetheme=06&codeindividu=00182&codelangue=FR',
         'details' => [
             'Institution' => 'CRAN',
@@ -56,7 +56,7 @@ $teamMembers = [
     [
         'name' => 'Latifa BOUTAT-BADDAS',
         'description' => 'Associate Prof.',
-        'photo' => 'assets\img\team\photo.png',
+        'photo' => 'assets/img/team/photo.png',
         'link' => 'https://www.cran.univ-lorraine.fr/detailindividupublic/?appel=annuaire&codetheme=06&codeindividu=00218&codelangue=FR',
         'details' => [
             'Institution' => 'CRAN',
@@ -69,7 +69,7 @@ $teamMembers = [
     [
         'name' => 'Michel ZASADZINSKI',
         'description' => 'Professor',
-        'photo' => 'assets\img\team\zasad.gif',
+        'photo' => 'assets/img/team/zasad.gif',
         'link' => 'https://www.cran.univ-lorraine.fr/detailindividupublic/?appel=annuaire&codetheme=06&codeindividu=00211&codelangue=FR',
         'details' => [
             'Institution' => 'CRAN',
@@ -82,7 +82,7 @@ $teamMembers = [
     [
         'name' => 'Dalil ICHALAL',
         'description' => 'Associate Prof.',
-        'photo' => 'assets\img\team\Dalil.jpg',
+        'photo' => 'assets/img/team/Dalil.jpg',
         'link' => 'https://scholar.google.com/citations?user=93i60LIAAAAJ&hl=en',
         'details' => [
             'Institution' => 'IBISC',
@@ -94,7 +94,7 @@ $teamMembers = [
     [
         'name' => 'Said MAMMAR',
         'description' => 'Professor',
-        'photo' => 'assets\img\team\Said.jpg',
+        'photo' => 'assets/img/team/Said.jpg',
         'link' => 'https://scholar.google.com/citations?user=DGYGvkUAAAAJ&hl=en',
         'details' => [
             'Institution' => 'IBISC',
@@ -106,7 +106,7 @@ $teamMembers = [
     [
         'name' => 'Lydie NOUVELIERE',
         'description' => 'Associate Prof.',
-        'photo' => 'assets\img\team\photo.png',
+        'photo' => 'assets/img/team/photo.png',
         'link' => '',
         'details' => [
             'Institution' => 'IBISC',
@@ -118,7 +118,7 @@ $teamMembers = [
     [
         'name' => 'Khaled LAHIANI',
         'description' => 'Engineer/PhD',
-        'photo' => 'assets\img\team\photo.png',
+        'photo' => 'assets/img/team/photo.png',
         'link' => '',
         'details' => [
             'Institution' => 'IBISC',
@@ -130,7 +130,7 @@ $teamMembers = [
     [
         'name' => 'Sofiane AHMED ALI',
         'description' => 'Assistant Prof.',
-        'photo' => 'assets\img\team\photo.png',
+        'photo' => 'assets/img/team/photo.png',
         'link' => '',
         'details' => [
             'Institution' => 'IRSEEM',
@@ -142,7 +142,7 @@ $teamMembers = [
     [
         'name' => 'Redouane KHEMMAR',
         'description' => 'Assistant Prof.',
-        'photo' => 'assets\img\team\Redouane.png',
+        'photo' => 'assets/img/team/Redouane.png',
         'link' => 'https://www.esigelec.fr/fr/node/400',
         'details' => [
             'Institution' => 'IRSEEM',
@@ -154,7 +154,7 @@ $teamMembers = [
     [
         'name' => 'Adnane CABANI',
         'description' => 'Assistant Prof.',
-        'photo' => 'assets\img\team\photo.png',
+        'photo' => 'assets/img/team/photo.png',
         'link' => '',
         'details' => [
             'Institution' => 'IRSEEM',
@@ -166,7 +166,7 @@ $teamMembers = [
     [
         'name' => 'Yohan DUPUIS',
         'description' => 'R&D Responsible',
-        'photo' => 'assets\img\team\photo.png',
+        'photo' => 'assets/img/team/photo.png',
         'link' => '',
         'details' => [
             'Institution' => 'IRSEEM',
@@ -178,7 +178,7 @@ $teamMembers = [
     [
         'name' => 'Rihab EL HOUDA HAJRI',
         'description' => 'Research Engineer',
-        'photo' => 'assets\img\team\photo.png',
+        'photo' => 'assets/img/team/photo.png',
         'link' => '',
         'details' => [
             'Institution' => 'IRSEEM',
@@ -190,7 +190,7 @@ $teamMembers = [
     [
         'name' => 'Dam QUANGTRUC',
         'description' => 'PhD student',
-        'photo' => 'assets\img\team\photo.png',
+        'photo' => 'assets/img/team/photo.png',
         'link' => '',
         'details' => [
             'Institution' => 'IRSEEM',
@@ -202,7 +202,7 @@ $teamMembers = [
     [
         'name' => 'Nicolas LANGLOIS',
         'description' => 'Professor',
-        'photo' => 'assets\img\team\photo.png',
+        'photo' => 'assets/img/team/photo.png',
         'link' => '',
         'details' => [
             'Institution' => 'IRSEEM',
@@ -214,7 +214,7 @@ $teamMembers = [
     [
         'name' => 'Randolph TOOM',
         'description' => 'Director of Innovation',
-        'photo' => 'assets\img\team\photo.png',
+        'photo' => 'assets/img/team/photo.png',
         'link' => '',
         'details' => [
             'Institution' => 'FAAR',
@@ -226,7 +226,7 @@ $teamMembers = [
     [
         'name' => 'Enzo SALVATORE',
         'description' => 'Engineer',
-        'photo' => 'assets\img\team\photo.png',
+        'photo' => 'assets/img/team/photo.png',
         'link' => '',
         'details' => [
             'Institution' => 'FAAR',
@@ -238,7 +238,7 @@ $teamMembers = [
     [
         'name' => 'Eric NANG-TCHEE',
         'description' => 'Engineer',
-        'photo' => 'assets\img\team\photo.png',
+        'photo' => 'assets/img/team/photo.png',
         'link' => '',
         'details' => [
             'Institution' => 'FAAR',
@@ -250,7 +250,7 @@ $teamMembers = [
     [
         'name' => 'Melchior DUTHOIT',
         'description' => 'Engineer',
-        'photo' => 'assets\img\team\photo.png',
+        'photo' => 'assets/img/team/photo.png',
         'link' => '',
         'details' => [
             'Institution' => 'FAAR',
@@ -262,7 +262,7 @@ $teamMembers = [
     [
         'name' => 'Thomas MARCHAND',
         'description' => 'Engineer',
-        'photo' => 'assets\img\team\photo.png',
+        'photo' => 'assets/img/team/photo.png',
         'link' => '',
         'details' => [
             'Institution' => 'FAAR',
@@ -274,7 +274,7 @@ $teamMembers = [
     [
         'name' => 'Rajesh RAJAMANI',
         'description' => 'Professor',
-        'photo' => 'assets\img\team\Rajamani.jpg',
+        'photo' => 'assets/img/team/Rajamani.jpg',
         'link' => 'https://cse.umn.edu/me/rajesh-rajamani',
         'details' => [
             'Institution' => 'LISEC',

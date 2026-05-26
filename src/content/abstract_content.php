@@ -1,0 +1,88 @@
+<?php
+
+return [
+    [
+        'id' => 'context',
+        'title_key' => 'abstract.section_1',
+        'blocks' => [
+            [
+                'type' => 'paragraph',
+                'text_key' => 'abstract.context_1',
+            ],
+            [
+                'type' => 'paragraph',
+                'text_key' => 'abstract.context_2',
+            ],
+            [
+                'type' => 'paragraph',
+                'text_key' => 'abstract.context_3',
+            ],
+            [
+                'type' => 'image',
+                'src' => 'assets/img/platoon2.png',
+                'alt' => [
+                    'en' => 'Interconnected vehicle platoon on highway',
+                    'fr' => 'Peloton de véhicules interconnectés sur autoroute',
+                ],
+                'caption' => [
+                    'en' => 'Interconnected vehicle.',
+                    'fr' => 'Véhicule interconnecté.',
+                ],
+            ],
+        ],
+    ],
+    [
+        'id' => 'objectives',
+        'title_key' => 'abstract.section_2',
+        'blocks' => [
+            [
+                'type' => 'heading',
+                'text_key' => 'abstract.objectives_title_1',
+            ],
+            [
+                'type' => 'paragraph',
+                'text_key' => 'abstract.objectives_1',
+            ],
+            [
+                'type' => 'paragraph',
+                'text_key' => 'abstract.objectives_2',
+            ],
+            [
+                'type' => 'image',
+                'src' => 'assets/img/neuro_obs_v2.png',
+                'alt' => [
+                    'en' => 'Hybrid vehicle dynamics model combining physics-based equations with adaptive neural networks and online parameter estimation.',
+                    'fr' => 'Modèle hybride de dynamique véhicule combinant équations physiques, réseaux neuronaux adaptatifs et estimation en ligne des paramètres.',
+                ],
+                'caption' => [
+                    'en' => 'A hybrid vehicle dynamics model that combines physics-based equations with adaptive neural networks. Analytical models describe the fundamental vehicle motions and road-related effects, while neural networks capture complex nonlinear behaviors. With online parameter adaptation, the model continuously improves accuracy during real-world vehicle operation.',
+                    'fr' => 'Un modèle hybride de dynamique véhicule combinant équations physiques et réseaux neuronaux adaptatifs. Les modèles analytiques décrivent les mouvements fondamentaux et les effets liés à la route, tandis que les réseaux neuronaux capturent les comportements non linéaires complexes.',
+                ],
+            ],
+            [
+                'type' => 'paragraph',
+                'text_key' => 'abstract.objectives_3',
+            ],
+            [
+                'type' => 'heading',
+                'text_key' => 'abstract.objectives_title_2',
+            ],
+            [
+                'type' => 'paragraph',
+                'text_key' => 'abstract.objectives_4',
+            ],
+            [
+                'type' => 'paragraph',
+                'text_key' => 'abstract.objectives_5',
+            ],
+            [
+                'type' => 'heading',
+                'text_key' => 'abstract.objectives_title_3',
+            ],
+            [
+                'type' => 'html',
+                'text_key' => 'abstract.objectives_6',
+            ],
+        ],
+    ],
+];

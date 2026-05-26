@@ -23,6 +23,12 @@ ArtISMo_Website/
 │       ├── img/
 │       └── video/
 └── src/
+    ├── components/
+    │   └── render_blocks.php
+    ├── content/
+    │   ├── abstract_content.php
+    │   ├── milestones_content.php
+    │   └── event_content.php
     ├── includes/
     │   ├── config.php
     │   ├── header.php
@@ -76,12 +82,58 @@ For final deployment, using `public/` as the web root is preferred.
 
 ## Editing Website Content
 
-Most routine updates should be made in the existing data and language files rather than
-directly changing page layout files.
+Most routine updates should be made in the existing content, data, and language files
+rather than directly changing page layout files.
+
+The site now separates content from page structure:
+
+```text
+public/*.php                page layout shell
+src/content/*.php           structured page sections, images, videos, and captions
+src/components/*.php        reusable rendering logic
+src/data/*.php              structured lists such as team members and publications
+src/lang/*.php              shared labels and long abstract text
+```
+
+In normal maintenance, avoid editing `public/*.php` unless the page layout itself needs
+to change.
+
+### Content Pages
+
+The main content pages are stored in:
+
+```text
+src/content/abstract_content.php
+src/content/milestones_content.php
+src/content/event_content.php
+```
+
+Each content file returns a PHP array of sections. A section usually contains:
+
+```text
+id       stable anchor used by the sub-navigation
+title    English/French section title, or a translation key
+blocks   ordered content blocks
+```
+
+Supported block types include:
+
+```text
+paragraph
+html
+heading
+image
+image_group
+video
+youtube
+```
+
+Use `paragraph` for plain text, `html` only for trusted internal HTML such as links or
+lists, `image_group` for event photo rows, and `youtube` for embedded YouTube videos.
 
 ### Main Text
 
-English and French page text is stored in:
+Shared labels and the long abstract text are stored in:
 
 ```text
 src/lang/en/
@@ -93,11 +145,12 @@ Examples:
 ```text
 src/lang/en/abstract_en.php
 src/lang/fr/abstract_fr.php
-src/lang/en/milestones_en.php
-src/lang/fr/milestones_fr.php
-src/lang/en/event_en.php
-src/lang/fr/event_fr.php
+src/lang/en/common_en.php
+src/lang/fr/common_fr.php
 ```
+
+Milestones and events now keep their bilingual section content directly in
+`src/content/milestones_content.php` and `src/content/event_content.php`.
 
 When adding or editing content, keep the English and French versions synchronized where
 possible.
@@ -194,7 +247,7 @@ editing system is not necessary at this stage.
 The recommended workflow for now is:
 
 ```text
-edit data/language files
+edit content/data/language files
 test locally with VS Code PHP Server
 commit changes with Git
 deploy the updated website

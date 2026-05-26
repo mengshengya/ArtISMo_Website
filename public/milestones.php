@@ -7,6 +7,9 @@ $pageTitle = t('nav.milestones');
 load_page_lang('milestones');
 
 $platoonVideoEmbedUrl = youtube_embed_url('https://youtu.be/n3M1J4P6dlQ?si=q5tv1sALv1Eirxkx');
+$simulationWebVideoEmbedUrl = youtube_embed_url('https://youtu.be/A0KsCnvjmfI?si=Gm6_9qTzkTo0drTY');
+$simulationYoloVideoEmbedUrl = youtube_embed_url('https://youtu.be/SraIErZ5QTg?si=3rbx-DJPYJrunefU');
+$realVehicleVideoEmbedUrl = youtube_embed_url('https://youtube.com/shorts/asIicSg48Fg?feature=share');
 
 include __DIR__ . '/../src/includes/header.php';
 include __DIR__ . '/../src/includes/nav.php';
@@ -75,30 +78,51 @@ include __DIR__ . '/../src/includes/nav.php';
                 <?= t('milestones.simulation_0') ?>
                 <h3><?= htmlspecialchars(t('milestones.simulation_1_title')) ?></h3>
                 <?= t('milestones.simulation_1') ?>
-                <section class="page-video">
-                    <video controls>
-                        <source src="assets/video/milestones/simulation/web.mp4" type="video/mp4">
-                    </video>
-                    <p>Web-based QLabs simulation environment demo</p>
-                </section>
+                <?php if ($simulationWebVideoEmbedUrl !== ''): ?>
+                    <section class="page-video youtube-video">
+                        <div class="youtube-video__frame">
+                            <iframe
+                                src="<?= htmlspecialchars($simulationWebVideoEmbedUrl) ?>"
+                                title="Web-based QLabs simulation environment demo"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                        </div>
+                        <p>Web-based QLabs simulation environment demo</p>
+                    </section>
+                <?php endif; ?>
                 <h3><?= htmlspecialchars(t('milestones.simulation_2_title')) ?></h3>
                 <?= t('milestones.simulation_2') ?>
-                <section class="page-video">
-                    <video controls preload="metadata" style="width: 100%; max-width: 900px;">
-                        <source src="assets/video/milestones/simulation/yolo.mkv" type="video/x-matroska">
-                    </video>
-                    <p>Python-based local monitoring and management platform demo.</p>
-                </section>
+                <?php if ($simulationYoloVideoEmbedUrl !== ''): ?>
+                    <section class="page-video youtube-video">
+                        <div class="youtube-video__frame">
+                            <iframe
+                                src="<?= htmlspecialchars($simulationYoloVideoEmbedUrl) ?>"
+                                title="Python-based local monitoring and management platform demo"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                        </div>
+                        <p>Python-based local monitoring and management platform demo.</p>
+                    </section>
+                <?php endif; ?>
             </section>
             <section id="real-vehicle-testing" class="page-section">
                 <h2><?= htmlspecialchars(t('milestones.section_7')) ?></h2>
                 <?= t('milestones.real_vehicle_text_1') ?>
-                <section class="page-video">
-                    <video controls preload="metadata" style="width: 50%; max-width: 900px;">
-                        <source src="assets/video/milestones/real_vehicle/Real_car_Web.mp4" type="video/mp4">
-                    </video>
-                    <p>Web-based remote monitoring and control of physical QCar 2.</p>
-                </section>
+                <?php if ($realVehicleVideoEmbedUrl !== ''): ?>
+                    <section class="page-video youtube-video">
+                        <div class="youtube-video__frame">
+                            <iframe
+                                src="<?= htmlspecialchars($realVehicleVideoEmbedUrl) ?>"
+                                title="Web-based remote monitoring and control of physical QCar 2"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                        </div>
+                        <p>Web-based remote monitoring and control of physical QCar 2.</p>
+                    </section>
+                <?php endif; ?>
                 <?= t('milestones.real_vehicle_text_2') ?>
             </section>
         </div>

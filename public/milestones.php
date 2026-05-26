@@ -6,6 +6,8 @@ $pageTitle = t('nav.milestones');
 
 load_page_lang('milestones');
 
+$platoonVideoEmbedUrl = youtube_embed_url('https://youtu.be/n3M1J4P6dlQ?si=q5tv1sALv1Eirxkx');
+
 include __DIR__ . '/../src/includes/header.php';
 include __DIR__ . '/../src/includes/nav.php';
 ?>
@@ -46,6 +48,19 @@ include __DIR__ . '/../src/includes/nav.php';
             <section id="platoon-applications" class="page-section">
                 <h2><?= htmlspecialchars(t('milestones.section_3')) ?></h2>
                 <p><?= htmlspecialchars(t('milestones.content_3')) ?></p>
+                <?php if ($platoonVideoEmbedUrl !== ''): ?>
+                    <section class="page-video youtube-video">
+                        <div class="youtube-video__frame">
+                            <iframe
+                                src="<?= htmlspecialchars($platoonVideoEmbedUrl) ?>"
+                                title="Resilient Platoon Applications video"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                        </div>
+                        <p>Resilient Platoon Applications demo.</p>
+                    </section>
+                <?php endif; ?>
             </section>
             <section id="validation-integration" class="page-section">
                 <h2><?= htmlspecialchars(t('milestones.section_4')) ?></h2>

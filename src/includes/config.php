@@ -56,3 +56,36 @@ function lang_switch_url(string $targetLang): string
     $currentPage = basename($_SERVER['PHP_SELF']);
     return $currentPage . '?lang=' . urlencode($targetLang);
 }
+
+function youtube_embed_url(string $url): string
+{
+    $parts = parse_url($url);
+
+    if ($parts === false || empty($parts['host'])) {
+        return '';
+    }
+
+    $host = strtolower($parts['host']);
+    $path = $parts['path'] ?? '';
+    $videoId = '';
+
+    if ($host === 'youtu.be' || substr($host, -9) === '.youtu.be') {
+        $pathParts = explode('/', trim($path, '/'));
+        $videoId = $pathParts[0] ?? '';
+    } elseif (in_array($host, ['youtube.com', 'www.youtube.com', 'm.youtube.com'], true)) {
+        parse_str($parts['query'] ?? '', $query);
+
+        if (!empty($query['v']) && is_string($query['v'])) {
+            $videoId = $query['v'];
+        } elseif (preg_match('#^/(embed|shorts)/([^/?]+)#', $path, $matches)) {
+            $videoId = $matches[2];
+        }
+    }
+
+    if (!preg_match('/^[A-Za-z0-9_-]{11}$/', $videoId)) {
+        return '';
+    }
+
+    return 'https://www.youtube-nocookie.com/embed/' . rawurlencode($videoId)
+        . '?autoplay=1&mute=1&playsinline=1&controls=1&rel=0';
+}

@@ -17,6 +17,7 @@
 - Standardized asset paths from `assets\...` to `assets/...`.
 - Renamed the logo asset to use lowercase `logo.png`.
 - Replaced temporary event section IDs with stable anchors: `workshop-2` and `other-events`.
+- Styled publication titles with the site accent light blue and bold weight.
 
 ### Verified
 - Checked that page content for abstract, milestones, and events is now loaded from `src/content/`.
@@ -24,3 +25,4 @@
 - Checked `vercel.json` JSON syntax.
 - Checked asset path consistency.
 - Checked case-sensitive asset references.
+- Checked publication title markup and CSS changes with `git diff --check`.

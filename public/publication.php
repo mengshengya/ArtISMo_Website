@@ -105,7 +105,7 @@ function renderPublicationText(array $publication): string
     }
 
     if ($title !== '') {
-        $html .= $title . '. ';
+        $html .= '<span class="publication-title">' . $title . '</span>. ';
     }
 
     if ($type === 'conference') {

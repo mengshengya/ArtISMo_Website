@@ -291,6 +291,11 @@ html {
     line-height: 1.75;
 }
 
+.publication-title {
+    color: #2a9bc4;
+    font-weight: 700;
+}
+
 .publication-content em {
     font-style: italic;
 }

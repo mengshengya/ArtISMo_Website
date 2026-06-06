@@ -22,13 +22,6 @@
         </li>
 
         <li>
-            <a href="<?= htmlspecialchars(page_url('milestones.php')) ?>"
-               class="<?= $currentPage === 'milestones' ? 'active' : '' ?>">
-                <?= htmlspecialchars(t('nav.milestones')) ?>
-            </a>
-        </li>
-
-        <li>
             <a href="<?= htmlspecialchars(page_url('publication.php')) ?>"
                class="<?= $currentPage === 'publication' ? 'active' : '' ?>">
                 <?= htmlspecialchars(t('nav.publications')) ?>

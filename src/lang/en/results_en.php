@@ -4,6 +4,7 @@ return [
     'results.title' => 'Research & Work Results',
     'results.cat_phd' => 'PhD Research',
     'results.cat_internship' => 'Master\'s Internship',
+    'results.cat_milestone' => 'Project Milestone',
     'results.phd_summary' => 'A Robust KalmaNet estimator developed for the Quanser QCar platform. Combines a physics-based bicycle model with a neural trust mechanism to suppress corrupted sensor measurements.',
     'results.viet_summary' => 'ROS2 web supervision dashboard and control loop execution for autonomous driving. Implemented Docker runtimes, Stanley trackers, and path planners on QCar2.',
     'results.melissa_summary' => 'Physics-informed recurrent neural networks (GRU) for vehicle lateral and longitudinal dynamics modeling. Decreased physical violations by 58% while maintaining accuracy.',

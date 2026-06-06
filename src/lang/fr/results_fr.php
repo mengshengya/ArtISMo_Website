@@ -4,6 +4,7 @@ return [
     'results.title' => 'Résultats de Recherche',
     'results.cat_phd' => 'Recherche Doctorale',
     'results.cat_internship' => 'Stage de Master',
+    'results.cat_milestone' => 'Jalon de Projet',
     'results.phd_summary' => 'Un estimateur Robust KalmaNet développé pour la plateforme Quanser QCar. Il associe un modèle cinématique de bicyclette à un réseau neuronal estimant la confiance des mesures capteurs.',
     'results.viet_summary' => 'Supervision web sous ROS2 et boucle de commande autonome pour véhicules miniatures. Déploiement de conteneurs Docker, planificateur Stanley et évitement d\'obstacles LiDAR sur QCar2.',
     'results.melissa_summary' => 'Modélisation de la dynamique du véhicule par réseau de neurones récurrent (GRU) informé par la physique. Réduction des incohérences mécaniques de 58% tout en préservant la précision.',

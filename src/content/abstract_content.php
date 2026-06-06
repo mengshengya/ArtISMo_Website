@@ -19,14 +19,14 @@ return [
             ],
             [
                 'type' => 'image',
-                'src' => 'assets/img/platoon2.png',
+                'src' => 'assets/img/artismo-abstract-connected-platoon.webp',
                 'alt' => [
-                    'en' => 'Interconnected vehicle platoon on highway',
-                    'fr' => 'Peloton de véhicules interconnectés sur autoroute',
+                    'en' => 'ArtISMo connected autonomous vehicle platoon with V2X communication, sensing, neural observer, and resilience elements',
+                    'fr' => 'Peloton de véhicules autonomes connectés ArtISMo avec communication V2X, perception, observateur neuronal et éléments de résilience',
                 ],
                 'caption' => [
-                    'en' => 'Interconnected vehicle.',
-                    'fr' => 'Véhicule interconnecté.',
+                    'en' => 'ArtISMo context: connected autonomous vehicles combine V2X communication, onboard sensing, physics-based models, and learning-based observers to improve resilient platooning.',
+                    'fr' => 'Contexte ArtISMo : les véhicules autonomes connectés combinent communication V2X, perception embarquée, modèles physiques et observateurs basés sur l’apprentissage pour améliorer la résilience du peloton.',
                 ],
             ],
         ],

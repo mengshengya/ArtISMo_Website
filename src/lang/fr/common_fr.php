@@ -24,6 +24,16 @@ return [
     'milestones.title' => 'Jalons',
 
     'publication.title' => 'Publications',
+    'publication.empty' => 'Aucune publication ne correspond à vos critères.',
+    'publication.search_placeholder' => 'Rechercher un titre, un auteur ou un lieu...',
+    'publication.filter_all' => 'Tout',
+    'publication.filter_type' => 'Type',
+    'publication.filter_year' => 'Année',
+    'publication.journals' => 'Journaux',
+    'publication.conferences' => 'Conférences',
+    'publication.stat_total' => 'Publications Totales',
+    'publication.stat_journals' => 'Journaux',
+    'publication.stat_conferences' => 'Conférences',
 
     'event.title' => 'Événements',
 ];

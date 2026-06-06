@@ -434,3 +434,55 @@
     line-height: 1.6;
 }
 
+/* Card & Detail Metadata styling */
+.card-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.card-meta .card-category {
+    margin-bottom: 0;
+}
+
+.card-meta-separator {
+    color: #cbd5e1;
+    font-size: 14px;
+    user-select: none;
+}
+
+.card-date {
+    font-size: 13px;
+    font-weight: 600;
+    color: #64748b;
+    font-family: 'Outfit', sans-serif;
+}
+
+.detail-meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+}
+
+.detail-meta .detail-category {
+    margin-bottom: 0;
+}
+
+.detail-meta-separator {
+    color: #cbd5e1;
+    font-size: 15px;
+    user-select: none;
+}
+
+.detail-date {
+    font-size: 14px;
+    font-weight: 600;
+    color: #64748b;
+    font-family: 'Outfit', sans-serif;
+}
+

@@ -4,6 +4,10 @@ return [
     [
         'id' => 'phd-research',
         'category_key' => 'results.cat_phd',
+        'date' => [
+            'en' => 'May 2025',
+            'fr' => 'Mai 2025',
+        ],
         'summary_key' => 'results.phd_summary',
         'preview_image' => 'assets/img/work/Apdapt_obs_shema_2_uio.png',
         'title_key' => 'results.section_phd',
@@ -77,6 +81,10 @@ return [
     [
         'id' => 'internship-ros2',
         'category_key' => 'results.cat_internship',
+        'date' => [
+            'en' => 'June 2025',
+            'fr' => 'Juin 2025',
+        ],
         'summary_key' => 'results.viet_summary',
         'preview_image' => 'assets/img/work/intership/Rapport_de_Stage_CRAN_Viet/resume_rapport_preview.png',
         'title_key' => 'results.section_viet',
@@ -114,6 +122,10 @@ return [
     [
         'id' => 'internship-pinns',
         'category_key' => 'results.cat_internship',
+        'date' => [
+            'en' => 'July 2025',
+            'fr' => 'Juillet 2025',
+        ],
         'summary_key' => 'results.melissa_summary',
         'preview_image' => 'assets/img/work/intership/rapport_de_stage_melissa/resume_preview-1.png',
         'title_key' => 'results.section_melissa',
@@ -159,6 +171,10 @@ return [
     [
         'id' => 'internship-siyu',
         'category_key' => 'results.cat_internship',
+        'date' => [
+            'en' => 'September 2025',
+            'fr' => 'Septembre 2025',
+        ],
         'summary_key' => 'results.siyu_summary',
         'preview_image' => 'assets/img/work/intership/Siyu/figures/siyu_fig-067.png',
         'title_key' => 'results.section_siyu',
@@ -240,6 +256,10 @@ return [
     [
         'id' => 'internship-tanush',
         'category_key' => 'results.cat_internship',
+        'date' => [
+            'en' => 'August 2025',
+            'fr' => 'Août 2025',
+        ],
         'summary_key' => 'results.tanush_summary',
         'preview_image' => 'assets/img/work/intership/Tanush/figures/tanush_fig-034.png',
         'title_key' => 'results.section_tanush',
@@ -321,6 +341,10 @@ return [
     [
         'id' => 'vehicle-modeling',
         'category_key' => 'results.cat_milestone',
+        'date' => [
+            'en' => 'May 2025',
+            'fr' => 'Mai 2025',
+        ],
         'summary' => [
             'en' => 'Research on vehicle physical models, kinematic models, parameter estimation, and multi-sensor fusion algorithms.',
             'fr' => 'Recherche sur les modèles physiques de véhicules, les modèles cinématiques, l\'estimation des paramètres et les algorithmes de fusion multi-capteurs.',
@@ -343,6 +367,10 @@ return [
     [
         'id' => 'estimation-algorithms',
         'category_key' => 'results.cat_phd',
+        'date' => [
+            'en' => 'October 2025',
+            'fr' => 'Octobre 2025',
+        ],
         'summary' => [
             'en' => 'Designing trust-aware distributed observers for connected vehicle platoons under sensor and communication anomalies.',
             'fr' => 'Conception d\'observateurs distribués sensibles à la confiance pour les pelotons de véhicules connectés soumis à des anomalies de capteurs et de communication.',
@@ -413,6 +441,10 @@ return [
     [
         'id' => 'platoon-applications-platform-testing',
         'category_key' => 'results.cat_milestone',
+        'date' => [
+            'en' => 'November 2025',
+            'fr' => 'Novembre 2025',
+        ],
         'summary' => [
             'en' => 'Co-design framework for distributed observers and controllers, integrated vehicle platforms (LIMO ROS2 and QCar2), and web-based remote supervision for real-vehicle testing.',
             'fr' => 'Cadre de co-conception pour observateurs et contrôleurs distribués, plateformes de véhicules intégrées (LIMO ROS2 et QCar2), et supervision web à distance pour essais réels.',
@@ -676,6 +708,10 @@ return [
     [
         'id' => 'simulation-environment',
         'category_key' => 'results.cat_milestone',
+        'date' => [
+            'en' => 'December 2025',
+            'fr' => 'Décembre 2025',
+        ],
         'summary' => [
             'en' => 'A modular V2V autonomous-driving testbed that connects numerical simulation, Quanser QLabs, CARLA, Quanser QCar, and AgileX LIMO through a common experiment pipeline. The system supports testing cooperative perception, state estimation, control, and robustness under noisy or corrupted sensor measurements from simulation to real small-scale vehicles.',
             'fr' => 'Un banc d\'essai modulaire de conduite autonome V2V connectant la simulation numérique, Quanser QLabs, CARLA, Quanser QCar et AgileX LIMO via un pipeline expérimental commun. Le système permet de tester la perception coopérative, l\'estimation d\'état, le contrôle et la robustesse sous mesures capteurs bruitées ou corrompues.',

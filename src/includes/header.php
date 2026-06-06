@@ -19,6 +19,8 @@ $pageTitle = $pageTitle ?? t('web.title');
     <link rel="stylesheet" href="assets/css/team.css">
     <?php if ($currentPage === 'results'): ?>
         <link rel="stylesheet" href="assets/css/results.css">
+    <?php elseif ($currentPage === 'publication'): ?>
+        <link rel="stylesheet" href="assets/css/publication.css">
     <?php endif; ?>
 </head>
 

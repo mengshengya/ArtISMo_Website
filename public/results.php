@@ -9,6 +9,23 @@ load_page_lang('results');
 
 $sections = require __DIR__ . '/../src/content/results_content.php';
 
+// Sort sections by date descending (latest first)
+usort($sections, function ($a, $b) {
+    $dateAStr = '';
+    if (isset($a['date'])) {
+        $dateAStr = is_array($a['date']) ? ($a['date']['en'] ?? '') : $a['date'];
+    }
+    $dateBStr = '';
+    if (isset($b['date'])) {
+        $dateBStr = is_array($b['date']) ? ($b['date']['en'] ?? '') : $b['date'];
+    }
+
+    $timeA = $dateAStr ? strtotime($dateAStr) : 0;
+    $timeB = $dateBStr ? strtotime($dateBStr) : 0;
+
+    return $timeB <=> $timeA;
+});
+
 $detailId = $_GET['id'] ?? null;
 $matchedItem = null;
 
@@ -42,9 +59,23 @@ include __DIR__ . '/../src/includes/nav.php';
 
                 <article class="detail-container">
                     <header class="detail-header">
-                        <?php if (!empty($matchedItem['category_key'])): ?>
-                            <span class="detail-category"><?= content_escape(t($matchedItem['category_key'])) ?></span>
-                        <?php endif; ?>
+                        <div class="detail-meta">
+                            <?php if (!empty($matchedItem['category_key'])): ?>
+                                <span class="detail-category"><?= content_escape(t($matchedItem['category_key'])) ?></span>
+                            <?php endif; ?>
+                            <?php
+                            $itemDate = '';
+                            if (!empty($matchedItem['date'])) {
+                                $itemDate = content_value($matchedItem['date'], $lang);
+                            }
+                            if ($itemDate !== ''):
+                            ?>
+                                <?php if (!empty($matchedItem['category_key'])): ?>
+                                    <span class="detail-meta-separator">•</span>
+                                <?php endif; ?>
+                                <span class="detail-date"><?= content_escape($itemDate) ?></span>
+                            <?php endif; ?>
+                        </div>
                         <h1 class="detail-title"><?= content_escape(content_title($matchedItem, $lang)) ?></h1>
                     </header>
 
@@ -101,9 +132,23 @@ include __DIR__ . '/../src/includes/nav.php';
                         <?php endif; ?>
                     </a>
                     <div class="card-content">
-                        <?php if ($category): ?>
-                            <span class="card-category"><?= content_escape($category) ?></span>
-                        <?php endif; ?>
+                        <div class="card-meta">
+                            <?php if ($category): ?>
+                                <span class="card-category"><?= content_escape($category) ?></span>
+                            <?php endif; ?>
+                            <?php
+                            $itemDate = '';
+                            if (!empty($section['date'])) {
+                                $itemDate = content_value($section['date'], $lang);
+                            }
+                            if ($itemDate !== ''):
+                            ?>
+                                <?php if ($category): ?>
+                                    <span class="card-meta-separator">•</span>
+                                <?php endif; ?>
+                                <span class="card-date"><?= content_escape($itemDate) ?></span>
+                            <?php endif; ?>
+                        </div>
                         <h2 class="card-title">
                             <a href="<?= $projectUrl ?>"><?= content_escape($title) ?></a>
                         </h2>

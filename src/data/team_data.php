@@ -284,3 +284,9 @@ $teamMembers = [
         ],
     ],
 ];
+
+// Sort team members alphabetically by name
+usort($teamMembers, function ($a, $b) {
+    return strcasecmp($a['name'], $b['name']);
+});
+

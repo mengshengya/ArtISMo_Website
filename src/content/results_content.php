@@ -38,6 +38,42 @@ return [
             ],
             [
                 'type' => 'heading',
+                'text_key' => 'results.phd_val_title',
+            ],
+            [
+                'type' => 'html',
+                'text_key' => 'results.phd_val_table_html',
+            ],
+            [
+                'type' => 'heading',
+                'text_key' => 'results.phd_runtime_title',
+            ],
+            [
+                'type' => 'image',
+                'src' => 'assets/img/work/doctorant/Huy/robust_kalma/report_figures/kalmarobust_result-12.png',
+                'alt' => [
+                    'en' => 'Validation result comparing EKF, ordinary EKF under attacks, and robust KalmaNet',
+                    'fr' => 'Résultat de validation comparant l\'EKF, l\'EKF ordinaire sous attaques et Robust KalmaNet',
+                ],
+                'caption' => [
+                    'en' => 'The robust estimator follows the clean-reference EKF while the ordinary EKF shows larger spikes during attack intervals.',
+                    'fr' => 'L\'estimateur robuste suit l\'EKF de référence sain tandis que l\'EKF ordinaire montre des pics plus importants lors des intervalles d\'attaque.',
+                ],
+            ],
+            [
+                'type' => 'image',
+                'src' => 'assets/img/work/doctorant/Huy/robust_kalma/report_figures/kalmarobust_result-13.png',
+                'alt' => [
+                    'en' => 'Learned trust mask and gain behavior under sensor attack intervals',
+                    'fr' => 'Comportement du masque de confiance appris et du gain lors des intervalles d\'attaque capteurs',
+                ],
+                'caption' => [
+                    'en' => 'Gain and measurement-mask behavior: The learned mask and effective gain decrease during GPS jump and wheel-bias intervals, reducing dependence on corrupted measurements.',
+                    'fr' => 'Comportement du gain et du masque de mesure : Le masque appris et le gain effectif diminuent pendant les intervalles de saut GPS et de biais de roue, réduisant la dépendance aux mesures corrompues.',
+                ],
+            ],
+            [
+                'type' => 'heading',
                 'text_key' => 'results.phd_downloads_title',
             ],
             [
@@ -129,6 +165,168 @@ return [
         ],
     ],
     [
+        'id' => 'internship-siyu',
+        'category_key' => 'results.cat_internship',
+        'summary_key' => 'results.siyu_summary',
+        'preview_image' => 'assets/img/work/intership/Siyu/figures/siyu_fig-067.png',
+        'title_key' => 'results.section_siyu',
+        'blocks' => [
+            [
+                'type' => 'paragraph',
+                'text_key' => 'results.siyu_intro_1',
+            ],
+            [
+                'type' => 'paragraph',
+                'text_key' => 'results.siyu_intro_2',
+            ],
+            [
+                'type' => 'image',
+                'src' => 'assets/img/work/intership/Siyu/figures/siyu_fig-067.png',
+                'alt' => [
+                    'en' => 'Two virtual cars in QLabs scenario.',
+                    'fr' => 'Deux véhicules virtuels dans le scénario QLabs.',
+                ],
+                'caption' => [
+                    'en' => 'Siyu\'s project QLabs Scenario: Two virtual QCars (leader and follower) on a closed-loop track.',
+                    'fr' => 'Scénario QLabs de Siyu : Deux véhicules QCar2 virtuels (leader et follower) sur une piste fermée.',
+                ],
+            ],
+            [
+                'type' => 'image',
+                'src' => 'assets/img/work/intership/Siyu/figures/siyu_fig-060.png',
+                'alt' => [
+                    'en' => 'Docker-based Quanser simulation workflow.',
+                    'fr' => 'Flux de travail de simulation Quanser sous Docker.',
+                ],
+                'caption' => [
+                    'en' => 'Virtual Environment: Connection schematic between the Quanser container, QLabs, and developer container.',
+                    'fr' => 'Environnement virtuel : Schéma de connexion entre le conteneur Quanser, QLabs et le conteneur développeur.',
+                ],
+            ],
+            [
+                'type' => 'image',
+                'src' => 'assets/img/work/intership/Siyu/figures/siyu_fig-073.png',
+                'alt' => [
+                    'en' => 'LiDAR-Camera fusion sensor readings.',
+                    'fr' => 'Lectures de capteurs par fusion LiDAR-caméra.',
+                ],
+                'caption' => [
+                    'en' => 'Perception: Vehicle detection and relative distance tracking using camera-LiDAR fusion.',
+                    'fr' => 'Perception : Détection du véhicule et suivi de distance par fusion caméra-LiDAR.',
+                ],
+            ],
+            [
+                'type' => 'image',
+                'src' => 'assets/img/work/intership/Siyu/figures/siyu_fig-079.png',
+                'alt' => [
+                    'en' => 'Lateral ELC look-ahead point.',
+                    'fr' => 'Point d\'anticipation de contrôle latéral ELC.',
+                ],
+                'caption' => [
+                    'en' => 'ELC Lateral Control: Visual tracking point layout used to minimize corner-cutting in curves.',
+                    'fr' => 'Contrôle latéral ELC : Tracé du point virtuel utilisé pour limiter les coupures de virage.',
+                ],
+            ],
+            [
+                'type' => 'heading',
+                'text_key' => 'results.siyu_results_title',
+            ],
+            [
+                'type' => 'html',
+                'text_key' => 'results.siyu_table_html',
+            ],
+            [
+                'type' => 'heading',
+                'text_key' => 'results.siyu_downloads_title',
+            ],
+            [
+                'type' => 'html',
+                'text_key' => 'results.siyu_downloads_html',
+            ],
+        ],
+    ],
+    [
+        'id' => 'internship-tanush',
+        'category_key' => 'results.cat_internship',
+        'summary_key' => 'results.tanush_summary',
+        'preview_image' => 'assets/img/work/intership/Tanush/figures/tanush_fig-034.png',
+        'title_key' => 'results.section_tanush',
+        'blocks' => [
+            [
+                'type' => 'paragraph',
+                'text_key' => 'results.tanush_intro_1',
+            ],
+            [
+                'type' => 'paragraph',
+                'text_key' => 'results.tanush_intro_2',
+            ],
+            [
+                'type' => 'image',
+                'src' => 'assets/img/work/intership/Tanush/figures/tanush_fig-018.png',
+                'alt' => [
+                    'en' => 'Quanser QCar autonomous vehicle model.',
+                    'fr' => 'Modèle de véhicule autonome Quanser QCar.',
+                ],
+                'caption' => [
+                    'en' => 'Experimental Context: The 1/10-scale physical QCar vehicle.',
+                    'fr' => 'Contexte expérimental : Véhicule physique QCar à l\'échelle 1/10.',
+                ],
+            ],
+            [
+                'type' => 'image',
+                'src' => 'assets/img/work/intership/Tanush/figures/tanush_fig-024.png',
+                'alt' => [
+                    'en' => 'Hardware layout of the board.',
+                    'fr' => 'Schéma bloc matériel de la carte.',
+                ],
+                'caption' => [
+                    'en' => 'Hardware Architecture: Connection blocks for dual MCU (navigation and communication), sensors, storage, and Wi-Fi.',
+                    'fr' => 'Architecture matérielle : Blocs d\'interconnexion du double MCU, des capteurs, du stockage et du Wi-Fi.',
+                ],
+            ],
+            [
+                'type' => 'image',
+                'src' => 'assets/img/work/intership/Tanush/figures/tanush_fig-032.png',
+                'alt' => [
+                    'en' => 'KiCad dense routing tracks.',
+                    'fr' => 'Pistes de routage denses sous KiCad.',
+                ],
+                'caption' => [
+                    'en' => 'Conception PCB: Dense multi-layer board routing and power constraints layout in KiCad.',
+                    'fr' => 'Conception PCB : Routage multicouche dense et contraintes d\'alimentation sous KiCad.',
+                ],
+            ],
+            [
+                'type' => 'image',
+                'src' => 'assets/img/work/intership/Tanush/figures/tanush_fig-034.png',
+                'alt' => [
+                    'en' => '3D model of the electronic card.',
+                    'fr' => 'Modèle 3D de la carte électronique.',
+                ],
+                'caption' => [
+                    'en' => '3D PCB model: Assembled board representation with connectors, modules, and USB ports.',
+                    'fr' => 'Modèle 3D du PCB : Représentation de la carte assemblée avec connecteurs, modules et ports USB.',
+                ],
+            ],
+            [
+                'type' => 'heading',
+                'text_key' => 'results.tanush_results_title',
+            ],
+            [
+                'type' => 'html',
+                'text_key' => 'results.tanush_table_html',
+            ],
+            [
+                'type' => 'heading',
+                'text_key' => 'results.tanush_downloads_title',
+            ],
+            [
+                'type' => 'html',
+                'text_key' => 'results.tanush_downloads_html',
+            ],
+        ],
+    ],
+    [
         'id' => 'vehicle-modeling',
         'category_key' => 'results.cat_milestone',
         'summary' => [
@@ -166,8 +364,20 @@ return [
             [
                 'type' => 'paragraph',
                 'text' => [
-                    'en' => 'We design trust-aware distributed observers for connected vehicle platoons under sensor and communication anomalies. The observers allow each vehicle to estimate the states of the entire platoon using local measurements and V2V communication, detecting and isolating malicious data or sensor faults.',
-                    'fr' => 'Nous concevons des observateurs distribués sensibles à la confiance pour les pelotons de véhicules connectés soumis à des anomalies de capteurs et de communication. Les observateurs permettent à chaque véhicule d\'estimer les états de l\'ensemble du peloton à l\'aide de mesures locales et de communications V2V, en détectant et isolant les données malveillantes ou les défauts de capteurs.',
+                    'en' => 'We design trust-aware distributed observers for resilient state estimation in vehicle platoons under cyberattacks. A behavioral divergence metric scores shared data and builds a dynamic trusted-neighbor set for online weight adaptation. Sufficient Input-to-State Stability (ISS) conditions are provided. The observers allow each vehicle to estimate the states of the entire platoon using local measurements and V2V communication, detecting and isolating malicious data, sensor faults, or communication anomalies (such as bogus data, replay, and DoS attacks).',
+                    'fr' => 'Nous concevons des observateurs distribués sensibles à la confiance pour l\'estimation d\'état résiliente dans les pelotons de véhicules connectés face aux cyberattaques. Une métrique de divergence comportementale évalue les données partagées et construit un ensemble dynamique de voisins de confiance pour l\'adaptation en ligne des poids. Des conditions suffisantes de stabilité ISS (Input-to-State Stability) sont formulées. Les observateurs permettent à chaque véhicule d\'estimer les états de l\'ensemble du peloton en utilisant des mesures locales et des communications V2V, tout en détectant et isolant les données corrompues, les pannes de capteurs ou les anomalies de communication (telles que les attaques de données fallacieuses, de rejeu et de déni de service DoS).',
+                ],
+            ],
+            [
+                'type' => 'image',
+                'src' => 'assets/img/work/doctorant/Huy/trust_based/ifac/trust_all_new_huy.png',
+                'alt' => [
+                    'en' => 'Trust-aware resilient distributed observer framework for connected vehicle platoons',
+                    'fr' => 'Cadre d\'observateur distribué résilient et sensible à la confiance pour les pelotons de véhicules connectés',
+                ],
+                'caption' => [
+                    'en' => 'Trust-based estimation framework: compares reported data with physics-based predictions to adapt consensus weights and isolate compromised vehicles.',
+                    'fr' => 'Cadre d\'estimation basé sur la confiance : compare les données reçues avec les prédictions physiques pour adapter les poids de consensus et isoler les véhicules compromis.',
                 ],
             ],
             [
@@ -182,21 +392,53 @@ return [
                     'fr' => 'Vidéo de démonstration de la conception de l\'observateur distribué résilient et sensible à la confiance pour les pelotons de véhicules.',
                 ],
             ],
+            [
+                'type' => 'heading',
+                'text' => [
+                    'en' => 'Publications & Reports',
+                    'fr' => 'Publications & Rapports',
+                ],
+            ],
+            [
+                'type' => 'html',
+                'text' => [
+                    'en' => '
+                    <div class="download-container">
+                        <a href="assets/img/work/doctorant/Huy/trust_based/ifac/Trust_ifac.pdf" class="download-btn" target="_blank" rel="noopener noreferrer">
+                            <span class="btn-icon">📄</span> Download IFAC Paper (PDF)
+                        </a>
+                    </div>',
+                    'fr' => '
+                    <div class="download-container">
+                        <a href="assets/img/work/doctorant/Huy/trust_based/ifac/Trust_ifac.pdf" class="download-btn" target="_blank" rel="noopener noreferrer">
+                            <span class="btn-icon">📄</span> Télécharger l\'article IFAC (PDF)
+                        </a>
+                    </div>',
+                ],
+            ],
         ],
     ],
     [
-        'id' => 'platoon-applications',
+        'id' => 'platoon-applications-platform-testing',
         'category_key' => 'results.cat_milestone',
         'summary' => [
-            'en' => 'Co-design framework for distributed observers and controllers that preserves string stability of platoons under road disturbances.',
-            'fr' => 'Cadre de co-conception d\'observateurs et de contrôleurs distribués préservant la stabilité de chaîne face aux perturbations routières.',
+            'en' => 'Co-design framework for distributed observers and controllers, integrated vehicle platforms (LIMO ROS2 and QCar2), and web-based remote supervision for real-vehicle testing.',
+            'fr' => 'Cadre de co-conception pour observateurs et contrôleurs distribués, plateformes de véhicules intégrées (LIMO ROS2 et QCar2), et supervision web à distance pour essais réels.',
         ],
         'preview_image' => 'assets/img/Milestones/vehicle_platform/platoon_limo_qcar.jpg',
         'title' => [
-            'en' => 'Resilient Platoon Applications',
-            'fr' => 'Applications robustes au pelotonnage de véhicules',
+            'en' => 'Resilient Platoon Applications, Experimental Platform, and Real-Vehicle Testing & Evaluation',
+            'fr' => 'Applications de peloton résilient, plateforme expérimentale et essais sur véhicule réel & évaluation',
         ],
         'blocks' => [
+            // --- SECTION 1: RESILIENT PLATOON APPLICATIONS ---
+            [
+                'type' => 'heading',
+                'text' => [
+                    'en' => 'Resilient Platoon Applications & Control Co-Design',
+                    'fr' => 'Applications de peloton résilient & Co-conception du contrôle',
+                ],
+            ],
             [
                 'type' => 'html',
                 'text' => [
@@ -225,6 +467,7 @@ return [
                 'type' => 'heading',
                 'text' => [
                     'en' => 'Wave-road disturbance test',
+                    'fr' => 'Test de perturbation sur route ondulée',
                 ],
             ],
             [
@@ -255,6 +498,7 @@ return [
                 'type' => 'heading',
                 'text' => [
                     'en' => 'Start-stop maneuver test',
+                    'fr' => 'Test de manœuvre de démarrage et d\'arrêt',
                 ],
             ],
             [
@@ -275,21 +519,15 @@ return [
                     'en' => 'During the start-stop phase, the distributed observer shows larger estimation errors because the design assumes zero leader acceleration. A larger leader acceleration leads to a larger mismatch. Even under this condition, the controller maintains weak string stability of the platoon: the acceleration oscillations decrease from the first follower to the last follower, which supports the effectiveness and robustness of the proposed method.',
                 ],
             ],
-        ],
-    ],
-    [
-        'id' => 'experimental-platform',
-        'category_key' => 'results.cat_milestone',
-        'summary' => [
-            'en' => 'An integrated platform combining LIMO ROS2 and QCar2 physical autonomous systems with the QLabs virtual simulation environment.',
-            'fr' => 'Plateforme intégrée combinant les systèmes physiques autonomes LIMO ROS2 et QCar2 avec l\'environnement de simulation virtuelle QLabs.',
-        ],
-        'preview_image' => 'assets/img/Milestones/vehicle_platform/Phycial_Qcar.png',
-        'title' => [
-            'en' => 'Experimental Platform',
-            'fr' => 'Développement de la plateforme expérimentale',
-        ],
-        'blocks' => [
+
+            // --- SECTION 2: EXPERIMENTAL PLATFORM LAYOUT ---
+            [
+                'type' => 'heading',
+                'text' => [
+                    'en' => 'Experimental Platform Setup',
+                    'fr' => 'Configuration de la plateforme expérimentale',
+                ],
+            ],
             [
                 'type' => 'paragraph',
                 'text' => [
@@ -406,95 +644,15 @@ return [
                     'fr' => 'Validation réelle du peloton V2V à l\'aide de véhicules physiques QCar et LIMO dans le laboratoire.',
                 ],
             ],
-        ],
-    ],
-    [
-        'id' => 'simulation-environment',
-        'category_key' => 'results.cat_milestone',
-        'summary' => [
-            'en' => 'An enhanced QLabs simulation environment supporting real-time web-based monitoring, control, and Python management platforms.',
-            'fr' => 'Environnement de simulation QLabs amélioré prenant en charge la supervision en temps réel et les plateformes de gestion Python.',
-        ],
-        'preview_image' => 'assets/img/Milestones/vehicle_platform/Qcar4.png',
-        'title' => [
-            'en' => 'Simulation Environment',
-            'fr' => 'Conception de l\'environnement de simulation',
-        ],
-        'blocks' => [
-            [
-                'type' => 'paragraph',
-                'text' => [
-                    'en' => 'We developed an enhanced QLabs-based simulation environment to support real-time monitoring, control, and validation of connected autonomous vehicle systems. This upgraded environment bridges algorithm development, web-based interaction, and virtual experimentation for intelligent transportation research.',
-                    'fr' => 'Nous avons développé un environnement de simulation amélioré basé sur QLabs afin de soutenir la supervision, la commande et la validation en temps réel des systèmes de véhicules autonomes connectés. Cet environnement relie le développement d\'algorithmes, l\'interaction web et l\'expérimentation virtuelle pour la recherche en transport intelligent.',
-                ],
-            ],
+
+            // --- SECTION 3: REAL-VEHICLE TESTING & EVALUATION ---
             [
                 'type' => 'heading',
                 'text' => [
-                    'en' => 'Web-based real-time monitoring and control interface for connected autonomous vehicle simulation.',
-                    'fr' => 'Interface web de supervision et de commande en temps réel pour la simulation de véhicules autonomes connectés.',
+                    'en' => 'Real-Vehicle Testing & Remote Web Supervision',
+                    'fr' => 'Essais sur véhicule réel et supervision web à distance',
                 ],
             ],
-            [
-                'type' => 'paragraph',
-                'text' => [
-                    'en' => 'A web-based remote monitoring and control platform has been developed for the QLabs simulation environment. This platform allows users to observe vehicle states, trajectories, and sensor data in real time through an intuitive online interface. It also enables remote switching between control modes during simulation, facilitating interactive experimentation and algorithm testing.',
-                    'fr' => 'Une plateforme web de supervision et de commande à distance a été développée pour l\'environnement de simulation QLabs. Elle permet d\'observer en temps réel les états des véhicules, les trajectoires et les données capteurs via une interface en ligne intuitive.',
-                ],
-            ],
-            [
-                'type' => 'youtube',
-                'url' => 'https://youtu.be/A0KsCnvjmfI?si=Gm6_9qTzkTo0drTY',
-                'title' => [
-                    'en' => 'Web-based QLabs simulation environment demo',
-                    'fr' => 'Démonstration de l\'environnement de simulation QLabs via le web',
-                ],
-                'caption' => [
-                    'en' => 'Web-based QLabs simulation environment demo',
-                    'fr' => 'Démonstration de l\'environnement de simulation QLabs via le web',
-                ],
-            ],
-            [
-                'type' => 'heading',
-                'text' => [
-                    'en' => 'Python-based local monitoring and management platform to support flexible simulation setup and algorithm evaluation for connected autonomous vehicles',
-                    'fr' => 'Plateforme locale de supervision et de gestion basée sur Python pour soutenir la configuration flexible des simulations et l\'évaluation des algorithmes',
-                ],
-            ],
-            [
-                'type' => 'html',
-                'text' => [
-                    'en' => '<p>The platform enables custom communication network design, sensor activation/deactivation for robustness and fault testing, custom route selection for diverse driving scenarios, and multiple control modes for controller comparison. By providing a unified and open-source experimental tool, publicly released on <a href="https://github.com/kslhuy/QCar2_Cran" target="_blank" rel="noopener noreferrer">GitHub</a>, this platform improves the efficiency, reproducibility, and extensibility of simulation-based connected vehicle research.</p>',
-                    'fr' => '<p>La plateforme permet la conception de réseaux de communication personnalisés, l\'activation ou la désactivation de capteurs pour les tests de robustesse et de défauts, la sélection d\'itinéraires variés et plusieurs modes de commande pour comparer les contrôleurs. En fournissant un outil expérimental unifié et open source, publié sur <a href="https://github.com/kslhuy/QCar2_Cran" target="_blank" rel="noopener noreferrer">GitHub</a>, elle améliore l\'efficacité, la reproductibilité et l\'extensibilité de la recherche sur les véhicules connectés par simulation.</p>',
-                ],
-            ],
-            [
-                'type' => 'youtube',
-                'url' => 'https://youtu.be/SraIErZ5QTg?si=3rbx-DJPYJrunefU',
-                'title' => [
-                    'en' => 'Python-based local monitoring and management platform demo',
-                    'fr' => 'Démonstration de la plateforme locale de supervision et de gestion basée sur Python',
-                ],
-                'caption' => [
-                    'en' => 'Python-based local monitoring and management platform demo.',
-                    'fr' => 'Démonstration de la plateforme locale de supervision et de gestion basée sur Python.',
-                ],
-            ],
-        ],
-    ],
-    [
-        'id' => 'real-vehicle-testing',
-        'category_key' => 'results.cat_milestone',
-        'summary' => [
-            'en' => 'Web-based remote monitoring and control platform for physical QCar2 real-vehicle experiments and performance evaluation.',
-            'fr' => 'Plateforme web de supervision et de contrôle à distance pour les essais physiques et l\'évaluation des performances du QCar2.',
-        ],
-        'preview_image' => 'assets/img/Milestones/vehicle_platform/platoon_limo_qcar.jpg',
-        'title' => [
-            'en' => 'Real-Vehicle Testing & Evaluation',
-            'fr' => 'Essais sur véhicule réel et évaluation des performances',
-        ],
-        'blocks' => [
             [
                 'type' => 'paragraph',
                 'text' => [
@@ -519,6 +677,198 @@ return [
                 'text' => [
                     'en' => 'Development for additional vehicles is currently ongoing, aiming to support broader real-world validation of connected and autonomous vehicle algorithms.',
                     'fr' => 'Le développement pour d\'autres véhicules est en cours afin de soutenir une validation expérimentale plus large des algorithmes pour véhicules connectés et autonomes.',
+                ],
+            ],
+        ],
+    ],
+    [
+        'id' => 'simulation-environment',
+        'category_key' => 'results.cat_milestone',
+        'summary' => [
+            'en' => 'A modular V2V autonomous-driving testbed that connects numerical simulation, Quanser QLabs, CARLA, Quanser QCar, and AgileX LIMO through a common experiment pipeline. The system supports testing cooperative perception, state estimation, control, and robustness under noisy or corrupted sensor measurements from simulation to real small-scale vehicles.',
+            'fr' => 'Un banc d\'essai modulaire de conduite autonome V2V connectant la simulation numérique, Quanser QLabs, CARLA, Quanser QCar et AgileX LIMO via un pipeline expérimental commun. Le système permet de tester la perception coopérative, l\'estimation d\'état, le contrôle et la robustesse sous mesures capteurs bruitées ou corrompues.',
+        ],
+        'preview_image' => 'assets/img/Milestones/vehicle_platform/Cycle Development Test Deployment.png',
+        'title' => [
+            'en' => 'Multi-Platform V2V CAV Testbed for Robust Cooperative State Estimation and Control',
+            'fr' => 'Banc d\'essai V2V CAV multi-plateforme pour l\'estimation d\'état coopérative et le contrôle robustes',
+        ],
+        'blocks' => [
+            [
+                'type' => 'paragraph',
+                'text' => [
+                    'en' => 'A modular V2V autonomous-driving testbed that connects numerical simulation, Quanser QLabs, CARLA, Quanser QCar, and AgileX LIMO through a common experiment pipeline. The system supports testing cooperative perception, state estimation, control, and robustness under noisy or corrupted sensor measurements from simulation to real small-scale vehicles.',
+                    'fr' => 'Un banc d\'essai modulaire de conduite autonome V2V connectant la simulation numérique, Quanser QLabs, CARLA, Quanser QCar et AgileX LIMO via un pipeline expérimental commun. Le système permet de tester la perception coopérative, l\'estimation d\'état, le contrôle et la robustesse sous mesures capteurs bruitées ou corrompues.',
+                ],
+            ],
+            [
+                'type' => 'image',
+                'src' => 'assets/img/Milestones/vehicle_platform/Cycle Development Test Deployment.png',
+                'alt' => [
+                    'en' => 'V2V CAV Testbed Development and Deployment Cycle',
+                    'fr' => 'Cycle de développement et déploiement du banc d\'essai V2V CAV',
+                ],
+                'caption' => [
+                    'en' => 'The development cycle connects numerical simulation, virtual twins in QLabs, high-fidelity CARLA simulator, physical miniature vehicles (QCar and LIMO) through a common experiment pipeline.',
+                    'fr' => 'Le cycle connecte la simulation numérique, les jumeaux virtuels dans QLabs, le simulateur haute fidélité CARLA et les véhicules physiques miniatures (QCar et LIMO) via un pipeline expérimental commun.',
+                ],
+            ],
+            [
+                'type' => 'image',
+                'src' => 'assets/img/Milestones/vehicle_platform/Carla.jpg',
+                'alt' => [
+                    'en' => 'CARLA multi-vehicle V2V simulation environment',
+                    'fr' => 'Environnement de simulation multi-véhicules V2V CARLA',
+                ],
+                'caption' => [
+                    'en' => 'High-fidelity multi-vehicle simulation in CARLA showing autonomous cars running cooperative estimation and control.',
+                    'fr' => 'Simulation multi-véhicules haute fidélité sous CARLA montrant des voitures autonomes exécutant l\'estimation et le contrôle coopératifs.',
+                ],
+            ],
+            [
+                'type' => 'heading',
+                'text' => [
+                    'en' => 'Key Contributions',
+                    'fr' => 'Contributions Clés',
+                ],
+            ],
+            [
+                'type' => 'html',
+                'text' => [
+                    'en' => '
+                    <ul class="contributions-list">
+                        <li><strong>Built a V2V autonomous-driving stack</strong> across numerical simulation, QLabs, CARLA, QCar, and LIMO.</li>
+                        <li><strong>Created a common experiment pipeline</strong> for simulation-to-real validation.</li>
+                        <li><strong>Integrated multi-vehicle state estimation</strong>, control, and V2V communication.</li>
+                        <li><strong>Developed robust observer modules</strong>, including EKF, trust-based estimation, and RKNet, for noisy or attacked GPS and velocity signals.</li>
+                        <li><strong>Enabled repeatable comparison</strong> across virtual and physical platforms using shared scenarios, logs, and metrics.</li>
+                    </ul>',
+                    'fr' => '
+                    <ul class="contributions-list">
+                        <li><strong>Développement d\'une pile de conduite autonome V2V</strong> sur simulation numérique, QLabs, CARLA, QCar et LIMO.</li>
+                        <li><strong>Création d\'un pipeline expérimental commun</strong> pour la validation de la simulation au réel (sim-to-real).</li>
+                        <li><strong>Intégration de l\'estimation d\'état multi-véhicules</strong>, du contrôle et de la communication V2V.</li>
+                        <li><strong>Développement de modules d\'observation robustes</strong>, incluant EKF, estimation basée sur la confiance et RKNet, face aux signaux GPS et de vitesse bruités ou attaqués.</li>
+                        <li><strong>Comparaison répétable</strong> entre plateformes virtuelles et physiques via des scénarios, des journaux et des métriques partagés.</li>
+                    </ul>',
+                ],
+            ],
+            [
+                'type' => 'heading',
+                'text' => [
+                    'en' => 'Testbed Specifications (Survey Entry)',
+                    'fr' => 'Spécifications du Banc d\'Essai (Entrée d\'Enquête)',
+                ],
+            ],
+            [
+                'type' => 'html',
+                'text' => [
+                    'en' => '
+                    <div class="table-container">
+                        <table class="results-table">
+                            <thead>
+                                <tr>
+                                    <th>Feature / Metric</th>
+                                    <th>Specification Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Number of Vehicles</strong></td>
+                                    <td>Up to 4 virtual vehicles in simulation, 3 physical vehicles in platoon (2x QCars, 1x LIMO)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Vehicle Scale</strong></td>
+                                    <td>1/10-scale (Quanser QCar), desktop-scale (AgileX LIMO)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Sensors</strong></td>
+                                    <td>LiDAR, depth camera, 360° CSI cameras, IMU, wheel encoders, virtual GNSS/GPS, magnetometer</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Compute Hardware</strong></td>
+                                    <td>NVIDIA Jetson TX2 (QCar), NVIDIA Jetson Nano / Raspberry Pi (LIMO), STM32 MCUs, simulation host PCs</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Communication Method</strong></td>
+                                    <td>UDP-based V2V communication protocol over local Wi-Fi network (with ACKs and heartbeat checks)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Software Stack</strong></td>
+                                    <td>ROS2 (Humble/Foxy), Docker, Python 3, MATLAB/Simulink (optional), C++</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Simulator Support</strong></td>
+                                    <td>Quanser Interactive Labs (QLabs) virtual twins, CARLA simulator, numerical Python/MATLAB models</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Open-Source Link</strong></td>
+                                    <td><a href="https://github.com/kslhuy/QCar2_Cran" target="_blank" rel="noopener noreferrer">github.com/kslhuy/QCar2_Cran</a></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Documentation Link</strong></td>
+                                    <td>Included in the repository README and developmental folders</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Access & Reproducibility</strong></td>
+                                    <td>Fully reproducible using public Docker images, Python scripts, open-source repositories, and documented scenarios. Accessible to other researchers for cooperative CAV testing.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>',
+                    'fr' => '
+                    <div class="table-container">
+                        <table class="results-table">
+                            <thead>
+                                <tr>
+                                    <th>Caractéristique / Métrique</th>
+                                    <th>Détails des Spécifications</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Nombre de véhicules</strong></td>
+                                    <td>Jusqu\'à 4 véhicules virtuels en simulation, 3 véhicules physiques en peloton (2x QCars, 1x LIMO)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Échelle des véhicules</strong></td>
+                                    <td>Échelle 1/10 (Quanser QCar), échelle bureau (AgileX LIMO)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Capteurs</strong></td>
+                                    <td>LiDAR, caméra de profondeur, caméras CSI 360°, IMU, encodeurs de roue, GNSS/GPS virtuel, magnétomètre</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Matériel de calcul</strong></td>
+                                    <td>NVIDIA Jetson TX2 (QCar), NVIDIA Jetson Nano / Raspberry Pi (LIMO), microcontrôleurs STM32, PC hôtes de simulation</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Méthode de communication</strong></td>
+                                    <td>Protocole de communication V2V basé sur UDP via réseau Wi-Fi local (avec ACK et vérifications de pulsation)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Pile logicielle</strong></td>
+                                    <td>ROS2 (Humble/Foxy), Docker, Python 3, MATLAB/Simulink (optionnel), C++</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Simulateurs supportés</strong></td>
+                                    <td>Jumeaux virtuels Quanser Interactive Labs (QLabs), simulateur CARLA, modèles numériques Python/MATLAB</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Lien open-source</strong></td>
+                                    <td><a href="https://github.com/kslhuy/QCar2_Cran" target="_blank" rel="noopener noreferrer">github.com/kslhuy/QCar2_Cran</a></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Lien de documentation</strong></td>
+                                    <td>Inclus dans le README du dépôt et les dossiers de développement</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Accès & Reproductibilité</strong></td>
+                                    <td>Entièrement reproductible à l\'aide d\'images Docker publiques, scripts Python, dépôts open-source et scénarios documentés. Accessible aux autres chercheurs pour les tests CAV coopératifs.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>',
                 ],
             ],
         ],

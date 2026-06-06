@@ -1,0 +1,192 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{textcomp}
+
+\geometry{
+  left=1.15cm,
+  right=1.15cm,
+  top=1.65cm,
+  bottom=1.25cm,
+  headheight=30pt,
+  headsep=12pt
+}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\raisebox{-0.08cm}{\includegraphics[height=0.55cm]{../UL.png}}}
+\fancyhead[R]{\raisebox{-0.08cm}{\includegraphics[height=0.55cm]{../iut.png}}}
+\fancyfoot[C]{\footnotesize \thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\definecolor{accent}{RGB}{0,86,150}
+\definecolor{accentlight}{RGB}{232,242,250}
+\definecolor{linegray}{RGB}{210,215,222}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2.5pt}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.12}
+
+\newcommand{\sectiontitle}[1]{%
+  \vspace{2.5mm}
+  {\large\bfseries\color{accent} #1}\par
+  \vspace{1mm}
+}
+
+\newcommand{\keybox}[2]{%
+  \fcolorbox{accent}{accentlight}{%
+    \parbox[c][1.15cm][c]{0.29\textwidth}{%
+      \centering\bfseries #1\\[-1pt]
+      {\normalfont\footnotesize #2}}}}
+
+\newcommand{\imagehighlight}[3]{%
+  \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \fcolorbox{accent}{white}{\includegraphics[width=0.95\linewidth,height=3.0cm,keepaspectratio]{#1}}
+    \vspace{0.7mm}
+
+    {\scriptsize \textbf{#2}\\[-1pt] #3}
+  \end{minipage}}
+
+\newcommand{\flowbox}[2]{%
+  \fcolorbox{accent}{white}{%
+    \parbox[c][1.45cm][c]{0.30\textwidth}{%
+      \centering\bfseries #1\\[-1pt]
+      {\normalfont\footnotesize #2}}}}
+
+\newcommand{\phasecard}[2]{%
+  \fcolorbox{linegray}{white}{%
+    \parbox[t][2.35cm][t]{0.46\textwidth}{%
+      \vspace{1mm}
+      {\bfseries\color{accent} #1}\par
+      \footnotesize #2}}}
+
+\begin{document}
+
+\begin{center}
+{\Large\bfseries R\'esum\'e synth\'etique du rapport de Siyu}\\[-1pt]
+{\normalsize V\'ehicule autonome et connect\'e : communication V2V et contr\^ole coop\'eratif}\\
+{\small Projet VEHALSECU -- SEGULA Technologies / CRAN -- 2025}
+\end{center}
+
+\sectiontitle{Objectif du travail}
+Le rapport s'inscrit dans le projet VEHALSECU, qui vise \`a am\'eliorer la s\'ecurit\'e et la robustesse de v\'ehicules autonomes connect\'es en peloton. Le travail de Siyu se concentre sur la partie simulation, communication inter-v\'ehicules et contr\^ole coop\'eratif, afin de tester des sc\'enarios de platooning dans un environnement proche du r\'eel.
+
+Les objectifs principaux sont de construire un environnement QLabs/QCar2 reproductible, de mettre en place une communication V2V robuste, puis d'int\'egrer des contr\^oleurs longitudinal et lat\'eral capables de maintenir la distance, la vitesse et la trajectoire du convoi en conditions nominales ou d\'egrad\'ees.
+
+\vspace{1mm}
+\begin{center}
+\keybox{QLabs/QCar2}{simulation r\'ealiste}
+\hfill
+\keybox{UDP + ACK}{communication V2V}
+\hfill
+\keybox{CACC + ELC}{contr\^ole du peloton}
+\end{center}
+
+\sectiontitle{Images importantes \`a retenir}
+\begin{figure}[H]
+\centering
+\imagehighlight{figures/siyu_fig-067.png}{Sc\'enario QLabs}{Deux QCar2 virtuels, leader et follower, circulent sur une piste ferm\'ee avec murs, route et passage pi\'eton.}
+\hfill
+\imagehighlight{figures/siyu_fig-060.png}{Environnement virtuel}{Connexion entre le conteneur Quanser, QLabs et le conteneur de d\'eveloppement pour commander le QCar2.}
+
+\vspace{2mm}
+
+\imagehighlight{figures/siyu_fig-073.png}{Fusion cam\'era--LiDAR}{D\'etection des v\'ehicules et estimation des distances inter-v\'ehicules \`a partir de la perception multimodale.}
+\hfill
+\imagehighlight{figures/siyu_fig-079.png}{Contr\^ole lat\'eral ELC}{Point virtuel de poursuite utilis\'e pour limiter le corner-cutting dans les virages.}
+\end{figure}
+
+\sectiontitle{Lecture rapide du rapport}
+\begin{center}
+\flowbox{1. Simuler}{plateforme Ubuntu, Docker Quanser, QLabs et QCar2 virtuels}
+\hfill
+\flowbox{2. Communiquer}{messages V2V, horodatage GPS, accus\'es de r\'eception et heartbeat}
+\hfill
+\flowbox{3. Contr\^oler}{CACC longitudinal, contr\^ole lat\'eral ELC et validation en peloton}
+\end{center}
+
+\newpage
+
+\sectiontitle{D\'emarche technique}
+\begin{center}
+\phasecard{Mise en place QLabs}{Configuration sous Ubuntu 24.04 LTS avec GPU Nvidia, d\'eploiement du conteneur Quanser Virtual Environment et connexion \`a QLabs/QCar2 pour disposer d'un banc de test standardis\'e.}
+\hfill
+\phasecard{Sc\'enario leader--follower}{Cr\'eation d'une boucle de test \`a partir de points de passage de la carte QLabs. Le leader suit la trajectoire \`a vitesse impos\'ee, tandis que le follower reproduit le comportement coop\'eratif.}
+
+\vspace{2mm}
+
+\phasecard{Communication V2V}{D\'eveloppement d'un module UDP envoyant toutes les 100 ms l'identifiant, la position, l'orientation, la vitesse, l'acc\'el\'eration et un horodatage. Les ACK et heartbeats limitent les pertes silencieuses.}
+\hfill
+\phasecard{Architecture Python}{Structuration en modules : environnement, v\'ehicule, communication, synchronisation GPS, logs et script principal. Cette modularisation permet de tester chaque bloc avant l'int\'egration compl\`ete.}
+\end{center}
+
+\sectiontitle{R\'esultats principaux}
+\begin{minipage}[t]{0.47\textwidth}
+\textbf{Livrables techniques.} Le travail fournit une base logicielle exploitable pour les essais de platooning.
+
+\vspace{1mm}
+\footnotesize
+\begin{tabularx}{\linewidth}{|>{\raggedright\arraybackslash}p{0.34\linewidth}|>{\raggedright\arraybackslash}X|}
+\hline
+\textbf{Bloc} & \textbf{R\'esultat}\\
+\hline
+Simulation & QLabs/QCar2, Docker\\
+Portage & MATLAB vers Python\\
+V2V & UDP, ACK, heartbeat, GPS virtuel\\
+Longitudinal & CACC distance/vitesse\\
+Lat\'eral & ELC anti corner-cutting\\
+Perception & cam\'era--LiDAR pour $d$ et $\Delta v$\\
+\hline
+\end{tabularx}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.49\textwidth}
+\textbf{Donn\'ees exploit\'ees.} La simulation QCar2 donne acc\`es aux mesures utiles au contr\^ole.
+
+\vspace{1mm}
+\footnotesize
+\begin{tabularx}{\linewidth}{|>{\raggedright\arraybackslash}p{0.34\linewidth}|>{\raggedright\arraybackslash}X|}
+\hline
+\textbf{Source} & \textbf{Mesures utiles}\\
+\hline
+GPS virtuel & position, temps, trajectoire\\
+IMU & acc\'el\'eration et vitesse angulaire\\
+Codeurs & roues et braquage\\
+LiDAR/cam\'era & distance, obstacles\\
+V2V & \'etats voisins, qualit\'e liaison\\
+\hline
+\end{tabularx}
+\end{minipage}
+
+\vspace{2mm}
+\fcolorbox{accent}{accentlight}{%
+  \parbox{0.96\textwidth}{%
+  \textbf{Interpr\'etation.}
+  La contribution centrale est la mise en place d'un banc de simulation coh\'erent pour v\'ehicules connect\'es : un environnement QLabs, une architecture Python modulaire, une communication V2V robuste et deux boucles de contr\^ole compl\'ementaires. Le CACC g\`ere la vitesse et l'espacement, tandis que l'ELC am\'eliore le suivi de trajectoire dans les virages.}}
+
+\sectiontitle{Conclusion et perspectives}
+Le rapport montre une progression claire depuis la configuration de l'environnement jusqu'\`a l'int\'egration d'un sc\'enario coop\'eratif en temps r\'eel. Le syst\`eme permet de lancer des QCar2 autonomes virtuels, d'\'echanger les donn\'ees de voisinage, de maintenir le peloton et de tester le comportement en ligne droite comme en virage.
+
+Les suites prioritaires sont la consolidation des essais en pr\'esence de pertes ou retards de communication, l'extension \`a davantage de v\'ehicules, puis le transfert des algorithmes depuis QLabs vers la plateforme QCar2 physique. \`A plus long terme, cette cha\^ine peut servir de base \`a des validations sur v\'ehicules r\'eels et \`a d'autres fonctions coop\'eratives comme le contr\^ole de trajectoire ou la coordination de robots mobiles.
+
+\vspace{2mm}
+\begin{center}
+\fcolorbox{accent}{white}{%
+  \parbox{0.82\textwidth}{%
+  \centering
+  \textbf{Message central :}
+  le travail transforme le projet VEHALSECU en une plateforme de simulation op\'erationnelle pour tester la communication V2V et le contr\^ole coop\'eratif de QCar2 en peloton.}}
+\end{center}
+
+\end{document}

@@ -1,0 +1,19 @@
+Abbaszadeh, M. and Zemouche, A. (eds.) (2022). Security and Resilience in Cyber-Physical Systems: Detection, Estimation and Control. Springer International Publishing, Cham. doi:10.1007/978-3-030-97166-3.
+
+Barboni, A., Rezaee, H., Boem, F., and Parisini, T. (2019). Distributed detection of covert attacks for interconnected systems. In 2019 18th European Control Conference (ECC). doi:10.23919/ECC.2019.8796266.
+
+Hao, Y. and Liu, L. (2024). Event-Triggered Consensus of Uncertain Euler-Lagrange Multiagent Systems Over Jointly Connected Digraphs. IEEE Transactions on Cybernetics, 54(6). doi:10.1109/TCYB.2023.3282703.
+
+Li, Z., Zhou, Y., Zhang, Y., and Li, X. (2024). Enhancing vehicular platoon stability in the presence of communication cyberattacks: A reliable longitudinal cooperative control strategy. Transportation Research Part C: Emerging Technologies, 163, 104660.
+
+Meng, S., Nguyen, Q., Zemouche, A., Meng, F., and Zhang, F. (2025). Distributed high-gain observer for nonlinear connected autonomous vehicle. In 2025 American Control Conference (ACC), 626-631. doi:10.23919/ACC63710.2025.11107847.
+
+Mustafa, A., Modares, H., and Moghadam, R. (2020). Resilient synchronization of distributed multi-agent systems under attacks. Automatica, 115, 108869. doi:https://doi.org/10.1016/j.automatica.2020.108869.
+
+Nguyen, Q.H., Sadki, O., Rafaralahy, H., Haddad, M., and Zemouche, A. (2024). Cyberattack detection by using a discrete-time model-based unknown input observer. IEEE Control Systems Letters, 8, 856-861.
+
+Wang, Y., Masoud, N., and Khojandi, A. (2021). Real-time sensor anomaly detection and recovery in connected automated vehicle sensors. IEEE Transactions on Intelligent Transportation Systems, 22(3), 1411-1421. doi:10.1109/tits.2020.2970295.
+
+Yang, G., Rezaee, H., Serrani, A., and Parisini, T. (2022). Sensor fault-tolerant state estimation by networks of distributed observers. IEEE Transactions on Automatic Control, 67(10), 5348-5360. doi:10.1109/TAC.2022.3190429.
+
+Yemini, M., Nedić, A., Goldsmith, A.J., and Gil, S. (2022). Characterizing trust and resilience in distributed consensus for cyberphysical systems. IEEE Transactions on Robotics, 38(1), 71-91. doi:10.1109/TRO.2021.3088054.

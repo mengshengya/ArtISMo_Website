@@ -1,0 +1,85 @@
+\begin{thebibliography}{10}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Abbaszadeh and Zemouche(2022)}]{Ali_book}
+Abbaszadeh, M. and Zemouche, A. (eds.) (2022).
+\newblock \emph{Security and {{Resilience}} in {{Cyber-Physical Systems}}:
+  {{Detection}}, {{Estimation}} and {{Control}}}.
+\newblock Springer International Publishing, Cham.
+\newblock \doi{10.1007/978-3-030-97166-3}.
+
+\bibitem[{Barboni et~al.(2019)Barboni, Rezaee, Boem, and
+  Parisini}]{2_obs_Angelo}
+Barboni, A., Rezaee, H., Boem, F., and Parisini, T. (2019).
+\newblock Distributed detection of covert attacks for interconnected systems.
+\newblock In \emph{2019 18th European Control Conference (ECC)}.
+\newblock \doi{10.23919/ECC.2019.8796266}.
+
+\bibitem[{Hao and Liu(2024)}]{hao2024eventtriggered}
+Hao, Y. and Liu, L. (2024).
+\newblock Event-{{Triggered Consensus}} of {{Uncertain Euler}}-{{Lagrange
+  Multiagent Systems Over Jointly Connected Digraphs}}.
+\newblock \emph{IEEE Transactions on Cybernetics}, 54(6).
+\newblock \doi{10.1109/TCYB.2023.3282703}.
+
+\bibitem[{Li et~al.(2024)Li, Zhou, Zhang, and Li}]{Enhancing_control_trust}
+Li, Z., Zhou, Y., Zhang, Y., and Li, X. (2024).
+\newblock Enhancing vehicular platoon stability in the presence of
+  communication cyberattacks: A reliable longitudinal cooperative control
+  strategy.
+\newblock \emph{Transportation Research Part C: Emerging Technologies}, 163,
+  104660.
+
+\bibitem[{Meng et~al.(2025)Meng, Nguyen, Zemouche, Meng, and
+  Zhang}]{Shengya_HG}
+Meng, S., Nguyen, Q., Zemouche, A., Meng, F., and Zhang, F. (2025).
+\newblock Distributed high-gain observer for nonlinear connected autonomous
+  vehicle.
+\newblock In \emph{2025 American Control Conference (ACC)}, 626--631.
+\newblock \doi{10.23919/ACC63710.2025.11107847}.
+
+\bibitem[{Mustafa et~al.(2020)Mustafa, Modares, and Moghadam}]{self_belive}
+Mustafa, A., Modares, H., and Moghadam, R. (2020).
+\newblock Resilient synchronization of distributed multi-agent systems under
+  attacks.
+\newblock \emph{Automatica}, 115, 108869.
+\newblock \doi{https://doi.org/10.1016/j.automatica.2020.108869}.
+
+\bibitem[{Nguyen et~al.(2024)Nguyen, Sadki, Rafaralahy, Haddad, and
+  Zemouche}]{Huy_LCSS}
+Nguyen, Q.H., Sadki, O., Rafaralahy, H., Haddad, M., and Zemouche, A. (2024).
+\newblock Cyberattack detection by using a discrete-time model-based unknown
+  input observer.
+\newblock \emph{IEEE Control Systems Letters}, 8, 856--861.
+
+\bibitem[{Wang et~al.(2021)Wang, Masoud, and Khojandi}]{Wang_2021}
+Wang, Y., Masoud, N., and Khojandi, A. (2021).
+\newblock Real-time sensor anomaly detection and recovery in connected
+  automated vehicle sensors.
+\newblock \emph{IEEE Transactions on Intelligent Transportation Systems},
+  22(3), 1411--1421.
+\newblock \doi{10.1109/tits.2020.2970295}.
+
+\bibitem[{Yang et~al.(2022)Yang, Rezaee, Serrani, and
+  Parisini}]{Guitao_multi_mesure}
+Yang, G., Rezaee, H., Serrani, A., and Parisini, T. (2022).
+\newblock Sensor fault-tolerant state estimation by networks of distributed
+  observers.
+\newblock \emph{IEEE Transactions on Automatic Control}, 67(10), 5348--5360.
+\newblock \doi{10.1109/TAC.2022.3190429}.
+
+\bibitem[{Yemini et~al.(2022)Yemini, Nedić, Goldsmith, and
+  Gil}]{trust_physic_connecte}
+Yemini, M., Nedić, A., Goldsmith, A.J., and Gil, S. (2022).
+\newblock Characterizing trust and resilience in distributed consensus for
+  cyberphysical systems.
+\newblock \emph{IEEE Transactions on Robotics}, 38(1), 71--91.
+\newblock \doi{10.1109/TRO.2021.3088054}.
+
+\end{thebibliography}

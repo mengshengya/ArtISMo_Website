@@ -71,6 +71,49 @@ return [
         </a>
     </div>',
 
+    'results.phd_val_title' => 'Offline Validation Performance',
+    'results.phd_val_table_html' => '
+    <div class="table-container">
+        <table class="results-table">
+            <thead>
+                <tr>
+                    <th>Method / Estimator</th>
+                    <th>$x$ [m]</th>
+                    <th>$y$ [m]</th>
+                    <th>$\psi$ [rad]</th>
+                    <th>$v$ [m/s]</th>
+                    <th>Mean (4 states)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Kinematic Reference</strong></td>
+                    <td class="numeric-val">0.0663</td>
+                    <td class="numeric-val">0.0574</td>
+                    <td class="numeric-val">0.1151</td>
+                    <td class="numeric-val">0.0134</td>
+                    <td class="numeric-val">0.0631</td>
+                </tr>
+                <tr class="highlight-row">
+                    <td><strong>Learned RKNet</strong></td>
+                    <td class="numeric-val highlight-row">0.0076</td>
+                    <td class="numeric-val highlight-row">0.0168</td>
+                    <td class="numeric-val highlight-row">0.1096</td>
+                    <td class="numeric-val highlight-row">0.0124</td>
+                    <td class="numeric-val highlight-row">0.0366</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="results-interpretation">
+        <strong>Interpretation:</strong> The learned estimator strongly improves tracking accuracy, reducing mean RMSE by <strong>over 41%</strong> compared to the kinematic prediction reference model.
+    </p>',
+    'results.phd_runtime_title' => 'Runtime Performance under Sensor Attacks',
+    'results.phd_fig12_alt' => 'Validation plot comparing EKF baseline and robust KalmaNet',
+    'results.phd_fig12_caption' => 'The robust estimator follows the clean-reference EKF while the ordinary EKF shows larger spikes during attack intervals.',
+    'results.phd_fig13_alt' => 'Learned trust mask and gain behavior under sensor attack intervals',
+    'results.phd_fig13_caption' => 'Gain and measurement-mask behavior: The learned mask and effective gain decrease during GPS jump and wheel-bias intervals, reducing dependence on corrupted measurements.',
+
     'results.section_viet' => 'M2 Internship: ROS2 Web Supervision (Xuan Viet Cong)',
     
     'results.viet_intro_1' => 'This internship focused on bridging state observation theories (like High-Gain Observers and Fast Linear Parameter-Varying observers) with a concrete, reproducible laboratory setup. The workflow transitioned from CARLA simulations to Quanser QLabs and the physical QCar2 robot.',
@@ -150,6 +193,159 @@ return [
     <div class="download-container">
         <a href="assets/img/work/intership/rapport_de_stage_melissa/resume_report.pdf" class="download-btn" target="_blank" rel="noopener noreferrer">
             <span class="btn-icon">📄</span> Download Internship Summary (PDF)
+        </a>
+    </div>',
+
+    // Siyu Results
+    'results.siyu_summary' => 'Cooperative adaptive cruise control (CACC) and virtual tracking (ELC) simulation platform. Built V2V communication loops with Quanser QLabs, Docker, and Python.',
+    'results.section_siyu' => 'Master\'s Internship: V2V Communication & Cooperative Control (Siyu)',
+    'results.siyu_intro_1' => 'This internship, part of the VEHALSECU project in collaboration with SEGULA Technologies and CRAN, focuses on simulation, inter-vehicle communication, and cooperative control for autonomous connected vehicle platoons. The objective was to build a reproducible QLabs and QCar2 simulation environment in Python to validate cooperative control under realistic conditions.',
+    'results.siyu_intro_2' => 'Key developments include: deploying a standardized Ubuntu/Docker development container for Quanser Virtual Environment, building a robust UDP-based V2V communication module with ACK and heartbeat checks, and implementing cooperative longitudinal control (CACC) along with virtual-point lateral control (ELC) to prevent corner-cutting in curves.',
+    'results.siyu_img_scenario' => 'QLabs Scenario: Two virtual QCars (leader and follower) navigating a closed-loop track with pedestrian crossings and lane markings.',
+    'results.siyu_img_env' => 'Virtual Environment: Software connection between the Quanser container, QLabs, and the local developer container to control the virtual vehicle.',
+    'results.siyu_img_fusion' => 'Camera-LiDAR Fusion: Multimodal perception network detecting neighboring vehicles and estimating inter-vehicle distance.',
+    'results.siyu_img_elc' => 'Lateral ELC Control: Virtual look-ahead tracking point algorithm reducing corner-cutting during curve navigation.',
+    'results.siyu_results_title' => 'Technical Modules and Deliverables',
+    'results.siyu_table_html' => '
+    <div class="table-container">
+        <table class="results-table">
+            <thead>
+                <tr>
+                    <th>Module / Block</th>
+                    <th>Result / Contribution</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Simulation</strong></td>
+                    <td>QLabs/QCar2 environment configured inside a unified Docker runtime</td>
+                </tr>
+                <tr>
+                    <td><strong>Porting</strong></td>
+                    <td>Re-implemented MATLAB control logic directly in modular Python</td>
+                </tr>
+                <tr>
+                    <td><strong>V2V Communication</strong></td>
+                    <td>Robust UDP messaging with packet ACKs, heartbeats, and virtual GPS sync</td>
+                </tr>
+                <tr>
+                    <td><strong>Longitudinal Control</strong></td>
+                    <td>Cooperative Adaptive Cruise Control (CACC) for spacing/velocity regulation</td>
+                </tr>
+                <tr>
+                    <td><strong>Lateral Control</strong></td>
+                    <td>Error Limit Control (ELC) tracking path to prevent corner-cutting</td>
+                </tr>
+                <tr>
+                    <td><strong>Perception</strong></td>
+                    <td>Camera-LiDAR sensor fusion estimating relative distance ($d$) and speed difference ($\Delta v$)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="results-interpretation">
+        <strong>Available Sensor Measurements:</strong> The virtual vehicle platform exposes several vital datastreams: 
+        <em>Virtual GPS</em> (global coordinates, timestamp, target trajectory), 
+        <em>IMU</em> (longitudinal/lateral acceleration and yaw rate), 
+        <em>Encoders</em> (wheel speed and steering angle), 
+        <em>LiDAR/Camera</em> (visual objects and point clouds), and 
+        <em>V2V telemetry</em> (neighboring states and packet drop quality).
+    </p>',
+    'results.siyu_downloads_title' => 'Internship Materials',
+    'results.siyu_downloads_html' => '
+    <div class="download-container">
+        <a href="assets/img/work/intership/Siyu/resume_report_siyu.pdf" class="download-btn" target="_blank" rel="noopener noreferrer">
+            <span class="btn-icon">📄</span> Download Summary Report (PDF)
+        </a>
+    </div>',
+
+    // Tanush Results
+    'results.tanush_summary' => 'Custom 4-layer PCB design using KiCad for autonomous vehicle state estimation. Integrates a dual-MCU STM32 architecture with Wi-Fi 6, GNSS, and local SD storage.',
+    'results.section_tanush' => 'Master\'s Internship: Embedded PCB Design for Cyber-Attack Detection (Tanush)',
+    'results.tanush_intro_1' => 'This internship, conducted at CRAN / IUT de Longwy, is part of a CIFRE thesis focusing on the security and resilience of autonomous and connected vehicles (CAVs). The primary objective was to design a custom embedded electronic board capable of acquiring real-time dynamic and environmental vehicle data to support advanced state estimation and cyber-attack detection algorithms.',
+    'results.tanush_intro_2' => 'The work covers requirement analysis, hardware architecture selection, schematic entry and routing using KiCad, production preparation for a 4-layer board with Eurocircuits, and the development of the initial STM32 RTOS firmware base.',
+    'results.tanush_img_qcar' => 'Quanser QCar Platform: Miniature autonomous scale vehicle used as the physical verification context for testing.',
+    'results.tanush_img_arch' => 'System Architecture: Layout showing sensors, power regulation, SD storage, Wi-Fi, navigation MCU, and communication MCU blocks.',
+    'results.tanush_img_kicad' => 'KiCad Final Routing: Dense 4-layer layout detailing RF trace matching, power plane layers, and component placements.',
+    'results.tanush_img_3d' => '3D PCB Model: Visual rendering of the completed board assembly with connectors, USB ports, and integrated circuits.',
+    'results.tanush_results_title' => 'Hardware Specifications and Delivery',
+    'results.tanush_table_html' => '
+    <div class="table-container">
+        <table class="results-table">
+            <thead>
+                <tr>
+                    <th>Hardware Component</th>
+                    <th>Specification / Selection</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Architecture</strong></td>
+                    <td>Dual-MCU design (Primary navigation MCU and secondary communication MCU)</td>
+                </tr>
+                <tr>
+                    <td><strong>Sensors</strong></td>
+                    <td>Onboard IMU, GNSS module, and digital magnetometer</td>
+                </tr>
+                <tr>
+                    <td><strong>Connectivity</strong></td>
+                    <td>Wi-Fi 6, USB-C interface, and SPI/I2C/UART bus routing</td>
+                </tr>
+                <tr>
+                    <td><strong>Local Storage</strong></td>
+                    <td>MicroSD card slot (up to 64 GB), onboard EEPROM, and Flash memory</td>
+                </tr>
+                <tr>
+                    <td><strong>PCB Manufacturing</strong></td>
+                    <td>Fabricated as a dense 4-layer board with Eurocircuits</td>
+                </tr>
+                <tr>
+                    <td><strong>Production Cost</strong></td>
+                    <td>Total manufacturing run cost of €2,010.14</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="table-container" style="margin-top: 20px;">
+        <table class="results-table">
+            <thead>
+                <tr>
+                    <th>Verification Domain</th>
+                    <th>Status / Schedule</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Power Distribution</strong></td>
+                    <td>Validation protocol defined and ready for execution</td>
+                </tr>
+                <tr>
+                    <td><strong>Bus Protocols (UART/SPI/I2C)</strong></td>
+                    <td>Verification test suites written and loaded in debugger</td>
+                </tr>
+                <tr>
+                    <td><strong>RF Connectivity (GNSS/Wi-Fi)</strong></td>
+                    <td>Antenna constraint matches validated; protocols defined</td>
+                </tr>
+                <tr>
+                    <td><strong>STM32 Firmware Base</strong></td>
+                    <td>RTOS framework initialized with hardware abstraction layers</td>
+                </tr>
+                <tr>
+                    <td><strong>PCB Delivery Date</strong></td>
+                    <td>Delivered on August 19, 2025</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="results-interpretation">
+        <strong>Interpretation:</strong> The primary outcome is a robust, physically manufacturable embedded board layout. While manufacturing lead times pushed the final closed-loop vehicle experiments beyond the internship period, the detailed design, firmware templates, and verification test-plans establish a complete hardware foundation for active cyber-attack detection on the vehicle.
+    </p>',
+    'results.tanush_downloads_title' => 'Internship Materials',
+    'results.tanush_downloads_html' => '
+    <div class="download-container">
+        <a href="assets/img/work/intership/Tanush/resume_report_tanush.pdf" class="download-btn" target="_blank" rel="noopener noreferrer">
+            <span class="btn-icon">📄</span> Download Summary Report (PDF)
         </a>
     </div>',
 ];

@@ -1,0 +1,190 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{textcomp}
+
+\geometry{
+  left=1.15cm,
+  right=1.15cm,
+  top=1.65cm,
+  bottom=1.25cm,
+  headheight=30pt,
+  headsep=12pt
+}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\raisebox{-0.08cm}{\includegraphics[height=0.55cm]{../UL.png}}}
+\fancyhead[R]{\raisebox{-0.08cm}{\includegraphics[height=0.55cm]{../iut.png}}}
+\fancyfoot[C]{\footnotesize \thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\definecolor{accent}{RGB}{0,86,150}
+\definecolor{accentlight}{RGB}{232,242,250}
+\definecolor{linegray}{RGB}{210,215,222}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2.5pt}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.12}
+
+\newcommand{\sectiontitle}[1]{%
+  \vspace{2.5mm}
+  {\large\bfseries\color{accent} #1}\par
+  \vspace{1mm}
+}
+
+\newcommand{\keybox}[2]{%
+  \fcolorbox{accent}{accentlight}{%
+    \parbox[c][1.15cm][c]{0.29\textwidth}{%
+      \centering\bfseries #1\\[-1pt]
+      {\normalfont\footnotesize #2}}}}
+
+\newcommand{\imagehighlight}[3]{%
+  \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \fcolorbox{accent}{white}{\includegraphics[width=0.95\linewidth,height=3.0cm,keepaspectratio]{#1}}
+    \vspace{0.7mm}
+
+    {\scriptsize \textbf{#2}\\[-1pt] #3}
+  \end{minipage}}
+
+\newcommand{\flowbox}[2]{%
+  \fcolorbox{accent}{white}{%
+    \parbox[c][1.45cm][c]{0.30\textwidth}{%
+      \centering\bfseries #1\\[-1pt]
+      {\normalfont\footnotesize #2}}}}
+
+\newcommand{\phasecard}[2]{%
+  \fcolorbox{linegray}{white}{%
+    \parbox[t][2.35cm][t]{0.46\textwidth}{%
+      \vspace{1mm}
+      {\bfseries\color{accent} #1}\par
+      \footnotesize #2}}}
+
+\begin{document}
+
+\begin{center}
+{\Large\bfseries R\'esum\'e synth\'etique du rapport de stage}\\[-1pt]
+{\normalsize R\'ealisation d'une carte \'electronique embarqu\'ee pour l'estimation avanc\'ee et la d\'etection des cyberattaques}\\
+{\small Tanush Rathakumar -- Ing\'enieur g\'en\'eraliste, mention M\'ecatronique -- 2024/2025}
+\end{center}
+
+\sectiontitle{Objectif du stage}
+Le stage r\'ealis\'e au CRAN / IUT de Longwy s'inscrit dans une th\`ese CIFRE sur la s\'ecurit\'e et la r\'esilience des v\'ehicules autonomes et connect\'es. L'objectif principal est de concevoir une carte \'electronique embarqu\'ee capable d'acqu\'erir des donn\'ees dynamiques et environnementales, puis de servir de support \`a des algorithmes d'estimation d'\'etat et de diagnostic.
+
+La carte vise \`a r\'eduire la d\'ependance \`a des capteurs co\^uteux ou indisponibles, tout en pr\'eparant la d\'etection de d\'efaillances et de cyberattaques dans des fonctions ADAS. Le travail couvre l'analyse des besoins, l'architecture mat\'erielle, la conception sous KiCad, la pr\'eparation de la fabrication, puis les premiers \'el\'ements de firmware et de validation.
+
+\vspace{1mm}
+\begin{center}
+\keybox{2 MCU}{navigation et communication}
+\hfill
+\keybox{Wi-Fi 6 + GNSS}{connectivit\'e et localisation}
+\hfill
+\keybox{PCB 4 couches}{routage KiCad et fabrication}
+\end{center}
+
+\sectiontitle{Images importantes \`a retenir}
+\begin{figure}[H]
+\centering
+\imagehighlight{figures/tanush_fig-018.png}{Plateforme QCar}{V\'ehicule miniature Quanser utilis\'e comme contexte exp\'erimental pour les futurs essais.}
+\hfill
+\imagehighlight{figures/tanush_fig-024.png}{Architecture de la carte}{Organisation des blocs : capteurs, MCU de navigation, MCU de communication, USB, SD et Wi-Fi.}
+
+\vspace{2mm}
+
+\imagehighlight{figures/tanush_fig-032.png}{Routage final KiCad}{Vue PCB montrant le placement, les pistes, les vias, les zones d'alimentation et les contraintes RF.}
+\hfill
+\imagehighlight{figures/tanush_fig-034.png}{Mod\`ele 3D du PCB}{Visualisation de la carte assembl\'ee avec connecteurs, modules, ports USB-C et composants principaux.}
+\end{figure}
+
+\sectiontitle{Lecture rapide du rapport}
+\begin{center}
+\flowbox{1. D\'efinir}{besoins CAV, fonctions ADAS, estimation d'\'etat, contraintes de co\^ut}
+\hfill
+\flowbox{2. Concevoir}{architecture bi-MCU, capteurs, stockage, communication, alimentation}
+\hfill
+\flowbox{3. Valider}{fichiers de fabrication, firmware STM32, protocoles de tests mat\'eriels}
+\end{center}
+
+\newpage
+
+\sectiontitle{D\'emarche technique}
+\begin{center}
+\phasecard{Contexte et \'etat de l'art}{Analyse des besoins des CAV, des syst\`emes ADAS et de cartes existantes. Le projet cible la premi\`ere primitive robotique : percevoir l'\'etat du v\'ehicule et de son environnement.}
+\hfill
+\phasecard{Architecture embarqu\'ee}{D\'efinition d'une carte avec IMU, magn\'etom\`etre, module GNSS, Wi-Fi 6, EEPROM/Flash, carte SD, USB-C, alimentation et deux microcontr\^oleurs STM32.}
+
+\vspace{2mm}
+
+\phasecard{Conception PCB}{R\'ealisation des sch\'emas, s\'election des composants, routage KiCad, mod\`ele 3D, fichiers Gerber, BOM et adaptation aux contraintes du fabricant Eurocircuits.}
+\hfill
+\phasecard{Firmware et validation}{Pr\'eparation avec STM32CubeMX/STM32CubeIDE, protocoles UART, SPI et I\textsuperscript{2}C, structure logicielle avec logique RTOS, puis plans de tests alimentation et communication.}
+\end{center}
+
+\sectiontitle{R\'esultats principaux}
+\begin{minipage}[t]{0.47\textwidth}
+\textbf{Livrables mat\'eriels.} Le stage aboutit \`a une base de carte embarqu\'ee fabriquable.
+
+\vspace{1mm}
+\begin{tabular}{|l|c|}
+\hline
+\textbf{\'El\'ement} & \textbf{R\'esultat}\\
+\hline
+Architecture & bi-MCU\\
+Capteurs & IMU, GNSS, magn\'etom\`etre\\
+Communication & Wi-Fi 6, USB, UART/SPI/I\textsuperscript{2}C\\
+Stockage & SD 64 Go, EEPROM/Flash\\
+Fabricant PCB & Eurocircuits\\
+Co\^ut PCB & 2\,010,14 \texteuro\\
+\hline
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.49\textwidth}
+\textbf{Validation pr\'evue.} Les tests sont d\'efinis mais restaient \`a effectuer apr\`es livraison.
+
+\vspace{1mm}
+\begin{tabular}{|l|c|}
+\hline
+\textbf{Domaine} & \textbf{Statut}\\
+\hline
+Alimentation & protocole d\'efini\\
+UART/SPI/I\textsuperscript{2}C & protocole d\'efini\\
+GNSS/Wi-Fi & protocole d\'efini\\
+Firmware STM32 & base pr\'epar\'ee\\
+Livraison PCB & 19 ao\^ut 2025\\
+\hline
+\end{tabular}
+\end{minipage}
+
+\vspace{2mm}
+\fcolorbox{accent}{accentlight}{%
+  \parbox{0.96\textwidth}{%
+  \textbf{Interpr\'etation.}
+  La contribution principale n'est pas une campagne de mesures termin\'ee, mais la cr\'eation d'un socle mat\'eriel complet : architecture, choix des composants, routage, fichiers de production et environnement de d\'eveloppement. Les retards de fabrication ont limit\'e la programmation embarqu\'ee et report\'e les essais finaux.}}
+
+\sectiontitle{Conclusion et perspectives}
+Le rapport montre une cha\^ine de conception coh\'erente pour une carte embarqu\'ee d\'edi\'ee aux v\'ehicules autonomes connect\'es. Les choix techniques pr\'eparent l'acquisition de donn\'ees de navigation, la communication inter-v\'ehicules, le stockage local et l'int\'egration future d'observateurs pour estimer des variables critiques et distinguer d\'efaillances capteurs et cyberattaques.
+
+Les suites prioritaires sont la r\'ealisation des tests d'alimentation et de communication apr\`es r\'eception du PCB, l'am\'elioration du routage RF et des alimentations, le d\'eveloppement complet du firmware, l'ajout d'un bo\^itier, puis l'int\'egration de la carte sur QCar pour valider son comportement en conditions r\'eelles.
+
+\vspace{2mm}
+\begin{center}
+\fcolorbox{accent}{white}{%
+  \parbox{0.82\textwidth}{%
+  \centering
+  \textbf{Message central :}
+  le stage transforme un besoin de recherche sur la r\'esilience des CAV en une plateforme \'electronique concr\`ete, pr\^ete \`a \^etre test\'ee, corrig\'ee et enrichie pour les travaux futurs.}}
+\end{center}
+
+\end{document}

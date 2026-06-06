@@ -81,7 +81,12 @@ include __DIR__ . '/../src/includes/nav.php';
                 $id = $section['id'] ?? '';
                 $title = content_title($section, $lang);
                 $category = !empty($section['category_key']) ? t($section['category_key']) : '';
-                $summary = !empty($section['summary_key']) ? t($section['summary_key']) : '';
+                $summary = '';
+                if (!empty($section['summary_key'])) {
+                    $summary = t($section['summary_key']);
+                } elseif (!empty($section['summary'])) {
+                    $summary = content_value($section['summary'], $lang);
+                }
                 $img = $section['preview_image'] ?? '';
                 $projectUrl = 'results.php?id=' . urlencode($id) . '&lang=' . urlencode($lang);
                 ?>

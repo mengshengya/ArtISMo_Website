@@ -20,45 +20,7 @@ return [
     
     'results.phd_image_caption' => 'Schéma du système d\'estimation de confiance Robust KalmaNet, combinant cinématique analytique et mise à jour de confiance apprise.',
     
-    'results.phd_results_title' => 'Performances de Validation Observées',
-    
-    'results.phd_table_html' => '
-    <div class="table-container">
-        <table class="results-table">
-            <thead>
-                <tr>
-                    <th>Point de contrôle / Phase</th>
-                    <th>Erreur de Validation Saine</th>
-                    <th>Erreur de Validation Attaquée</th>
-                    <th>Erreur de Sélection Combinée</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Époque 1 (Référence)</strong></td>
-                    <td class="numeric-val">0.00668</td>
-                    <td class="numeric-val">1.10951</td>
-                    <td class="numeric-val">0.66838</td>
-                </tr>
-                <tr class="highlight-row">
-                    <td><strong>Époque 15 (Meilleure Robustesse)</strong></td>
-                    <td class="numeric-val highlight-row">0.01751</td>
-                    <td class="numeric-val highlight-row">0.40279</td>
-                    <td class="numeric-val highlight-row">0.24868</td>
-                </tr>
-                <tr>
-                    <td><strong>Époque 20 (Phase C Finale)</strong></td>
-                    <td class="numeric-val">0.02408</td>
-                    <td class="numeric-val">0.43457</td>
-                    <td class="numeric-val">0.27037</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <p class="results-interpretation">
-        <strong>Interprétation :</strong> L\'erreur sur données saines augmente légèrement après l\'introduction d\'attaques agressives lors de l\'apprentissage (compromis classique). Cependant, l\'erreur de validation sous attaque est réduite de <strong>plus de 63%</strong> (de 1.109 à 0.402). Cela prouve que le mécanisme de masquage de confiance parvient à isoler efficacement les capteurs défaillants.
-    </p>',
-    
+
     'results.phd_downloads_title' => 'Rapports & Supports de Présentation',
     
     'results.phd_downloads_html' => '

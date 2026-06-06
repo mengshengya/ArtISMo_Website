@@ -20,45 +20,7 @@ return [
     
     'results.phd_image_caption' => 'System scheme of Robust KalmaNet trust architecture, showing the combination of analytical kinematics with a learned trust updater.',
     
-    'results.phd_results_title' => 'Observed Validation Performance',
-    
-    'results.phd_table_html' => '
-    <div class="table-container">
-        <table class="results-table">
-            <thead>
-                <tr>
-                    <th>Checkpoint / Phase</th>
-                    <th>Clean Validation Loss</th>
-                    <th>Attacked Validation Loss</th>
-                    <th>Combined Selection Loss</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Epoch 1 (Baseline)</strong></td>
-                    <td class="numeric-val">0.00668</td>
-                    <td class="numeric-val">1.10951</td>
-                    <td class="numeric-val">0.66838</td>
-                </tr>
-                <tr class="highlight-row">
-                    <td><strong>Epoch 15 (Best Robust)</strong></td>
-                    <td class="numeric-val highlight-row">0.01751</td>
-                    <td class="numeric-val highlight-row">0.40279</td>
-                    <td class="numeric-val highlight-row">0.24868</td>
-                </tr>
-                <tr>
-                    <td><strong>Epoch 20 (Final Phase C)</strong></td>
-                    <td class="numeric-val">0.02408</td>
-                    <td class="numeric-val">0.43457</td>
-                    <td class="numeric-val">0.27037</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <p class="results-interpretation">
-        <strong>Interpretation:</strong> The clean validation loss increases slightly after introducing aggressive attack training, which is a typical trade-off. However, the attacked validation loss is reduced by <strong>over 63%</strong> (from 1.109 to 0.402). This demonstrates that the trust-masking mechanism successfully learns to isolate corrupted sensors.
-    </p>',
-    
+
     'results.phd_downloads_title' => 'Reports & Presentation Slides',
     
     'results.phd_downloads_html' => '

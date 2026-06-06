@@ -15,7 +15,7 @@ return [
 
     'abstract.title' => 'Abstract',
     'abstract.hero_tag' => 'ArtISMo Project Consortium',
-    'abstract.lead_text' => 'Developing learning-based neuro-adaptive observers and robust estimators to improve the safety, resilience, and reliability of connected and autonomous vehicle platoons.',
+    'abstract.lead_text' => 'Developing robust estimators and learning-based neuro-adaptive observers to improve the safety, resilience, and reliability of connected and autonomous vehicle platoons.',
 
     'team.title' => 'Team',
     'team.empty' => 'No team members to display.',

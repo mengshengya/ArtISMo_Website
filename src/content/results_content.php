@@ -5,7 +5,7 @@ return [
         'id' => 'phd-research',
         'category_key' => 'results.cat_phd',
         'summary_key' => 'results.phd_summary',
-        'preview_image' => 'assets/img/work/doctorant/global_system_scheme_ieee_simple.png',
+        'preview_image' => 'assets/img/work/Apdapt_obs_shema_2_uio.png',
         'title_key' => 'results.section_phd',
         'blocks' => [
             [
@@ -18,7 +18,7 @@ return [
             ],
             [
                 'type' => 'image',
-                'src' => 'assets/img/work/doctorant/global_system_scheme_ieee_simple.png',
+                'src' => 'assets/img/work/Apdapt_obs_shema_2_uio.png',
                 'alt' => [
                     'en' => 'Robust KalmaNet block diagram with kinematic prediction and neural trust update',
                     'fr' => 'Schéma bloc Robust KalmaNet avec prédiction cinématique et mise à jour de confiance neuronale',
@@ -27,14 +27,6 @@ return [
                     'en' => 'Robust KalmaNet architecture: concentrates neural learning on estimating measurement trust (gain K and mask m) while keeping physics-based prediction.',
                     'fr' => 'Architecture Robust KalmaNet : concentre l\'apprentissage neuronal sur l\'estimation de la confiance de mesure (gain K et masque m) tout en conservant la prédiction physique.',
                 ],
-            ],
-            [
-                'type' => 'heading',
-                'text_key' => 'results.phd_results_title',
-            ],
-            [
-                'type' => 'html',
-                'text_key' => 'results.phd_table_html',
             ],
             [
                 'type' => 'heading',
@@ -350,15 +342,15 @@ return [
     ],
     [
         'id' => 'estimation-algorithms',
-        'category_key' => 'results.cat_milestone',
+        'category_key' => 'results.cat_phd',
         'summary' => [
             'en' => 'Designing trust-aware distributed observers for connected vehicle platoons under sensor and communication anomalies.',
             'fr' => 'Conception d\'observateurs distribués sensibles à la confiance pour les pelotons de véhicules connectés soumis à des anomalies de capteurs et de communication.',
         ],
-        'preview_image' => 'assets/img/platoon2.png',
+        'preview_image' => 'assets/img/work/doctorant/Huy/global_system_scheme_ieee_simple.png',
         'title' => [
-            'en' => 'Intelligent Estimation Algorithms',
-            'fr' => 'Algorithmes avancés d\'estimation intelligente',
+            'en' => 'Resilient Trust-Aware Distributed Observer Design for Connected Vehicle Platoons',
+            'fr' => 'Conception d\'observateurs distribués résilients et sensibles à la confiance pour les pelotons de véhicules connectés',
         ],
         'blocks' => [
             [
@@ -370,7 +362,7 @@ return [
             ],
             [
                 'type' => 'image',
-                'src' => 'assets/img/work/doctorant/Huy/trust_based/ifac/trust_all_new_huy.png',
+                'src' => 'assets/img/work/doctorant/Huy/global_system_scheme_ieee_simple.png',
                 'alt' => [
                     'en' => 'Trust-aware resilient distributed observer framework for connected vehicle platoons',
                     'fr' => 'Cadre d\'observateur distribué résilient et sensible à la confiance pour les pelotons de véhicules connectés',

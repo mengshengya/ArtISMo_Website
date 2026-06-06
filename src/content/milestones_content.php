@@ -15,7 +15,27 @@ return [
             'en' => 'Intelligent Estimation Algorithms',
             'fr' => 'Algorithmes avancés d\'estimation intelligente',
         ],
-        'blocks' => [],
+        'blocks' => [
+            [
+                'type' => 'paragraph',
+                'text' => [
+                    'en' => 'We design trust-aware distributed observers for connected vehicle platoons under sensor and communication anomalies. The observers allow each vehicle to estimate the states of the entire platoon using local measurements and V2V communication, detecting and isolating malicious data or sensor faults.',
+                    'fr' => 'Nous concevons des observateurs distribués sensibles à la confiance pour les pelotons de véhicules connectés soumis à des anomalies de capteurs et de communication. Les observateurs permettent à chaque véhicule d\'estimer les états de l\'ensemble du peloton à l\'aide de mesures locales et de communications V2V, en détectant et isolant les données malveillantes ou les défauts de capteurs.',
+                ],
+            ],
+            [
+                'type' => 'youtube',
+                'url' => 'https://youtu.be/t6-soznp6ks',
+                'title' => [
+                    'en' => 'Trust-Aware Resilient Distributed Observer Design',
+                    'fr' => 'Conception d\'observateurs distribués résilients et sensibles à la confiance',
+                ],
+                'caption' => [
+                    'en' => 'Demo video of the trust-aware resilient distributed observer design for connected vehicle platoons.',
+                    'fr' => 'Vidéo de démonstration de la conception de l\'observateur distribué résilient et sensible à la confiance pour les pelotons de véhicules.',
+                ],
+            ],
+        ],
     ],
     [
         'id' => 'platoon-applications',
@@ -213,6 +233,18 @@ return [
                 'caption' => [
                     'en' => 'Two QCars and one LIMO forming a connected autonomous vehicle platoon for intelligent transportation research.',
                     'fr' => 'Deux QCars et un LIMO formant un peloton de véhicules autonomes connectés pour la recherche en transport intelligent.',
+                ],
+            ],
+            [
+                'type' => 'youtube',
+                'url' => 'https://youtu.be/amur0EEShJE',
+                'title' => [
+                    'en' => 'V2V Connected Vehicle Platoon Demo (LIMO + QCar)',
+                    'fr' => 'Démo Peloton de Véhicules Connectés V2V (LIMO + QCar)',
+                ],
+                'caption' => [
+                    'en' => 'Real-world V2V platoon validation using physical QCar and LIMO vehicles in the laboratory.',
+                    'fr' => 'Validation réelle du peloton V2V à l\'aide de véhicules physiques QCar et LIMO dans le laboratoire.',
                 ],
             ],
         ],

@@ -1,0 +1,113 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage[left=1.15cm,right=1.15cm,top=0.95cm,bottom=1cm]{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{hyperref}
+
+\hypersetup{hidelinks}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.25em}
+
+\definecolor{cranblue}{HTML}{174A7C}
+\definecolor{softblue}{HTML}{EEF5FB}
+\definecolor{softgreen}{HTML}{EEF8F2}
+\definecolor{softorange}{HTML}{FFF5EA}
+
+\newcommand{\resumeSection}[1]{%
+  \vspace{0.12em}
+  {\large\bfseries\color{cranblue}#1}\par
+  \vspace{0.05em}
+}
+
+\newcommand{\imageHighlight}[4]{%
+\begin{minipage}[t]{0.48\linewidth}
+\begin{tcolorbox}[
+  colback=white,
+  colframe=cranblue!35,
+  boxrule=0.5pt,
+  arc=1mm,
+  left=1.6mm,right=1.6mm,top=1.6mm,bottom=1.6mm,
+  height=4.55cm
+]
+\centering
+\includegraphics[height=2.05cm,width=\linewidth,keepaspectratio]{#1}
+\par\vspace{0.2em}
+{\scriptsize\bfseries #2\par}
+{\tiny\textbf{Importance :} #3\par}
+{\tiny\color{cranblue}#4\par}
+\end{tcolorbox}
+\end{minipage}
+}
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{center}
+{\LARGE\bfseries Résumé du rapport de stage\par}
+\vspace{0.15em}
+{\large Véhicule autonome et connecté : développement des contrôleurs avec interface graphique de gestion d'algorithmes d'estimation\par}
+\vspace{0.15em}
+{\small Xuan Viet \textsc{Cong} -- CRAN / IUT de Longwy -- Master 2 Informatique, Ingénierie du développement logiciel}
+\end{center}
+
+\begin{tcolorbox}[colback=softblue,colframe=cranblue!45,boxrule=0.6pt,arc=1mm,left=2mm,right=2mm,top=1mm,bottom=1mm]
+Le stage avait pour objectif de rapprocher des méthodes d'observation d'état pour véhicules autonomes, notamment les observateurs HGO et FLPV, d'un environnement expérimental exploitable. Le projet a évolué d'une validation prévue sous CARLA vers une plateforme hybride plus adaptée au laboratoire : le simulateur Quanser QLabs et le véhicule physique QCar2. Cette évolution a aussi transformé l'interface prévue, initialement orientée Qt, en une application web connectée à ROS2.
+\end{tcolorbox}
+
+\resumeSection{Synthèse des contributions}
+\small
+\begin{minipage}[t]{0.48\linewidth}
+\textbf{Plateforme expérimentale.} Prise en main de ROS2, QLabs, QCar2 et Docker afin de disposer d'un environnement reproductible pour la simulation et les tests physiques. L'analyse des bibliothèques Quanser a permis de comprendre les flux capteurs, les modèles temps réel et la connexion entre QLabs et ROS2.
+
+\textbf{Véhicule autonome.} Développement d'une base fonctionnelle pour le QCar2, avec localisation par EKF, intégration du Stanley Controller pour le suivi de trajectoire, génération d'une \textit{Occupancy Grid} à partir du LIDAR et logique locale pour contourner les obstacles.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\linewidth}
+
+\textbf{Interface web.} Conception d'une application web basée sur Express.js, \texttt{rosbridge-suite} et \texttt{roslibjs}. Elle permet de surveiller la connexion ROS2, consulter les nœuds, s'abonner aux topics, visualiser des messages capteurs et modifier certains paramètres en temps réel.
+
+\textbf{Méthodologie logicielle.} Mise en place d'un dépôt GitHub centralisé, d'une stratégie \textit{Trunk-Based Development}, d'un guide README et d'un accompagnement technique pour une équipe principalement spécialisée en automatique.
+\end{minipage}
+\normalsize
+
+\resumeSection{Images clés et importance}
+\imageHighlight{f/qlabs_qcar2.png}
+{QCar2 dans QLabs}
+{montre le passage de la théorie vers un banc de test réaliste, avant déploiement sur le véhicule physique.}
+{Simulation + expérimentation}
+\hfill
+\imageHighlight{f/arch.png}
+{Architecture Web -- ROS2 -- QCar2}
+{résume la communication entre navigateur, serveur web, rosbridge, nœuds ROS2 et véhicule.}
+{Interface exploitable par l'équipe}
+
+\vspace{0.05em}
+
+\imageHighlight{f/vehiclecontrolgraph.png}
+{Graphe des nœuds de contrôle}
+{met en évidence la modularité ROS2 : localisation, perception, contrôle et commandes moteur sont séparés.}
+{Base extensible pour HGO / FLPV}
+\hfill
+\imageHighlight{f/avoidobstacle.png}
+{Évitement d'obstacle}
+{illustre le résultat le plus concret du développement autonome : détection d'une trajectoire bloquée et choix d'une cible locale sûre.}
+{Validation fonctionnelle}
+
+\resumeSection{Résultats et bilan}
+\small
+Le travail réalisé fournit une première chaîne logicielle complète pour expérimenter sur QCar2 : acquisition de données, estimation de pose, suivi de trajectoire, perception LIDAR, évitement simplifié et supervision web. Cette base rend les futurs observateurs plus faciles à intégrer, tester et comparer dans QLabs puis sur le véhicule réel.
+
+Les difficultés principales ont concerné la complexité de ROS2 et des bibliothèques Quanser, la documentation limitée et l'écart entre automatique et ingénierie logicielle. Les solutions mises en place, notamment Docker, GitHub, la documentation et l'interface web, ont amélioré la reproductibilité et la collaboration.
+
+\begin{tcolorbox}[colback=softgreen,colframe=green!45!black,boxrule=0.5pt,arc=1mm,left=2mm,right=2mm,top=1mm,bottom=1mm]
+\textbf{Perspective principale :} intégrer directement les observateurs HGO et FLPV dans cette architecture, améliorer l'évitement d'obstacles avec une planification plus avancée, puis enrichir l'interface pour gérer plusieurs robots et davantage de visualisations temps réel.
+\end{tcolorbox}
+\normalsize
+
+\end{document}

@@ -1,0 +1,16 @@
+\documentclass[border = 5pt]{standalone}
+%commentaires
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+\begin{document}
+    \pgfplotstableread{Data.txt}{\table}
+    \begin{tikzpicture}
+        \begin{axis}[
+        	xlabel={I$_{abs}$  [W.cm$^{-2}$]}, 
+        	ylabel= {V$_d$ [cm.s$^{-1}$]}
+        	]
+            \addplot[mark=none,] table [x = {Iabs}, y = {Ts}] {\table}; 
+        \end{axis}
+    \end{tikzpicture}
+\end{document}

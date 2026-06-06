@@ -4,6 +4,7 @@ return [
     'site.title' => 'Intelligent Estimation Algorithms for Smart Mobility',
 
     'nav.abstract' => 'Abstract',
+    'nav.results' => 'Results',
     'nav.team' => 'Team',
     'nav.milestones' => 'Milestones',
     'nav.publications' => 'Publications',
@@ -13,6 +14,8 @@ return [
     'lang.fr' => 'FR',
 
     'abstract.title' => 'Abstract',
+    'abstract.hero_tag' => 'ArtISMo Project Consortium',
+    'abstract.lead_text' => 'Developing learning-based neuro-adaptive observers and robust estimators to improve the safety, resilience, and reliability of connected and autonomous vehicle platoons.',
 
     'team.title' => 'Team',
     'team.empty' => 'No team members to display.',

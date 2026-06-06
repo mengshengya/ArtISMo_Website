@@ -54,7 +54,9 @@ function page_url(string $pageFile): string
 function lang_switch_url(string $targetLang): string
 {
     $currentPage = basename($_SERVER['PHP_SELF']);
-    return $currentPage . '?lang=' . urlencode($targetLang);
+    $params = $_GET;
+    $params['lang'] = $targetLang;
+    return $currentPage . '?' . http_build_query($params);
 }
 
 function youtube_embed_url(string $url): string

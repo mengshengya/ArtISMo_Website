@@ -14,12 +14,17 @@ include __DIR__ . '/../src/includes/nav.php';
 ?>
 
 <main class="page-content">
-    <h1 class="page-title"><?= content_escape(t('abstract.title')) ?></h1>
+    <div class="hero-section">
+        <span class="hero-tag"><?= content_escape(t('abstract.hero_tag')) ?></span>
+        <h1 class="hero-title"><?= content_escape(t('site.title')) ?></h1>
+        <p class="hero-lead"><?= content_escape(t('abstract.lead_text')) ?></p>
+    </div>
 
     <div class="abstract-layout">
         <?php render_content_sub_nav($sections, $lang); ?>
 
         <div class="main-page">
+            <h2 class="section-heading-main"><?= content_escape(t('abstract.title')) ?></h2>
             <?php render_content_sections($sections, $lang); ?>
         </div>
     </div>

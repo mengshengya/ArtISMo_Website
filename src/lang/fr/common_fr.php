@@ -4,6 +4,7 @@ return [
     'site.title'=> 'Algorithmes d\'estimation intelligents pour la mobilité intelligente',
 
     'nav.abstract' => 'Résumé',
+    'nav.results' => 'Résultats',
     'nav.team' => 'Équipe',
     'nav.milestones' => 'Jalons',
     'nav.publications' => 'Publications',
@@ -13,6 +14,8 @@ return [
     'lang.fr' => 'FR',
 
     'abstract.title' => 'Résumé',
+    'abstract.hero_tag' => 'Consortium Projet ArtISMo',
+    'abstract.lead_text' => 'Développement d\'observateurs neuro-adaptatifs basés sur l\'apprentissage et d\'estimateurs robustes pour améliorer la sécurité, la résilience et la fiabilité des pelotons de véhicules autonomes et connectés.',
 
     'team.title' => 'Équipe',
     'team.empty' => 'Aucun membre à afficher.',

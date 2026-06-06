@@ -8,6 +8,13 @@
         </li>
 
         <li>
+            <a href="<?= htmlspecialchars(page_url('results.php')) ?>"
+               class="<?= $currentPage === 'results' ? 'active' : '' ?>">
+                <?= htmlspecialchars(t('nav.results')) ?>
+            </a>
+        </li>
+
+        <li>
             <a href="<?= htmlspecialchars(page_url('team.php')) ?>"
                class="<?= $currentPage === 'team' ? 'active' : '' ?>">
                 <?= htmlspecialchars(t('nav.team')) ?>

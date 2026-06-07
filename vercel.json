@@ -8,8 +8,8 @@
   },
   "routes": [
     {
-      "src": "/googleaa680cea3c532e64.html",
-      "dest": "/googleaa680cea3c532e64.html"
+      "src": "/(robots\\.txt|sitemap\\.xml|google2474259ca69870a8\\.html|googleaa680cea3c532e64\\.html)",
+      "dest": "/$1"
     },
     {
       "src": "/",

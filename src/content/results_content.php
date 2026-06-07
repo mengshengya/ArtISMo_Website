@@ -716,7 +716,7 @@ return [
             'en' => 'A modular V2V autonomous-driving testbed that connects numerical simulation, Quanser QLabs, CARLA, Quanser QCar, and AgileX LIMO through a common experiment pipeline. The system supports testing cooperative perception, state estimation, control, and robustness under noisy or corrupted sensor measurements from simulation to real small-scale vehicles.',
             'fr' => 'Un banc d\'essai modulaire de conduite autonome V2V connectant la simulation numérique, Quanser QLabs, CARLA, Quanser QCar et AgileX LIMO via un pipeline expérimental commun. Le système permet de tester la perception coopérative, l\'estimation d\'état, le contrôle et la robustesse sous mesures capteurs bruitées ou corrompues.',
         ],
-        'preview_image' => 'assets/img/Milestones/vehicle_platform/Cycle Development Test Deployment.png',
+        'preview_image' => 'assets/img/Milestones/vehicle_platform/qcar_multivehicle_testbed_overview.svg',
         'title' => [
             'en' => 'Multi-Platform V2V CAV Testbed for Robust Cooperative State Estimation and Control',
             'fr' => 'Banc d\'essai V2V CAV multi-plateforme pour l\'estimation d\'état coopérative et le contrôle robustes',
@@ -730,6 +730,51 @@ return [
                 ],
             ],
             [
+                'type' => 'heading',
+                'text' => [
+                    'en' => 'Repository Architecture',
+                    'fr' => 'Architecture du Dépôt',
+                ],
+            ],
+            [
+                'type' => 'html',
+                'text' => [
+                    'en' => '
+                    <ul class="contributions-list">
+                        <li><strong>Multi-Vehicle System:</strong> Runtime software for real QCar hardware and simulation, including sensing, state estimation, path/platoon control, V2V communication, safety checks, and asynchronous logging.</li>
+                        <li><strong>Vehicle logic loop:</strong> <code>vehicle_main.py</code> bootstraps each vehicle, while <code>vehicle_logic.py</code> orchestrates sensors, observers, controllers, telemetry, commands, and monitoring.</li>
+                        <li><strong>Ground Station App:</strong> Web dashboard for fleet supervision, command dispatch, status monitoring, replay, and experiment visualization.</li>
+                        <li><strong>Deployment workflow:</strong> Quanser QLabs and CARLA are used for simulation validation before running the same modules on physical QCar and LIMO vehicles.</li>
+                    </ul>',
+                    'fr' => '
+                    <ul class="contributions-list">
+                        <li><strong>Multi-Vehicle System :</strong> Logiciel d\'exécution pour QCar réel et simulation, incluant perception, estimation d\'état, contrôle de trajectoire et de peloton, communication V2V, sécurité et journalisation asynchrone.</li>
+                        <li><strong>Boucle logique véhicule :</strong> <code>vehicle_main.py</code> initialise chaque véhicule, tandis que <code>vehicle_logic.py</code> orchestre les capteurs, observateurs, contrôleurs, télémétrie, commandes et supervision.</li>
+                        <li><strong>Ground Station App :</strong> Tableau de bord web pour superviser la flotte, envoyer des commandes, suivre les états, rejouer les essais et visualiser les expériences.</li>
+                        <li><strong>Flux de déploiement :</strong> Quanser QLabs et CARLA servent à valider en simulation avant d\'exécuter les mêmes modules sur les véhicules physiques QCar et LIMO.</li>
+                    </ul>',
+                ],
+            ],
+            [
+                'type' => 'image',
+                'src' => 'assets/img/work/doctorant/Huy/global_system_scheme.svg',
+                'alt' => [
+                    'en' => 'Global V2V CAV architecture linking vehicle logic, V2V communication, trust estimation, distributed observer, visualization, and validation',
+                    'fr' => 'Architecture globale V2V CAV reliant la logique véhicule, la communication V2V, l\'estimation de confiance, l\'observateur distribué, la visualisation et la validation',
+                ],
+                'caption' => [
+                    'en' => 'Detailed global software scheme for the multi-platform V2V testbed, from each vehicle stack to trust-aware distributed observation, logging, visualization, and validation.',
+                    'fr' => 'Schéma logiciel global détaillé du banc d\'essai V2V multi-plateforme, depuis la pile embarquée de chaque véhicule jusqu\'à l\'observation distribuée sensible à la confiance, la journalisation, la visualisation et la validation.',
+                ],
+            ],
+            [
+                'type' => 'paragraph',
+                'text' => [
+                    'en' => 'The virtual validation stand combines Quanser QLabs for QCar-based digital twins with CARLA for high-fidelity traffic scenes. The same V2V, observer, and control modules can then be exercised before deployment on the physical QCar and LIMO platforms.',
+                    'fr' => 'Le banc de validation virtuel combine Quanser QLabs pour les jumeaux numériques QCar avec CARLA pour les scènes de trafic haute fidélité. Les mêmes modules V2V, d\'observation et de contrôle peuvent ensuite être testés avant le déploiement sur les plateformes physiques QCar et LIMO.',
+                ],
+            ],
+            [
                 'type' => 'image',
                 'src' => 'assets/img/Milestones/vehicle_platform/Cycle Development Test Deployment.png',
                 'alt' => [
@@ -739,6 +784,18 @@ return [
                 'caption' => [
                     'en' => 'The development cycle connects numerical simulation, virtual twins in QLabs, high-fidelity CARLA simulator, physical miniature vehicles (QCar and LIMO) through a common experiment pipeline.',
                     'fr' => 'Le cycle connecte la simulation numérique, les jumeaux virtuels dans QLabs, le simulateur haute fidélité CARLA et les véhicules physiques miniatures (QCar et LIMO) via un pipeline expérimental commun.',
+                ],
+            ],
+            [
+                'type' => 'image',
+                'src' => 'assets/img/Milestones/vehicle_platform/Qcar4.png',
+                'alt' => [
+                    'en' => 'Quanser QLabs open-road multi-vehicle QCar simulation stand',
+                    'fr' => 'Banc de simulation multi-véhicules QCar sur route ouverte dans Quanser QLabs',
+                ],
+                'caption' => [
+                    'en' => 'Quanser QLabs simulation stand with multiple virtual QCars, used alongside CARLA to test V2V cooperation before running the same modules on physical vehicles.',
+                    'fr' => 'Banc de simulation Quanser QLabs avec plusieurs QCars virtuels, utilisé avec CARLA pour tester la coopération V2V avant l\'exécution des mêmes modules sur les véhicules physiques.',
                 ],
             ],
             [

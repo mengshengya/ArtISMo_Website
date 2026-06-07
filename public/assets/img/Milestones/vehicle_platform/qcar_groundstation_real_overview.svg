@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">QCar V2V testbed with real fleet photo and Ground Station dashboard</title>
+  <desc id="desc">Standalone overview image using the real three-vehicle QCar and LIMO platform photo together with the QCar Ground Station web dashboard screenshot.</desc>
+  <defs>
+    <filter id="shadow" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.16"/>
+    </filter>
+    <filter id="softShadow" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.10"/>
+    </filter>
+    <clipPath id="fleetClip">
+      <rect x="72" y="176" width="650" height="520" rx="26"/>
+    </clipPath>
+    <clipPath id="dashboardClip">
+      <rect x="805" y="176" width="724" height="360" rx="26"/>
+    </clipPath>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="0.58" stop-color="#edf6ff"/>
+      <stop offset="1" stop-color="#f0fdf4"/>
+    </linearGradient>
+    <linearGradient id="darkFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f172a" stop-opacity="0"/>
+      <stop offset="0.72" stop-color="#0f172a" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#0f172a" stop-opacity="0.72"/>
+    </linearGradient>
+    <marker id="arrowBlue" viewBox="0 0 12 12" refX="10.5" refY="6" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M 0 0 L 12 6 L 0 12 Z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 12 12" refX="10.5" refY="6" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M 0 0 L 12 6 L 0 12 Z" fill="#059669"/>
+    </marker>
+    <marker id="arrowOrange" viewBox="0 0 12 12" refX="10.5" refY="6" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M 0 0 L 12 6 L 0 12 Z" fill="#ea580c"/>
+    </marker>
+    <style>
+      .title { font: 800 48px "Segoe UI", Arial, sans-serif; fill: #0f172a; }
+      .subtitle { font: 400 21px "Segoe UI", Arial, sans-serif; fill: #475569; }
+      .eyebrow { font: 800 14px "Segoe UI", Arial, sans-serif; letter-spacing: .08em; text-transform: uppercase; }
+      .cardTitle { font: 800 25px "Segoe UI", Arial, sans-serif; fill: #0f172a; }
+      .whiteTitle { font: 800 27px "Segoe UI", Arial, sans-serif; fill: #ffffff; }
+      .whiteSmall { font: 600 16px "Segoe UI", Arial, sans-serif; fill: #e2e8f0; }
+      .label { font: 800 18px "Segoe UI", Arial, sans-serif; fill: #0f172a; }
+      .small { font: 500 15.5px "Segoe UI", Arial, sans-serif; fill: #475569; }
+      .tiny { font: 600 13px "Segoe UI", Arial, sans-serif; fill: #64748b; }
+      .pill { font: 800 13px "Segoe UI", Arial, sans-serif; }
+      .panel { fill: #ffffff; stroke: #dbe7f3; stroke-width: 2; filter: url(#shadow); }
+      .chip { fill: #ffffff; stroke: #dbe7f3; stroke-width: 1.5; filter: url(#softShadow); }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1438" cy="72" r="180" fill="#dbeafe" opacity=".52"/>
+  <circle cx="72" cy="795" r="210" fill="#dcfce7" opacity=".55"/>
+
+  <text class="title" x="70" y="78">QCar Multi-Vehicle V2V Testbed</text>
+  <text class="subtitle" x="73" y="118">Real vehicles, web ground station, V2V communication, trust-aware estimation, and simulation-to-real validation</text>
+
+  <rect x="1118" y="52" width="132" height="38" rx="19" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text class="pill" x="1184" y="77" text-anchor="middle" fill="#1d4ed8">Real QCar</text>
+  <rect x="1262" y="52" width="126" height="38" rx="19" fill="#fff7ed" stroke="#fed7aa"/>
+  <text class="pill" x="1325" y="77" text-anchor="middle" fill="#c2410c">V2V + Trust</text>
+  <rect x="1400" y="52" width="130" height="38" rx="19" fill="#ecfdf5" stroke="#bbf7d0"/>
+  <text class="pill" x="1465" y="77" text-anchor="middle" fill="#047857">Web Control</text>
+
+  <!-- Real vehicle photo -->
+  <rect class="panel" x="52" y="156" width="690" height="580" rx="32"/>
+  <image href="3cars_1062.png" xlink:href="3cars_1062.png" x="72" y="176" width="650" height="520" preserveAspectRatio="xMidYMid slice" clip-path="url(#fleetClip)"/>
+  <rect x="72" y="176" width="650" height="520" rx="26" fill="url(#darkFade)"/>
+  <rect x="100" y="205" width="184" height="38" rx="19" fill="#ffffff" opacity=".92"/>
+  <text class="pill" x="192" y="230" text-anchor="middle" fill="#0f172a">Physical Platform</text>
+  <text class="whiteTitle" x="105" y="626">Three-Vehicle QCar / LIMO Fleet</text>
+  <text class="whiteSmall" x="105" y="657">Physical validation stand for cooperative state estimation and control</text>
+
+  <!-- Dashboard screenshot -->
+  <rect class="panel" x="785" y="156" width="764" height="420" rx="32"/>
+  <image href="Groundstation_web.png" xlink:href="Groundstation_web.png" x="805" y="176" width="724" height="360" preserveAspectRatio="xMidYMid slice" clip-path="url(#dashboardClip)"/>
+  <rect x="805" y="176" width="724" height="360" rx="26" fill="none" stroke="#0f172a" stroke-opacity=".12"/>
+  <rect x="825" y="197" width="210" height="38" rx="19" fill="#0f172a" opacity=".88"/>
+  <text class="pill" x="930" y="222" text-anchor="middle" fill="#ffffff">Ground Station Web</text>
+  <text class="cardTitle" x="820" y="551">Live Monitoring and Replay</text>
+  <text class="small" x="1116" y="552">trust logs, fleet trajectories, attack timeline, command status</text>
+
+  <!-- Communication arrows -->
+  <path d="M725 338 C760 310, 786 300, 816 292" fill="none" stroke="#2563eb" stroke-width="6" marker-end="url(#arrowBlue)"/>
+  <text class="tiny" x="768" y="284" text-anchor="middle" fill="#1d4ed8">telemetry</text>
+  <path d="M816 478 C776 506, 753 518, 720 524" fill="none" stroke="#059669" stroke-width="6" marker-end="url(#arrowGreen)"/>
+  <text class="tiny" x="760" y="548" text-anchor="middle" fill="#047857">commands</text>
+  <path d="M312 735 C440 814, 1052 814, 1212 574" fill="none" stroke="#ea580c" stroke-width="5" stroke-dasharray="16 12" marker-end="url(#arrowOrange)"/>
+  <text class="tiny" x="726" y="826" text-anchor="middle" fill="#9a3412">V2V packets, trust reports, replay logs, fleet-state estimates</text>
+
+  <!-- Bottom architecture cards -->
+  <g transform="translate(786 614)">
+    <rect class="chip" x="0" y="0" width="178" height="104" rx="20"/>
+    <circle cx="34" cy="36" r="17" fill="#2563eb"/>
+    <text class="pill" x="34" y="41" text-anchor="middle" fill="#ffffff">1</text>
+    <text class="label" x="62" y="37">Vehicle Logic</text>
+    <text class="small" x="24" y="68">sensing, safety,</text>
+    <text class="small" x="24" y="91">control loop</text>
+  </g>
+  <g transform="translate(982 614)">
+    <rect class="chip" x="0" y="0" width="178" height="104" rx="20"/>
+    <circle cx="34" cy="36" r="17" fill="#ea580c"/>
+    <text class="pill" x="34" y="41" text-anchor="middle" fill="#ffffff">2</text>
+    <text class="label" x="62" y="37">V2V Layer</text>
+    <text class="small" x="24" y="68">UDP broadcast,</text>
+    <text class="small" x="24" y="91">ACKs, heartbeat</text>
+  </g>
+  <g transform="translate(1178 614)">
+    <rect class="chip" x="0" y="0" width="178" height="104" rx="20"/>
+    <circle cx="34" cy="36" r="17" fill="#7c3aed"/>
+    <text class="pill" x="34" y="41" text-anchor="middle" fill="#ffffff">3</text>
+    <text class="label" x="62" y="37">Observer</text>
+    <text class="small" x="24" y="68">local + fleet,</text>
+    <text class="small" x="24" y="91">trust weights</text>
+  </g>
+  <g transform="translate(1374 614)">
+    <rect class="chip" x="0" y="0" width="156" height="104" rx="20"/>
+    <circle cx="34" cy="36" r="17" fill="#059669"/>
+    <text class="pill" x="34" y="41" text-anchor="middle" fill="#ffffff">4</text>
+    <text class="label" x="62" y="37">Deploy</text>
+    <text class="small" x="24" y="68">QLabs, CARLA,</text>
+    <text class="small" x="24" y="91">QCar, LIMO</text>
+  </g>
+
+  <rect x="74" y="766" width="280" height="78" rx="22" fill="#ffffff" stroke="#dbe7f3" filter="url(#softShadow)"/>
+  <text class="eyebrow" x="104" y="796" fill="#2563eb">Project Focus</text>
+  <text class="small" x="104" y="823">multi-vehicle management, robust</text>
+  <text class="small" x="104" y="844">cooperative estimation, web supervision</text>
+
+  <line x1="72" y1="866" x2="1528" y2="866" stroke="#cbd5e1"/>
+  <text class="tiny" x="72" y="889">Standalone visual asset using 3cars_1062.png and Groundstation_web.png</text>
+  <text class="tiny" x="1528" y="889" text-anchor="end">No website content changes required</text>
+</svg>

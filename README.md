@@ -5,6 +5,7 @@ This repository contains the website for the ArtISMo project.
 The site is currently a lightweight PHP website. Public pages and assets are stored in
 `public/`, while shared PHP components, language files, and structured content data are
 stored in `src/`.
+https://artismo-website.vercel.app/results.php?lang=en
 
 ## Project Structure
 

@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">QCar multi-vehicle V2V testbed overview</title>
+  <desc id="desc">Overview image for the QCar multi-vehicle management system showing the multi-vehicle runtime, V2V communication, observers and controllers, ground station app, and QLabs, CARLA, and real vehicle deployment targets.</desc>
+  <defs>
+    <filter id="shadow" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrowBlue" viewBox="0 0 12 12" refX="10.5" refY="6" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M 0 0 L 12 6 L 0 12 Z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrowOrange" viewBox="0 0 12 12" refX="10.5" refY="6" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M 0 0 L 12 6 L 0 12 Z" fill="#ea580c"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 12 12" refX="10.5" refY="6" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M 0 0 L 12 6 L 0 12 Z" fill="#059669"/>
+    </marker>
+    <marker id="arrowSlate" viewBox="0 0 12 12" refX="10.5" refY="6" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M 0 0 L 12 6 L 0 12 Z" fill="#475569"/>
+    </marker>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="0.55" stop-color="#eef6ff"/>
+      <stop offset="1" stop-color="#f7fee7"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#334155"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <style>
+      .title { font: 800 52px "Segoe UI", Arial, sans-serif; fill: #0f172a; }
+      .subtitle { font: 400 22px "Segoe UI", Arial, sans-serif; fill: #475569; }
+      .eyebrow { font: 800 15px "Segoe UI", Arial, sans-serif; letter-spacing: .08em; text-transform: uppercase; }
+      .cardTitle { font: 800 25px "Segoe UI", Arial, sans-serif; fill: #0f172a; }
+      .label { font: 700 18px "Segoe UI", Arial, sans-serif; fill: #0f172a; }
+      .small { font: 500 16px "Segoe UI", Arial, sans-serif; fill: #475569; }
+      .tiny { font: 600 13px "Segoe UI", Arial, sans-serif; fill: #64748b; }
+      .pillText { font: 800 14px "Segoe UI", Arial, sans-serif; }
+      .panel { fill: #ffffff; stroke: #dbe7f3; stroke-width: 2; filter: url(#shadow); }
+      .softPanel { fill: #f8fafc; stroke: #e2e8f0; stroke-width: 1.5; }
+      .blue { fill: #2563eb; }
+      .orange { fill: #ea580c; }
+      .green { fill: #059669; }
+      .purple { fill: #7c3aed; }
+      .slate { fill: #475569; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#pageBg)"/>
+
+  <text class="title" x="68" y="82">QCar Multi-Vehicle V2V Testbed</text>
+  <text class="subtitle" x="72" y="123">Real-time fleet control, monitoring, V2V communication, observers, and simulation-to-real deployment</text>
+
+  <rect x="1185" y="52" width="165" height="38" rx="19" fill="#eef6ff" stroke="#bfdbfe"/>
+  <text class="pillText" x="1267" y="77" fill="#174a7c" text-anchor="middle">Multi-Vehicle System</text>
+  <rect x="1365" y="52" width="165" height="38" rx="19" fill="#ecfdf5" stroke="#bbf7d0"/>
+  <text class="pillText" x="1447" y="77" fill="#047857" text-anchor="middle">Ground Station App</text>
+
+  <!-- Left: fleet and simulator stand -->
+  <rect class="panel" x="65" y="165" width="430" height="325" rx="24"/>
+  <text class="eyebrow" x="95" y="205" fill="#2563eb">Platform</text>
+  <text class="cardTitle" x="95" y="238">QCar / LIMO Fleet</text>
+  <path d="M110 424 C185 325, 305 286, 452 253 L452 458 L110 458 Z" fill="url(#road)"/>
+  <path d="M131 441 C206 354, 319 316, 452 288" fill="none" stroke="#e5e7eb" stroke-width="5" stroke-dasharray="18 18"/>
+  <g transform="translate(155 328)">
+    <rect x="0" y="22" width="105" height="48" rx="12" fill="#111827"/>
+    <rect x="14" y="6" width="78" height="35" rx="10" fill="#1f2937"/>
+    <rect x="23" y="12" width="60" height="20" rx="5" fill="#93c5fd"/>
+    <circle cx="22" cy="73" r="13" fill="#020617"/>
+    <circle cx="83" cy="73" r="13" fill="#020617"/>
+    <rect x="9" y="42" width="88" height="8" rx="4" fill="#34d399"/>
+  </g>
+  <g transform="translate(275 268) scale(.82)">
+    <rect x="0" y="22" width="105" height="48" rx="12" fill="#111827"/>
+    <rect x="14" y="6" width="78" height="35" rx="10" fill="#1f2937"/>
+    <rect x="23" y="12" width="60" height="20" rx="5" fill="#c4b5fd"/>
+    <circle cx="22" cy="73" r="13" fill="#020617"/>
+    <circle cx="83" cy="73" r="13" fill="#020617"/>
+    <rect x="9" y="42" width="88" height="8" rx="4" fill="#f97316"/>
+  </g>
+  <g transform="translate(350 224) scale(.66)">
+    <rect x="0" y="22" width="105" height="48" rx="12" fill="#111827"/>
+    <rect x="14" y="6" width="78" height="35" rx="10" fill="#1f2937"/>
+    <rect x="23" y="12" width="60" height="20" rx="5" fill="#bfdbfe"/>
+    <circle cx="22" cy="73" r="13" fill="#020617"/>
+    <circle cx="83" cy="73" r="13" fill="#020617"/>
+    <rect x="9" y="42" width="88" height="8" rx="4" fill="#22c55e"/>
+  </g>
+  <rect x="95" y="271" width="110" height="34" rx="17" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text class="pillText" x="150" y="293" text-anchor="middle" fill="#174a7c">QLabs</text>
+  <rect x="218" y="271" width="110" height="34" rx="17" fill="#fff7ed" stroke="#fed7aa"/>
+  <text class="pillText" x="273" y="293" text-anchor="middle" fill="#9a3412">CARLA</text>
+  <rect x="341" y="271" width="110" height="34" rx="17" fill="#ecfdf5" stroke="#bbf7d0"/>
+  <text class="pillText" x="396" y="293" text-anchor="middle" fill="#047857">Real</text>
+
+  <!-- Center: vehicle runtime -->
+  <rect class="panel" x="585" y="165" width="430" height="325" rx="24"/>
+  <text class="eyebrow" x="615" y="205" fill="#ea580c">Runtime Core</text>
+  <text class="cardTitle" x="615" y="238">Per-Vehicle Logic Loop</text>
+  <g>
+    <rect class="softPanel" x="620" y="270" width="160" height="62" rx="14"/>
+    <text class="label" x="700" y="296" text-anchor="middle">Sensors</text>
+    <text class="tiny" x="700" y="318" text-anchor="middle">GPS IMU camera</text>
+    <rect class="softPanel" x="820" y="270" width="160" height="62" rx="14"/>
+    <text class="label" x="900" y="296" text-anchor="middle">Observer</text>
+    <text class="tiny" x="900" y="318" text-anchor="middle">local + fleet</text>
+    <rect class="softPanel" x="820" y="372" width="160" height="62" rx="14"/>
+    <text class="label" x="900" y="398" text-anchor="middle">Controller</text>
+    <text class="tiny" x="900" y="420" text-anchor="middle">path + platoon</text>
+    <rect class="softPanel" x="620" y="372" width="160" height="62" rx="14"/>
+    <text class="label" x="700" y="398" text-anchor="middle">Safety</text>
+    <text class="tiny" x="700" y="420" text-anchor="middle">watchdog + logs</text>
+    <path d="M780 301 L813 301" stroke="#ea580c" stroke-width="4" marker-end="url(#arrowOrange)"/>
+    <path d="M900 332 L900 365" stroke="#ea580c" stroke-width="4" marker-end="url(#arrowOrange)"/>
+    <path d="M820 403 L787 403" stroke="#ea580c" stroke-width="4" marker-end="url(#arrowOrange)"/>
+    <path d="M700 372 L700 339" stroke="#ea580c" stroke-width="4" marker-end="url(#arrowOrange)"/>
+  </g>
+  <rect x="645" y="448" width="310" height="28" rx="14" fill="#fff7ed" stroke="#fed7aa"/>
+  <text class="tiny" x="800" y="467" text-anchor="middle">vehicle_main.py + vehicle_logic.py</text>
+
+  <!-- Right: ground station -->
+  <rect class="panel" x="1105" y="165" width="430" height="325" rx="24"/>
+  <text class="eyebrow" x="1135" y="205" fill="#059669">Monitoring</text>
+  <text class="cardTitle" x="1135" y="238">Ground Station App</text>
+  <rect x="1140" y="274" width="360" height="180" rx="16" fill="#0f172a"/>
+  <rect x="1165" y="298" width="105" height="58" rx="8" fill="#172554" stroke="#1d4ed8"/>
+  <rect x="1292" y="298" width="185" height="58" rx="8" fill="#052e16" stroke="#16a34a"/>
+  <rect x="1165" y="376" width="135" height="58" rx="8" fill="#431407" stroke="#f97316"/>
+  <rect x="1320" y="376" width="157" height="58" rx="8" fill="#312e81" stroke="#8b5cf6"/>
+  <polyline points="1178,335 1198,323 1215,330 1236,310 1254,316" fill="none" stroke="#60a5fa" stroke-width="3"/>
+  <polyline points="1308,335 1335,328 1365,342 1400,315 1460,324" fill="none" stroke="#4ade80" stroke-width="3"/>
+  <polyline points="1178,413 1210,402 1240,421 1285,389" fill="none" stroke="#fb923c" stroke-width="3"/>
+  <polyline points="1332,412 1360,389 1405,408 1462,394" fill="none" stroke="#a78bfa" stroke-width="3"/>
+  <circle cx="1170" cy="468" r="7" fill="#22c55e"/>
+  <text class="tiny" x="1188" y="473" fill="#cbd5e1">commands, telemetry, replay, emergency stop</text>
+
+  <!-- Communications -->
+  <path d="M495 300 C535 300, 545 300, 580 300" fill="none" stroke="#2563eb" stroke-width="5" marker-end="url(#arrowBlue)"/>
+  <text class="tiny" x="540" y="281" text-anchor="middle">vehicle stack</text>
+  <path d="M1015 328 C1055 328, 1064 328, 1098 328" fill="none" stroke="#059669" stroke-width="5" marker-end="url(#arrowGreen)"/>
+  <text class="tiny" x="1058" y="309" text-anchor="middle">TCP telemetry</text>
+  <path d="M1105 425 C1056 504, 555 504, 495 425" fill="none" stroke="#ea580c" stroke-width="5" stroke-dasharray="14 12" marker-end="url(#arrowOrange)"/>
+  <text class="tiny" x="800" y="528" text-anchor="middle" fill="#9a3412">UDP V2V broadcast / receive between vehicles</text>
+
+  <!-- Bottom repository architecture -->
+  <rect class="panel" x="65" y="585" width="1470" height="238" rx="24"/>
+  <text class="eyebrow" x="95" y="627" fill="#7c3aed">Repository Architecture</text>
+  <text class="cardTitle" x="95" y="662">From README to experiment pipeline</text>
+
+  <g transform="translate(95 690)">
+    <rect x="0" y="0" width="320" height="95" rx="18" fill="#eff6ff" stroke="#bfdbfe" stroke-width="2"/>
+    <circle cx="42" cy="48" r="22" fill="#2563eb"/>
+    <text class="pillText" x="42" y="53" fill="#ffffff" text-anchor="middle">1</text>
+    <text class="label" x="78" y="35">Startup and config</text>
+    <text class="small" x="78" y="62">fleet YAML, CLI bootstrap,</text>
+    <text class="small" x="78" y="84">per-vehicle runtime context</text>
+  </g>
+  <g transform="translate(445 690)">
+    <rect x="0" y="0" width="320" height="95" rx="18" fill="#fff7ed" stroke="#fed7aa" stroke-width="2"/>
+    <circle cx="42" cy="48" r="22" fill="#ea580c"/>
+    <text class="pillText" x="42" y="53" fill="#ffffff" text-anchor="middle">2</text>
+    <text class="label" x="78" y="35">Orchestration loop</text>
+    <text class="small" x="78" y="62">sensing, estimation, control,</text>
+    <text class="small" x="78" y="84">V2V, monitoring, logging</text>
+  </g>
+  <g transform="translate(795 690)">
+    <rect x="0" y="0" width="320" height="95" rx="18" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="2"/>
+    <circle cx="42" cy="48" r="22" fill="#7c3aed"/>
+    <text class="pillText" x="42" y="53" fill="#ffffff" text-anchor="middle">3</text>
+    <text class="label" x="78" y="35">Observer and control</text>
+    <text class="small" x="78" y="62">local/fleet estimation,</text>
+    <text class="small" x="78" y="84">path and platoon control</text>
+  </g>
+  <g transform="translate(1145 690)">
+    <rect x="0" y="0" width="320" height="95" rx="18" fill="#ecfdf5" stroke="#bbf7d0" stroke-width="2"/>
+    <circle cx="42" cy="48" r="22" fill="#059669"/>
+    <text class="pillText" x="42" y="53" fill="#ffffff" text-anchor="middle">4</text>
+    <text class="label" x="78" y="35">Deploy and validate</text>
+    <text class="small" x="78" y="62">QLabs, CARLA, QCar 2,</text>
+    <text class="small" x="78" y="84">LIMO, replay logs, metrics</text>
+  </g>
+  <path d="M415 737 L438 737" stroke="#475569" stroke-width="4" marker-end="url(#arrowSlate)"/>
+  <path d="M765 737 L788 737" stroke="#475569" stroke-width="4" marker-end="url(#arrowSlate)"/>
+  <path d="M1115 737 L1138 737" stroke="#475569" stroke-width="4" marker-end="url(#arrowSlate)"/>
+
+  <line x1="72" y1="848" x2="1528" y2="848" stroke="#cbd5e1"/>
+  <text class="tiny" x="72" y="873">QCar Multi-Vehicle Management System: real-time control, monitoring, communication, state estimation, safety, and offline analysis</text>
+  <text class="tiny" x="1528" y="873" text-anchor="end">ArtISMo / Quanser Self-Driving Platform</text>
+</svg>

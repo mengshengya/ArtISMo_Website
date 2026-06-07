@@ -8,6 +8,10 @@
   },
   "routes": [
     {
+      "src": "/googleaa680cea3c532e64.html",
+      "dest": "/googleaa680cea3c532e64.html"
+    },
+    {
       "src": "/",
       "dest": "/api/abstract.php"
     },

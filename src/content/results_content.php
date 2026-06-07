@@ -2,6 +2,183 @@
 
 return [
     [
+        'id' => 'hichem-research',
+        'category_key' => 'results.cat_phd',
+        'date' => [
+            'en' => 'April 2026',
+            'fr' => 'Avril 2026',
+        ],
+        'summary_key' => 'results.hichem_summary',
+        'preview_image' => 'assets/img/work/doctorant/Hichem/sensor_fusion_carla.png',
+        'title_key' => 'results.section_hichem',
+        'blocks' => [
+            [
+                'type' => 'paragraph',
+                'text_key' => 'results.hichem_intro_1',
+            ],
+            [
+                'type' => 'paragraph',
+                'text_key' => 'results.hichem_intro_2',
+            ],
+            [
+                'type' => 'image',
+                'src' => 'assets/img/work/doctorant/Hichem/automatica_trajectory.png',
+                'alt' => [
+                    'en' => 'Trajectory estimation and tracking comparisons',
+                    'fr' => 'Comparaison de l\'estimation et du suivi de trajectoire',
+                ],
+                'caption_key' => 'results.hichem_img_traj',
+            ],
+            [
+                'type' => 'image',
+                'src' => 'assets/img/work/doctorant/Hichem/sensor_fusion_carla.png',
+                'alt' => [
+                    'en' => 'Sensor fusion and visual odometry block diagram framework',
+                    'fr' => 'Schéma bloc de fusion de capteurs et d\'odométrie visuelle',
+                ],
+                'caption_key' => 'results.hichem_img_carla',
+            ],
+            [
+                'type' => 'image',
+                'src' => 'assets/img/work/doctorant/Hichem/sensor_fusion_trajectory.png',
+                'alt' => [
+                    'en' => 'CARLA roundabout trajectory estimation with complete satellite failure',
+                    'fr' => 'Estimation de trajectoire en rond-point CARLA avec perte totale du signal satellite',
+                ],
+                'caption_key' => 'results.hichem_img_results',
+            ],
+            [
+                'type' => 'image',
+                'src' => 'assets/img/work/doctorant/Hichem/sensor_fusion_error.png',
+                'alt' => [
+                    'en' => 'CARLA roundabout estimation error plots',
+                    'fr' => 'Courbes d\'erreur d\'estimation en rond-point CARLA',
+                ],
+                'caption_key' => 'results.hichem_img_error',
+            ],
+            [
+                'type' => 'video',
+                'src' => 'assets/img/work/doctorant/Hichem/videoSc.mp4',
+                'mime' => 'video/mp4',
+                'caption_key' => 'results.hichem_video_caption',
+            ],
+            [
+                'type' => 'heading',
+                'text_key' => 'results.hichem_downloads_title',
+            ],
+            [
+                'type' => 'html',
+                'text_key' => 'results.hichem_downloads_html',
+            ],
+        ],
+    ],
+    [
+        'id' => 'liqi-research',
+        'category_key' => 'results.cat_phd',
+        'date' => [
+            'en' => 'November 2025',
+            'fr' => 'Novembre 2025',
+        ],
+        'summary' => [
+            'en' => 'Distributed high-gain observer (DHGO) design for a class of interconnected nonlinear systems. Implemented a modular Python leader-follower platoon simulation framework in QLabs and on physical QCars.',
+            'fr' => 'Conception d\'observateurs distribués grand gain (DHGO) pour une classe de systèmes non linéaires interconnectés. Implémentation d\'un cadre modulaire de simulation de peloton leader-suiveur en Python sous QLabs et sur QCars physiques.',
+        ],
+        'preview_image' => 'assets/img/work/doctorant/Liqi/2025_11_26/Fig/Fig_DistributedObserverScheme.jpg',
+        'title' => [
+            'en' => 'PhD Research: Distributed High-Gain Observers for Interconnected Systems (Dr. Qi Li)',
+            'fr' => 'Recherche Doctorale : Observateurs Distribués Grand Gain pour Systèmes Interconnectés (Dr. Qi Li)',
+        ],
+        'blocks' => [
+            [
+                'type' => 'paragraph',
+                'text' => [
+                    'en' => 'In the cooperative control of connected and autonomous vehicles, state estimation plays a key role. This research proposes a distributed high-gain observer (DHGO) design for a class of interconnected nonlinear systems. The primary objective is to allow each vehicle (agent) in a platoon to estimate the collective state of the entire fleet despite modeling errors, measurement noise, and communication constraints. By utilizing local measurements and V2V (Vehicle-to-Vehicle) communication, the observers achieve a consensus on the estimated platoon state.',
+                    'fr' => 'Dans le contrôle coopératif des véhicules connectés et autonomes, l\'estimation d\'état joue un rôle clé. Cette recherche propose une conception d\'observateur distribué à grand gain (DHGO) pour une classe de systèmes non linéaires interconnectés. L\'objectif principal est de permettre à chaque véhicule (agent) d\'un peloton d\'estimer l\'état collectif de l\'ensemble de la flotte malgré les erreurs de modélisation, le bruit de mesure et les contraintes de communication. En utilisant des mesures locales et la communication V2V (véhicule à véhicule), les observateurs parviennent à un consensus sur l\'état estimé du peloton.',
+                ],
+            ],
+            [
+                'type' => 'paragraph',
+                'text' => [
+                    'en' => 'An error space decomposition technique is developed, separating the estimation error into average estimation error and consensus estimation error. Under this decomposition, Lyapunov stability analysis is conducted to guarantee exponential convergence of the estimation error. The observer feedback matrices are designed by solving Linear Matrix Inequalities (LMIs), and explicit guidelines are provided for selecting the local high-gain parameters and the consensus coupling gain.',
+                    'fr' => 'Une technique de décomposition de l\'espace d\'erreur est développée, séparant l\'erreur d\'estimation en erreur d\'estimation moyenne et erreur d\'estimation de consensus. Sous cette décomposition, une analyse de stabilité de Lyapunov est menée pour garantir la convergence exponentielle de l\'erreur d\'estimation. Les matrices de rétroaction de l\'observateur sont conçues en résolvant des inégalités matricielles linéaires (LMI), et des directives explicites sont fournies pour sélectionner les paramètres locaux de grand gain et le gain de couplage de consensus.',
+                ],
+            ],
+            [
+                'type' => 'image',
+                'src' => 'assets/img/work/doctorant/Liqi/2025_11_26/Fig/Fig_DistributedObserverScheme.jpg',
+                'alt' => [
+                    'en' => 'Distributed high-gain observer scheme block diagram',
+                    'fr' => 'Schéma bloc du système d\'observateur distribué grand gain',
+                ],
+                'caption' => [
+                    'en' => 'Distributed estimation framework: each local agent uses a high-gain observer combined with V2V consensus terms to estimate the states of the interconnected nonlinear systems.',
+                    'fr' => 'Cadre d\'estimation distribuée : chaque agent local utilise un observateur grand gain combiné à des termes de consensus V2V pour estimer les états des systèmes non linéaires interconnectés.',
+                ],
+            ],
+            [
+                'type' => 'paragraph',
+                'text' => [
+                    'en' => 'To bridge theory with experimental validation, the framework is implemented on the Quanser QCar UGV platform. The initial monolithic scripts (such as follower.py and vehicle_control.py) were refactored into a structured, modular Python architecture containing three core modules: the CarFleet module (managing initialization and offering API hooks), the Control module (handling leader/follower inputs), and the Distributed Observer module (spawning local observer threads). This modular design allows easy transferability to different simulation environments (like QLabs) and physical testing configurations.',
+                    'fr' => 'Pour lier la théorie à la validation expérimentale, le cadre est mis en œuvre sur la plateforme UGV Quanser QCar. Les scripts monolithiques initiaux (tels que follower.py et vehicle_control.py) ont été refactorisés dans une architecture Python modulaire structurée contenant trois modules principaux : le module CarFleet (gérant l\'initialisation et offrant des API), le module Control (gérant les entrées du leader/suiveur) et le module Distributed Observer (lançant des threads d\'observateur locaux). Cette conception modulaire permet un transfert facile vers différents environnements de simulation (comme QLabs) et configurations d\'essais physiques.',
+                ],
+            ],
+            [
+                'type' => 'image',
+                'src' => 'assets/img/work/doctorant/Liqi/2025_11_26/Fig/Fig_method_diagram.jpg',
+                'alt' => [
+                    'en' => 'Method diagram of observer design and LMI calculation flow',
+                    'fr' => 'Diagramme méthodologique du flux de conception de l\'observateur et du calcul LMI',
+                ],
+                'caption' => [
+                    'en' => 'Main block diagram representing the interconnected system structure and the design process of the distributed observer.',
+                    'fr' => 'Schéma fonctionnel principal représentant la structure du système interconnecté et le processus de conception de l\'observateur distribué.',
+                ],
+            ],
+            [
+                'type' => 'image',
+                'src' => 'assets/img/work/doctorant/Liqi/2025_11_26/Fig/Fig_Interconnected_Sys.jpg',
+                'alt' => [
+                    'en' => 'Interconnected nonlinear system structure',
+                    'fr' => 'Structure du système non linéaire interconnecté',
+                ],
+                'caption' => [
+                    'en' => 'Visual model representing the state relationships and nonlinear coupling between the agents in a multi-agent system.',
+                    'fr' => 'Modèle visuel représentant les relations d\'état et le couplage non linéaire entre les agents dans un système multi-agents.',
+                ],
+            ],
+            [
+                'type' => 'heading',
+                'text' => [
+                    'en' => 'Presentation & Source Materials',
+                    'fr' => 'Présentation & Sources',
+                ],
+            ],
+            [
+                'type' => 'html',
+                'text' => [
+                    'en' => '
+                    <div class="download-container">
+                        <a href="assets/img/work/doctorant/Liqi/2025_11_26/main.pdf" class="download-btn" target="_blank" rel="noopener noreferrer">
+                            <span class="btn-icon">📄</span> Download Presentation Slides (PDF)
+                        </a>
+                        <a href="assets/img/work/doctorant/Liqi/2025_11_26/main.tex" class="download-btn secondary-btn" target="_blank" rel="noopener noreferrer">
+                            <span class="btn-icon">⚙️</span> View LaTeX Source (main.tex)
+                        </a>
+                    </div>',
+                    'fr' => '
+                    <div class="download-container">
+                        <a href="assets/img/work/doctorant/Liqi/2025_11_26/main.pdf" class="download-btn" target="_blank" rel="noopener noreferrer">
+                            <span class="btn-icon">📄</span> Télécharger les Diapositives (PDF)
+                        </a>
+                        <a href="assets/img/work/doctorant/Liqi/2025_11_26/main.tex" class="download-btn secondary-btn" target="_blank" rel="noopener noreferrer">
+                            <span class="btn-icon">⚙️</span> Voir la Source LaTeX (main.tex)
+                        </a>
+                    </div>',
+                ],
+            ],
+        ],
+    ],
+    [
         'id' => 'phd-research',
         'category_key' => 'results.cat_phd',
         'date' => [
@@ -716,7 +893,7 @@ return [
             'en' => 'A modular V2V autonomous-driving testbed that connects numerical simulation, Quanser QLabs, CARLA, Quanser QCar, and AgileX LIMO through a common experiment pipeline. The system supports testing cooperative perception, state estimation, control, and robustness under noisy or corrupted sensor measurements from simulation to real small-scale vehicles.',
             'fr' => 'Un banc d\'essai modulaire de conduite autonome V2V connectant la simulation numérique, Quanser QLabs, CARLA, Quanser QCar et AgileX LIMO via un pipeline expérimental commun. Le système permet de tester la perception coopérative, l\'estimation d\'état, le contrôle et la robustesse sous mesures capteurs bruitées ou corrompues.',
         ],
-        'preview_image' => 'assets/img/Milestones/vehicle_platform/Cycle Development Test Deployment.png',
+        'preview_image' => 'assets/img/Milestones/vehicle_platform/qcar_multivehicle_testbed_overview.svg',
         'title' => [
             'en' => 'Multi-Platform V2V CAV Testbed for Robust Cooperative State Estimation and Control',
             'fr' => 'Banc d\'essai V2V CAV multi-plateforme pour l\'estimation d\'état coopérative et le contrôle robustes',
@@ -730,6 +907,51 @@ return [
                 ],
             ],
             [
+                'type' => 'heading',
+                'text' => [
+                    'en' => 'Repository Architecture',
+                    'fr' => 'Architecture du Dépôt',
+                ],
+            ],
+            [
+                'type' => 'html',
+                'text' => [
+                    'en' => '
+                    <ul class="contributions-list">
+                        <li><strong>Multi-Vehicle System:</strong> Runtime software for real QCar hardware and simulation, including sensing, state estimation, path/platoon control, V2V communication, safety checks, and asynchronous logging.</li>
+                        <li><strong>Vehicle logic loop:</strong> <code>vehicle_main.py</code> bootstraps each vehicle, while <code>vehicle_logic.py</code> orchestrates sensors, observers, controllers, telemetry, commands, and monitoring.</li>
+                        <li><strong>Ground Station App:</strong> Web dashboard for fleet supervision, command dispatch, status monitoring, replay, and experiment visualization.</li>
+                        <li><strong>Deployment workflow:</strong> Quanser QLabs and CARLA are used for simulation validation before running the same modules on physical QCar and LIMO vehicles.</li>
+                    </ul>',
+                    'fr' => '
+                    <ul class="contributions-list">
+                        <li><strong>Multi-Vehicle System :</strong> Logiciel d\'exécution pour QCar réel et simulation, incluant perception, estimation d\'état, contrôle de trajectoire et de peloton, communication V2V, sécurité et journalisation asynchrone.</li>
+                        <li><strong>Boucle logique véhicule :</strong> <code>vehicle_main.py</code> initialise chaque véhicule, tandis que <code>vehicle_logic.py</code> orchestre les capteurs, observateurs, contrôleurs, télémétrie, commandes et supervision.</li>
+                        <li><strong>Ground Station App :</strong> Tableau de bord web pour superviser la flotte, envoyer des commandes, suivre les états, rejouer les essais et visualiser les expériences.</li>
+                        <li><strong>Flux de déploiement :</strong> Quanser QLabs et CARLA servent à valider en simulation avant d\'exécuter les mêmes modules sur les véhicules physiques QCar et LIMO.</li>
+                    </ul>',
+                ],
+            ],
+            [
+                'type' => 'image',
+                'src' => 'assets/img/work/doctorant/Huy/global_system_scheme.svg',
+                'alt' => [
+                    'en' => 'Global V2V CAV architecture linking vehicle logic, V2V communication, trust estimation, distributed observer, visualization, and validation',
+                    'fr' => 'Architecture globale V2V CAV reliant la logique véhicule, la communication V2V, l\'estimation de confiance, l\'observateur distribué, la visualisation et la validation',
+                ],
+                'caption' => [
+                    'en' => 'Detailed global software scheme for the multi-platform V2V testbed, from each vehicle stack to trust-aware distributed observation, logging, visualization, and validation.',
+                    'fr' => 'Schéma logiciel global détaillé du banc d\'essai V2V multi-plateforme, depuis la pile embarquée de chaque véhicule jusqu\'à l\'observation distribuée sensible à la confiance, la journalisation, la visualisation et la validation.',
+                ],
+            ],
+            [
+                'type' => 'paragraph',
+                'text' => [
+                    'en' => 'The virtual validation stand combines Quanser QLabs for QCar-based digital twins with CARLA for high-fidelity traffic scenes. The same V2V, observer, and control modules can then be exercised before deployment on the physical QCar and LIMO platforms.',
+                    'fr' => 'Le banc de validation virtuel combine Quanser QLabs pour les jumeaux numériques QCar avec CARLA pour les scènes de trafic haute fidélité. Les mêmes modules V2V, d\'observation et de contrôle peuvent ensuite être testés avant le déploiement sur les plateformes physiques QCar et LIMO.',
+                ],
+            ],
+            [
                 'type' => 'image',
                 'src' => 'assets/img/Milestones/vehicle_platform/Cycle Development Test Deployment.png',
                 'alt' => [
@@ -739,6 +961,18 @@ return [
                 'caption' => [
                     'en' => 'The development cycle connects numerical simulation, virtual twins in QLabs, high-fidelity CARLA simulator, physical miniature vehicles (QCar and LIMO) through a common experiment pipeline.',
                     'fr' => 'Le cycle connecte la simulation numérique, les jumeaux virtuels dans QLabs, le simulateur haute fidélité CARLA et les véhicules physiques miniatures (QCar et LIMO) via un pipeline expérimental commun.',
+                ],
+            ],
+            [
+                'type' => 'image',
+                'src' => 'assets/img/Milestones/vehicle_platform/Qcar4.png',
+                'alt' => [
+                    'en' => 'Quanser QLabs open-road multi-vehicle QCar simulation stand',
+                    'fr' => 'Banc de simulation multi-véhicules QCar sur route ouverte dans Quanser QLabs',
+                ],
+                'caption' => [
+                    'en' => 'Quanser QLabs simulation stand with multiple virtual QCars, used alongside CARLA to test V2V cooperation before running the same modules on physical vehicles.',
+                    'fr' => 'Banc de simulation Quanser QLabs avec plusieurs QCars virtuels, utilisé avec CARLA pour tester la coopération V2V avant l\'exécution des mêmes modules sur les véhicules physiques.',
                 ],
             ],
             [

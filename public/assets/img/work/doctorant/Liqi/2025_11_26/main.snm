@@ -1,0 +1,14 @@
+\beamer@slide {eq:sys}{3}
+\beamer@slide {fig:Interconnected System}{3}
+\beamer@slide {fig:DistributedObserverScheme.png}{4}
+\beamer@slide {eq:distributed_HGO}{5}
+\beamer@slide {fig:Fig_method_diagram}{6}
+\beamer@slide {prop:Veta}{10}
+\beamer@slide {eq:prop eta}{10}
+\beamer@slide {prop:Vzeta}{10}
+\beamer@slide {eq:prop zeta}{10}
+\beamer@slide {thm:main result}{12}
+\beamer@slide {eq:condition_DSTDHGO_LMIs}{12}
+\beamer@slide {eq:condition_theta}{12}
+\beamer@slide {eq:condition_gamma}{12}
+\beamer@slide {alg:observer_design_user}{13}

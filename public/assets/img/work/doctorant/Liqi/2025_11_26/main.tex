@@ -1,0 +1,75 @@
+% Created 2017-12-14 jeu. 14:25
+% Intended LaTeX compiler: pdflatex
+\documentclass[10pt,svgnames,fragile]{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[normalem]{ulem}
+\usepackage{textcomp}
+\usepackage{pdflscape}
+\usepackage[ruled]{algorithm2e}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{listings}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{qtree}
+\usepackage{bussproofs}
+\usepackage{fitch}
+\usepackage{cancel}
+\usepackage{url}
+\usepackage{smfthm}
+\usepackage{multicol}
+
+\usefonttheme{professionalfonts} % using non standard fonts for beamer
+\usefonttheme{serif} % default family is serif
+% \usepackage{fontspec}
+% \setmainfont{}
+
+\usepackage[english]{babel}
+
+\usepackage[
+  citestyle=numeric,
+  style = authoryear,
+  backend=biber,
+  sorting = nyt
+]{biblatex}
+\usepackage{setspace}
+\addbibresource{bib.bib}
+\setbeamerfont{footnote}{size=\tiny} %reduce the size of the footnote citation
+
+\AtBeginSection[]{\begin{frame}<beamer>\frametitle{}\tableofcontents[currentsection,hideothersubsections]\end{frame}}
+\subtitle{}
+\institute[]{Centre de Recherche en Automatique de Nancy (CRAN, UMR 7039) \\ Université de Lorraine \\ 186 rue de Lorraine,
+54400 Cosnes et Romain, France}
+\titlegraphic{\includegraphics[height=1cm]{Fig/LOGO_CRAN.png}\qquad\qquad\includegraphics[height=1cm]{Fig/LOGO_UL.png}}
+% \titlegraphic{\includegraphics[height=1cm]{Fig/LOGO_CRAN.png}\quad\includegraphics[height=1cm]{Fig/LOGO_UL.png}\quad\includegraphics[height=1cm]{Fig/LOGO_IUTlongwy.jpg}\quad\includegraphics[height=1cm]{Fig/LOGO_NEU.png}}
+\usetheme{CambridgeUS}
+\usepackage{beamer_udl_theme}
+\setbeamertemplate{navigation symbols}{%
+	%insertslidenavigationsymbol%
+	%insertframenavigationsymbol%
+	%insertsubsectionnavigationsymbol%
+	%insertsectionnavigationsymbol%
+	%insertdocnavigationsymbol%
+	%insertbackfindforwardnavigationsymbol%
+}
+\usetheme{default}
+\author{Qi LI}
+% \author[First]{Qi L\sc{i}*, S. M\sc{eng}, F. M\sc{eng}, C. D\sc{elattre}, A. Z\sc{emouche}} 
+\date{}
+\title{Distributed High-Gain Observer Design for Interconnected Nonlinear System}
+
+\newtheorem{proposition}{Proposition}
+
+\begin{document}
+\maketitle
+\setcounter{page}{1}
+
+\include{Frames/frame}
+
+\end{document}

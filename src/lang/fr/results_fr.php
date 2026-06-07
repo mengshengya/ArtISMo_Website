@@ -310,4 +310,31 @@ return [
             <span class="btn-icon">📄</span> Télécharger le Rapport Synthétique (PDF)
         </a>
     </div>',
+
+    // Hichem Results
+    'results.hichem_summary' => 'Modèles d\'observateurs grand gain (HGO) multi-sorties et cadres de fusion de capteurs pour la localisation de véhicules. Validés expérimentalement et en simulations CARLA haute fidélité.',
+    'results.section_hichem' => 'Recherche Doctorale : Observateurs Grand Gain Multi-Sorties et Fusion Sensorielle (Dr. Hichem Bessafa)',
+    'results.hichem_intro_1' => 'Ces travaux de recherche présentent une nouvelle conception d\'observateur grand gain (HGO) multi-sorties généralisé pour l\'estimation d\'état robuste de systèmes non linéaires. Les observateurs grand gain traditionnels souffrent d\'une forte sensibilité au bruit de mesure. Pour surmonter cette limitation, la méthode proposée exploite plusieurs mesures indépendantes pour optimiser les gains de l\'observateur. Le choix des gains est formulé via des inégalités matricielles linéaires (LMI), garantissant mathématiquement une dynamique d\'erreur stable et offrant un compromis rigoureux entre la vitesse de convergence et la sensibilité au bruit.',
+    'results.hichem_intro_2' => 'Le cadre d\'estimation est appliqué et validé dans deux domaines majeurs : <br>1. **Validation expérimentale sur Quanser QCar** : Estimation de la position, des vitesses et de l\'orientation (lacet) du véhicule en fusionnant les mesures de l\'IMU et de l\'angle de braquage sur des trajectoires rectilignes et en virage à gauche, démontrant une convergence rapide et une résilience face à des pertes de données GPS simulées.<br>2. **Fusion de données d\'odométrie visuelle et HGO** : Intégration de l\'odométrie visuelle (VO) monoculaire avec un EKF et l\'HGO, fusionnant les données inertielles, satellites et visuelles pour une localisation continue du véhicule sous perte totale du signal satellite dans des simulations de rond-point CARLA.',
+    'results.hichem_img_traj' => 'Performances de suivi de trajectoire : Comparaison de la trajectoire réelle et estimée sous l\'HGO multi-sorties démontrant une haute précision et une convergence rapide.',
+    'results.hichem_img_carla' => 'Odométrie visuelle & fusion de capteurs : Aperçu fonctionnel de l\'architecture de fusion proposée combinant l\'odométrie visuelle (VO), l\'HGO et un filtre de Kalman étendu (EKF).',
+    'results.hichem_img_results' => 'Performances sous simulation CARLA : Comparaison de la trajectoire réelle et de l\'estimation sous perte totale du signal satellite (RTK-GNSS) dans un scénario de rond-point.',
+    'results.hichem_img_error' => 'Performances d\'erreur d\'estimation : Courbes d\'erreur pour la position, la vitesse et l\'orientation sous anomalies sensorielles dans la simulation de rond-point CARLA.',
+    'results.hichem_video_caption' => 'Vidéo de validation expérimentale : Démonstration en temps réel du bouclage de l\'odométrie visuelle et du suivi de localisation.',
+    'results.hichem_downloads_title' => 'Articles de Recherche & Profils',
+    'results.hichem_downloads_html' => '
+    <div class="download-container">
+        <a href="assets/img/work/doctorant/Hichem/Automatica_Bessafa_Paper-3.pdf" class="download-btn" target="_blank" rel="noopener noreferrer">
+            <span class="btn-icon">📄</span> Télécharger l\'article Automatica (PDF)
+        </a>
+        <a href="assets/img/work/doctorant/Hichem/Sensor_Fusion_of_Visual_Odometry_and_High_Gain_Observer_Paper-10.pdf" class="download-btn" target="_blank" rel="noopener noreferrer">
+            <span class="btn-icon">📄</span> Télécharger l\'article Sensor Fusion (PDF)
+        </a>
+        <a href="https://github.com/hichem-bessa/" class="download-btn secondary-btn" target="_blank" rel="noopener noreferrer" style="background-color: #24292e; color: #fff; border-color: #24292e;">
+            <span class="btn-icon">💻</span> Profil GitHub
+        </a>
+        <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=2XIpzbcAAAAJ&sortby=pubdate" class="download-btn secondary-btn" target="_blank" rel="noopener noreferrer" style="background-color: #4285f4; color: #fff; border-color: #4285f4;">
+            <span class="btn-icon">🎓</span> Google Scholar
+        </a>
+    </div>',
 ];

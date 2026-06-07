@@ -176,8 +176,8 @@ $teamMembers = [
         ],
     ],
     [
-        'name' => 'Rihab EL HOUDA HAJRI',
-        'description' => 'Research Engineer',
+        'name' => 'Rihab El Houda THABET',
+        'description' => 'Associate Professor',
         'photo' => 'assets/img/team/photo.png',
         'link' => '',
         'details' => [
@@ -281,6 +281,53 @@ $teamMembers = [
             'Role' => 'LISEC scientific leader; Expertise and advising on all WPs',
             'WPs' => 'All WPs',
             'Effort (PM)' => '4',
+        ],
+    ],
+    [
+        'name' => 'Shengya MENG',
+        'description' => 'PhD Student',
+        'photo' => 'assets/img/team/shengya.jpg',
+        'link' => '',
+        'details' => [
+            'Institution' => 'CRAN',
+            'Role' => 'Distributed observer design, platoon control',
+            'WPs' => 'WP3, WP5',
+            'Email' => 'shengya.meng@univ-lorraine.fr',
+        ],
+    ],
+    [
+        'name' => 'Quang Huy NGUYEN',
+        'description' => 'PhD Student',
+        'photo' => 'assets/img/team/photo.png',
+        'link' => '',
+        'details' => [
+            'Institution' => 'CRAN',
+            'Role' => 'Resilient state estimation, cyberattack detection',
+            'WPs' => 'WP3, WP5',
+            'Email' => 'quang-huy.nguyen@univ-lorraine.fr',
+        ],
+    ],
+    [
+        'name' => 'Lara JABER',
+        'description' => 'PhD Student',
+        'photo' => 'assets/img/team/photo.png',
+        'link' => '',
+        'details' => [
+            'Institution' => 'IBISC',
+            'Role' => 'Observer design with delay compensation, vehicle dynamics',
+            'WPs' => 'WP2, WP4',
+        ],
+    ],
+    [
+        'name' => 'Hichem BESSAFA',
+        'description' => 'PhD Student',
+        'photo' => 'assets/img/team/hichem.jpg',
+        'link' => '',
+        'details' => [
+            'Institution' => 'CRAN',
+            'Role' => 'Estimation algorithms, hybrid observers, machine learning',
+            'WPs' => 'WP3, WP5',
+            'Email' => 'hichem.bessafa@univ-lorraine.fr',
         ],
     ],
 ];

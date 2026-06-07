@@ -72,6 +72,25 @@ return [
         'link' => 'https://doi.org/10.1016/j.ifacol.2025.11.110',
     ],
 
+    [
+        'type' => 'journal',
+        'authors' => [
+            ['name' => 'Jacques, W.', 'highlight' => false],
+            ['name' => 'Bessafa, H.', 'highlight' => false],
+            ['name' => 'Zemouche, A.', 'highlight' => true],
+            ['name' => 'Rajamani, R.', 'highlight' => true],
+            ['name' => 'Belkhatir, Z.', 'highlight' => false],
+        ],
+        'year' => 2025,
+        'title' => 'Sensor fusion of visual odometry and high-gain observer for application to vehicle localization',
+        'journal' => '',
+        'volume' => '',
+        'number' => '',
+        'pages' => '',
+        'doi' => '',
+        'link' => 'https://hal.science/hal-05331330v1',
+    ],
+
     // 2024 Publications
     [
         'type' => 'conference',
@@ -451,23 +470,4 @@ return [
         'link' => 'https://hal.science/hal-03467978v1',
     ],
 
-    // 2020 Publications
-    [
-        'type' => 'journal',
-        'authors' => [
-            ['name' => 'Jacques, W.', 'highlight' => false],
-            ['name' => 'Bessafa, H.', 'highlight' => false],
-            ['name' => 'Zemouche, A.', 'highlight' => true],
-            ['name' => 'Rajamani, R.', 'highlight' => true],
-            ['name' => 'Belkhatir, Z.', 'highlight' => false],
-        ],
-        'year' => 2020,
-        'title' => 'Sensor fusion of visual odometry and high-gain observer for application to vehicle localization',
-        'journal' => '',
-        'volume' => '',
-        'number' => '',
-        'pages' => '',
-        'doi' => '',
-        'link' => 'https://hal.science/hal-05331330v1',
-    ],
 ];

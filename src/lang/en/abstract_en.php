@@ -110,4 +110,87 @@ return [
         . 'estimation and thus resilience and reliability of control systems in smart mobility. Combining analytical '
         . 'model-based techniques with learning-based algorithms and statistical predictors '
         . 'will enhance significantly the estimation quality.</p>',
+
+    'abstract.section_3' => 'Work Packages',
+    'abstract.section_4' => 'Consortium Partners',
+
+    'abstract.workpackages_intro' =>
+        'To achieve the project objectives, the research is organized into five tightly integrated Work Packages (WPs):',
+
+    'abstract.workpackages_list_html' =>
+        '<div class="wp-grid">'
+        . '<div class="wp-card">'
+        . '<div class="wp-card-header"><span class="wp-badge wp1">WP1</span></div>'
+        . '<h4 class="wp-card-title">Project Management and Communication</h4>'
+        . '<div class="wp-leader-tag"><span class="wp-leader-icon">👤</span> Leader: Ali Zemouche (CRAN)</div>'
+        . '<p class="wp-card-desc">This work package is dedicated to the overall management of the project, daily tracking of Gantt schedules, and organizing deliverables, risk assessment, kick-off meetings, and annual workshops. It also coordinates academic and company knowledge transfer.</p>'
+        . '</div>'
+        . '<div class="wp-card">'
+        . '<div class="wp-card-header"><span class="wp-badge wp2">WP2</span></div>'
+        . '<h4 class="wp-card-title">Vehicle Modeling, Environment Perception & Deep-Learning</h4>'
+        . '<div class="wp-leader-tag"><span class="wp-leader-icon">👤</span> Leader: Sofiane Ahmed Ali (IRSEEM)</div>'
+        . '<p class="wp-card-desc">This WP provides physical and kinematic vehicle models and integrates computer vision and deep learning techniques to estimate vehicle states and verify raw measurements from physical sensors (e.g., LiDAR, Camera).</p>'
+        . '</div>'
+        . '<div class="wp-card">'
+        . '<div class="wp-card-header"><span class="wp-badge wp3">WP3</span></div>'
+        . '<h4 class="wp-card-title">Intelligent Software Sensors for Vehicle Tracking</h4>'
+        . '<div class="wp-leader-tag"><span class="wp-leader-icon">👤</span> Leader: Ali Zemouche (CRAN)</div>'
+        . '<p class="wp-card-desc">This WP focuses on single-vehicle tracking by designing learning-based neuro-adaptive observers and estimator architectures. It addresses mathematical challenges with nonlinear activation functions, noise rejection, and online learning.</p>'
+        . '</div>'
+        . '<div class="wp-card">'
+        . '<div class="wp-card-header"><span class="wp-badge wp4">WP4</span></div>'
+        . '<h4 class="wp-card-title">R³ Software Sensors for Vehicle Tracking in a Platoon</h4>'
+        . '<div class="wp-leader-tag"><span class="wp-leader-icon">👤</span> Leader: Dalil Ichalal (IBISC)</div>'
+        . '<p class="wp-card-desc">This WP builds cooperative and distributed software sensors to guarantee resilient, robust, and reliable (R³) platooning. It targets fault diagnostics, cyber-attack detection, and mitigation of communication delay or packet dropouts.</p>'
+        . '</div>'
+        . '<div class="wp-card">'
+        . '<div class="wp-card-header"><span class="wp-badge wp5">WP5</span></div>'
+        . '<h4 class="wp-card-title">Validation, Tests, and Integration of Algorithms</h4>'
+        . '<div class="wp-leader-tag"><span class="wp-leader-icon">👤</span> Leader: Randolph Toom (FAAR)</div>'
+        . '<p class="wp-card-desc">This WP integrates the developed software sensors and control algorithms into Quanser QCars, AgileX LIMOs, and real-world industrial testing vehicles provided by FAAR Industry, validating the theoretical models in real-world scenarios.</p>'
+        . '</div>'
+        . '</div>',
+
+    'abstract.partners_intro' =>
+        'The ArtISMo project brings together a multidisciplinary consortium of leading French research institutions, '
+        . 'an industrial leader, and international academic collaboration:',
+
+    'abstract.partners_list_html' =>
+        '<div class="partners-grid">'
+        . '<div class="partner-card">'
+        . '<div class="partner-logo-wrapper gradient-cran"><img src="assets/img/logo_cran.png" alt="CRAN Logo" class="partner-logo-img">CRAN</div>'
+        . '<h4 class="partner-title">CRAN</h4>'
+        . '<div class="partner-subtitle">Centre de Recherche en Automatique de Nancy — Université de Lorraine & CNRS</div>'
+        . '<span class="partner-role-tag">Project Coordinator</span>'
+        . '<p class="partner-desc">CRAN specializes in control design, nonlinear observers, stability analysis, and network communication.</p>'
+        . '</div>'
+        . '<div class="partner-card">'
+        . '<div class="partner-logo-wrapper gradient-ibisc"><img src="assets/img/logo_evry.png" alt="IBISC Logo" class="partner-logo-img">IBISC</div>'
+        . '<h4 class="partner-title">IBISC</h4>'
+        . '<div class="partner-subtitle">Informatique, Biologie Synthétique et Systèmes Complexes — Université d\'Évry & Université Paris-Saclay</div>'
+        . '<span class="partner-role-tag">WP4 Leader</span>'
+        . '<p class="partner-desc">IBISC provides deep expertise in vehicle dynamics, cyber-physical systems, observers, and fault-tolerant control strategies.</p>'
+        . '</div>'
+        . '<div class="partner-card">'
+        . '<div class="partner-logo-wrapper gradient-irseem"><img src="assets/img/logo_esigelec.jpg" alt="IRSEEM Logo" class="partner-logo-img">IRSEEM</div>'
+        . '<h4 class="partner-title">IRSEEM</h4>'
+        . '<div class="partner-subtitle">Institut de Recherche en Systèmes Électroniques Embarqués — ESIGELEC</div>'
+        . '<span class="partner-role-tag">WP2 Leader</span>'
+        . '<p class="partner-desc">IRSEEM brings expertise in mechatronics systems, deep-learning, computer vision, perception, and V2X multi-agent systems.</p>'
+        . '</div>'
+        . '<div class="partner-card">'
+        . '<div class="partner-logo-wrapper gradient-faar">FAAR</div>'
+        . '<h4 class="partner-title">FAAR Industry</h4>'
+        . '<div class="partner-subtitle">Industrial Partner</div>'
+        . '<span class="partner-role-tag">WP5 Leader & Validation</span>'
+        . '<p class="partner-desc">FAAR provides engineering support, instrumentation resources, and automotive facilities to deploy and validate algorithms on experimental and industrial vehicles.</p>'
+        . '</div>'
+        . '<div class="partner-card">'
+        . '<div class="partner-logo-wrapper gradient-lisec"><img src="assets/img/logo_umn.svg" alt="LISEC Logo" class="partner-logo-img">LISEC</div>'
+        . '<h4 class="partner-title">LISEC</h4>'
+        . '<div class="partner-subtitle">Laboratory of Intelligent Systems and Experimental Control — University of Minnesota</div>'
+        . '<span class="partner-role-tag">Academic Advisor</span>'
+        . '<p class="partner-desc">Collaborates on all work packages, providing advanced scientific advising on intelligent observers, vehicle platooning, and stability control systems.</p>'
+        . '</div>'
+        . '</div>',
 ];

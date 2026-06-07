@@ -1,0 +1,2035 @@
+% !TEX encoding = IsoLatin9
+\documentclass[a4paper,11pt]{article}
+%\usepackage{a4wide}
+%\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath,amssymb,amsfonts,amssymb}
+\usepackage{ae,lmodern}
+%\usepackage[applemac]{inputenc}
+%\usepackage[francais]{babel}
+
+%\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+%\usepackage[french]{babel}
+%\usepackage[latin1]{inputenc}
+%\usepackage[T1]{fontenc}
+%\usepackage{isolatin1}
+\usepackage{times}
+%\usepackage{charter}
+\usepackage{graphics}
+\usepackage[pdftex]{graphicx}
+\usepackage{subfigure}
+\usepackage{tabularx}
+%\usepackage{latin1}
+%\usepackage{color}
+\usepackage{url}
+%\urlstyle{sf}
+\usepackage{multirow}
+\usepackage{marvosym}
+\usepackage[colorlinks=blue,urlcolor=blue,pdfstartview=FitH]{hyperref}
+
+\usepackage{cleveref}
+
+\setlength{\headheight}{2cm}
+\usepackage[lmargin=2cm,rmargin=2cm,tmargin=3cm,bmargin=1.4cm,includefoot]{geometry}
+
+
+%\renewcommand\familydefault{\sfdefault}
+%\usepackage{scrextend}
+\usepackage[font={small,it},labelfont=bf]{caption}
+
+ \usepackage{enumitem}
+
+\usepackage[table]{xcolor}
+
+\usepackage{longtable}
+\usepackage[most]{tcolorbox}
+
+%\usepackage{lmodern}
+\usepackage{multicol}
+%\usepackage[table]{xcolor}
+\usepackage{eurosym}
+%\usepackage{tabularx}
+%
+ \usepackage{fancyhdr}
+ \usepackage{lastpage}
+ 
+ \usepackage{supertabular} % tableaux qui tiennent sur plusieurs pages
+ 
+ 
+ \usepackage{booktabs}  % ----- \toprule
+ 
+ \usepackage{pdflscape} %----- page en portrait 
+
+\renewcommand{\footnoterule}{}
+
+\usepackage{comment}
+
+\usepackage{smartdiagram}
+
+\usepackage{setspace}
+
+%\usepackage[round]{natbib}
+%\renewcommand\familydefault{\sfdefault}
+
+\usepackage{scrextend}
+\deffootnote[.2in]{.2in}{.195in}{\makebox[.5in][r]{\thefootnotemark.\hspace{.1in}}}
+
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{.5\baselineskip}{0.5\baselineskip}
+\titlespacing*{\subsubsection}{0pt}{0.5\baselineskip}{0.5\baselineskip}
+
+
+\usetikzlibrary{shapes.geometric, chains, calc}
+
+\tikzset{
+    startstop/.style={ellipse,   draw=orange, thick, fill=orange!20, text width=5em, minimum height=4em, text centered, dashed},
+    block/.style={rectangle, draw=blue,   thick, fill=blue!20,   text width=8em, minimum height=4em, shape aspect=2, text centered, rounded corners},
+    links/.style={line width=1.3pt}
+}
+%\IEEEoverridecommandlockouts          %------------- Pour utiliser la commande \thanks -----------
+\usepackage{pstricks-add}
+	\definecolor{skymagenta}{rgb}{0.81, 0.44, 0.69}
+	\definecolor{uscgold}{rgb}{1.0, 0.8, 0.0}
+		\definecolor{tearose(rose)}{rgb}{0.96, 0.76, 0.76}
+			\definecolor{wildstrawberry}{rgb}{1.0, 0.26, 0.64}
+	\definecolor{grey}{rgb}{0.5, 0.5, 0.5}
+		\definecolor{brown(web)}{rgb}{0.65, 0.16, 0.16}
+
+%\textheight 25.5cm
+%\textwidth 16.5cm %16.3
+%\voffset -2cm
+%\hoffset -2cm %-1.5
+%%\setlength{\parindent}{0cm}
+
+%\textheight 24cm
+%\textwidth 16.5cm %16.3
+%\voffset -2cm
+%\hoffset -2cm %-1.5
+%\setlength{\parindent}{0cm}
+
+
+%\renewcommand{\thechapter}{\Roman{chapter}}
+%\renewcommand{\thesection}{\Roman{section}}
+
+
+
+
+
+
+
+
+
+%\pagestyle{fancy}
+%%\fancyhead[C]{\includegraphics[height=1.2cm]{ecusson}\\\vspace{.4cm}}
+%%\fancyhead[L]{~\\~\\\sf  Groupe scolaire Cauchy-Schwarz\\\rule{3cm}{.2pt}}
+%\fancyhead[L]{\begin{tabular}{c}\sf  Groupe scolaire Cauchy-Schwarz\\\rule{3cm}{.2pt}\end{tabular}}
+%\fancyhead[R]{\begin{tabular}{c}\sf  Tempérance $\ast$ Rigueur $\ast$ Exaltation\\\rule{3cm}{.2pt}\end{tabular}}
+%%\fancyhead[R]{~\\~\\\sf Tempérance etc.\\\rule{3cm}{.2pt}}
+%\renewcommand{\headrulewidth}{0pt}
+
+
+
+
+%\title{Intelligent Estimation Algorithms for Smart Mobility}
+
+
+%\renewcommand{\arraystretch}{1.25}
+
+
+\definecolor{LightCyan}{rgb}{0.88,0.95,0.99}
+
+
+
+\definecolor{LightGreen}{rgb}{0.4,0.8,0.8}
+\pagestyle{fancy}{}
+\fancyhf{}
+%\vspace*{-2.5cm}
+
+\fancyhead[C]{}
+\fancyhead[R]{}
+\fancyhead[L]{ \includegraphics[width=\textwidth]{Entete.pdf}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.0pt}
+\lfoot{}%Task 2.3
+
+\cfoot{}
+\rfoot{\thepage}
+
+
+\makeatletter
+\let\ps@plain=\ps@fancy
+\makeatother
+
+
+
+
+
+\vspace*{0.1cm}
+
+
+
+%--------------------------------------------------------------------------------------------------------------------------------------
+%                   Pour ajouter des subusubsubsections
+%--------------------------------------------------------------------------------------------------------------------------------------
+\setcounter{secnumdepth}{4}
+%\setcounter{tocdepth}{3}
+\makeatletter
+\newcounter {subsubsubsection}[subsubsection]
+\renewcommand\thesubsubsubsection{\thesubsubsection .\@alph\c@subsubsubsection}
+\newcommand\subsubsubsection{\@startsection{subsubsubsection}{4}{\z@}%
+                                     {-3.25ex\@plus -1ex \@minus -.2ex}%
+                                     {1.5ex \@plus .2ex}%
+                                     {\normalfont\normalsize\bfseries}}
+\newcommand*\l@subsubsubsection{\@dottedtocline{3}{10.0em}{4.1em}}
+\newcommand*{\subsubsubsectionmark}[1]{}
+\makeatother
+%--------------------------------------------------------------------------------------------------------------------------------------
+%                   Pour ajouter des subusubsubsections
+%--------------------------------------------------------------------------------------------------------------------------------------
+\usepackage{sectsty}
+\usepackage{pifont}
+
+\definecolor{navyblue}{rgb}{0.0, 0.0, 0.5}
+\definecolor{navygreen}{rgb}{0.0, 0.5, 0.0}
+
+%\newcommand{\red}{\color{red}}
+%\newcommand{\blue}{\color{blue}}
+\newcommand{\navyblue}{\color{navyblue}}
+\newcommand{\navygreen}{\color{navygreen}}
+
+
+\sectionfont{\blue}
+\subsectionfont{\navygreen}
+\subsubsectionfont{\navyblue}
+
+
+
+\begin{document}
+
+
+
+
+\thispagestyle{plain}
+
+
+
+
+
+
+
+
+
+
+\renewcommand\refname{}
+%\renewcommand{\familydefault}{bch}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Page de titre
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\definecolor{LightCyan}{rgb}{0.88,1,1}
+%\definecolor{LightCyan}{rgb}{0.80,0.93,0.99}
+%\definecolor{LightCyan}{rgb}{0.88,0.95,0.99}
+%
+%
+%
+%\definecolor{LightGreen}{rgb}{0.4,0.8,0.8}
+%
+%\vspace*{-2.5cm}
+%
+%\renewcommand{\arraystretch}{1.25}
+%  \begin{center}
+%   %\hspace*{0.4cm}
+%    \begin{table}[h!]
+%    \rowcolors[\hline]{1}{blue!10}{blue!10}
+%    \setlength\arrayrulewidth{2pt}
+%    \arrayrulecolor{white}
+% \begin{tabular}{|c|c|c|c|}%
+%%\rowcolor{green!5}
+%\hline
+%\rowcolor{LightCyan}
+% {\color{LightGreen} \textbf{AAPG2020}  \hspace{0.7cm} $~$}&  \multicolumn{2}{|> {\columncolor{LightCyan}}c|}{\bf ArtISMo \hspace{7.5cm} $~$}& PRCE \hspace{1.4cm} $~$\\
+%\hline
+%\rowcolor{LightCyan}
+%Coordinated by: & Ali Z{\sc EMOUCHE} \hspace{3cm} $~$ & 48 months & ??? 000 \euro \\
+%\hline
+%\rowcolor{LightCyan}
+%\multicolumn{4}{|> {\columncolor{blue!10}}l|}{ Scientific evaluation committee ???} \\
+%\hline
+%\end{tabular}
+%\end{table}
+%  \end{center}
+
+
+
+\vspace*{-1.8cm}
+%\vspace*{-0.5cm}
+\begin{center}
+ \LARGE
+\textcolor{blue}{\bf Intelligent Estimation Algorithms for Smart Mobility}
+\end{center}
+\hrule
+%\normalsize
+%\end{titlepage}
+\normalsize
+%\vspace{0.2cm}
+% 
+%\section{Quality and Scientific Ambition of the Proposal}
+%\section{Scientific Description of the Proposal}
+%\section{Context, Positioning and Objective of the Proposal}
+
+
+
+
+
+%%----------
+%\subsection*{Summary table of persons involved in the project:}
+%%-----
+
+%%%----------
+
+
+
+
+
+
+
+
+
+
+
+
+
+%\newpage
+
+
+
+
+%\newpage
+
+
+%\vspace*{2cm}
+
+
+%\section*{Summary table of persons involved in the project:}
+
+%\vspace{-0.6cm}
+
+
+
+
+
+
+
+%\begin{comment}
+
+\begin{table}[h!]
+%\begin{longtable}
+%{
+%\small
+%\footnotesize 
+ \scriptsize
+%\begin{tabular}{|l|l|p{1.35cm}|p{1.65cm}|l|p{0.4cm}|}
+\begin{center}
+\begin{tabular}{|l|l|p{1.8cm}|p{2cm}|l|p{0.6cm}|}
+\hline
+\rowcolor{yellow!50} ~~\textbf{Partner}  & ~~~~~~~~~~~\textbf{Name}& \textbf{First name} & \textbf{Current position}  &  ~\textbf{Role \& responsibilities in the project} &~\textbf{p.m}\\ 
+\hline \hline % $\mathbf{(*)}$
+\textbf{CRAN} &  ZEMOUCHE                                                 &  Ali                 &  Associate Prof.       &  \begin{tabular}[c]{@{}l@{}}{\bf Coordinator of the project}\\ \textcolor{blue}{{}Manager of WP1 and WP3} \\ Major contribution/expertise to all WPs\end{tabular}& \multicolumn{1}{l|}{ $\mathbf{24}$}                                                                     \\ \hline
+\textbf{CRAN} &  ALMA  & Marouane   & Associate Prof.            &\begin{tabular}[c]{@{}l@{}}Adaptive observer, instrumentation\\ WP3, WP4, WP5\end{tabular}& \multicolumn{1}{l|}{$\mathbf{ 12}$}   \\ \hline
+ \textbf{CRAN}  &  DELATTRE &  C\'edric              &  Associate Prof.              &  \begin{tabular}[c]{@{}l@{}} Stability analysis, network communication\\ WP3, WP5\end{tabular}                                      & \multicolumn{1}{l|}{ $\mathbf{12}$}                             \\ \hline
+ \textbf{CRAN}         &  RAFARALAHY                                               &  Hugues &  Associate Prof. & \begin{tabular}[c]{@{}l@{}}Modeling $-$ Estimation\\ WP2, WP3, WP5\end{tabular} & \multicolumn{1}{l|}{ $\mathbf{14.4}$}     \\ \hline
+ \textbf{CRAN } &  \begin{tabular}[c]{@{}l@{}}BOUTAT-BADDAS\end{tabular} &  Latifa             &  Associate Prof.  &  \begin{tabular}[c]{@{}l@{}}Control design and Estimation\\ WP3, WP4\end{tabular}& \multicolumn{1}{l|}{ $\mathbf{12}$}    \\ \hline
+ \textbf{CRAN}  &  ZASADZINSKI &  Michel &  Professor &  \begin{tabular}[c]{@{}l@{}}Stochastic systems, Prediction/Estimation\\ WP3, WP4, WP5\end{tabular} & \multicolumn{1}{l|}{ $\mathbf{14.4}$}  \\ 
+ \hline
+ \hline
+ %\hline
+\textbf{IBISC} &  ICHALAL  &  Dalil  &  Associate Prof. &  \begin{tabular}[c]{@{}l@{}}{\bf IBISC's scientific leader}\\ \textcolor{blue}{Manager of WP4} \\ Modeling $-$ Estimation: WP2, WP3, WP5\end{tabular}   & \multicolumn{1}{l|}{$\mathbf{15}$}  \\ \hline
+ \textbf{IBISC}&  MAMMAR  & Sa\"{i}d  &  Professor &  \begin{tabular}[c]{@{}l@{}}Vehicle dynamics and Control\\ WP2, WP4, WP5\end{tabular} & \multicolumn{1}{l|}{$\mathbf{15}$} \\ \hline
+\textbf{IBISC} &  NOUVELIERE   &  Lydie &  Associate Prof.  &
+\begin{tabular}[c]{@{}l@{}}Vehicle dynamics and Estimation\\ WP2, WP3, WP4\end{tabular} & \multicolumn{1}{l|}{ $\mathbf{15}$}      \\ \hline
+ \textbf{IBISC} &  LAHIANI&  Khaled  &  Engineer/PhD  &  \begin{tabular}[c]{@{}l@{}}Cyber-physical system, Observers \\ WP4, WP5\end{tabular}    & \multicolumn{1}{l|}{$\mathbf{15}$}\\ 
+ \hline
+ \hline
+  \begin{tabular}[c]{@{}l@{}}{\bf IRSEEM} \end{tabular} & AHMED ALI   &  Sofiane & Assistant Prof.  & \begin{tabular}[c]{@{}l@{}}\textbf{IRSEEM's scientific leader}\\ \textcolor{blue}{Manager of WP2} \\ Modeling $-$ Estimation: WP3, WP5 \end{tabular} & \multicolumn{1}{l|}{ $\mathbf{12}$}  \\ \hline
+ \begin{tabular}[c]{@{}l@{}}\textbf{IRSEEM} \end{tabular} &  KHEMMAR  &  Redouane            &  Assistant Prof.            &  \begin{tabular}[c]{@{}l@{}}Perception $-$ Deep-learning, computer vision\\    WP1, WP2, WP5\end{tabular}              & \multicolumn{1}{l|}{ $\mathbf{12}$}  \\ \hline
+\begin{tabular}[c]{@{}l@{}} \textbf{IRSEEM} \end{tabular} &  CABANI                                                   &  Adnane              &  Assistant Prof.             &  \begin{tabular}[c]{@{}l@{}}Multi agent system, V2X communication\\    WP2, WP5\end{tabular} & \multicolumn{1}{l|}{ $\mathbf{9.6}$} \\ \hline
+\begin{tabular}[c]{@{}l@{}} \textbf{IRSEEM} \end{tabular} &  DUPUIS                                                  &  Yohan&  \begin{tabular}[c]{@{}l@{}}R \& D\\  Responsible\end{tabular} &  \begin{tabular}[c]{@{}l@{}}Perception, smart mobility\\ WP2, WP5\end{tabular}& \multicolumn{1}{|l|}{$\mathbf{9.6}$} \\ \hline
+ \begin{tabular}[c]{@{}l@{}}\textbf{IRSEEM} \end{tabular} &  \begin{tabular}[c]{@{}l@{}}EL HOUDA HAJRI\end{tabular} &  Rihab  &  \begin{tabular}[c]{@{}l@{}}Research Engineer\end{tabular}&  \begin{tabular}[c]{@{}l@{}}Mechatronics system $-$ Estimation\\ WP2, WP4, WP5\end{tabular}                                 & \multicolumn{1}{l|}{$\mathbf{7.6}$}   \\ \hline
+  \begin{tabular}[c]{@{}l@{}}{\bf IRSEEM} \end{tabular}&  QUANGTRUC  &  Dam                 &  \begin{tabular}[c]{@{}l@{}}PhD student\end{tabular}             &  \begin{tabular}[c]{@{}l@{}}Nonlinear observer, autonomous vehicle\\ WP3, WP5\end{tabular}  & \multicolumn{1}{l|}{ $\mathbf{6}$} \\ \hline
+\begin{tabular}[c]{@{}l@{}} \textbf{IRSEEM} \end{tabular}&  LANGLOIS &  Nicolas &  Professor &  \begin{tabular}[c]{@{}l@{}}Diesel Engine Control\\ WP2, WP5\end{tabular}    & \multicolumn{1}{l|}{ $\mathbf{3}$} \\ 
+\hline
+\hline
+\textbf{FAAR}&  TOOM  &  Randolph           &  \begin{tabular}[c]{@{}l@{}}Director of Innov.\end{tabular}  &  \begin{tabular}[c]{@{}l@{}}\textbf{FAAR's scientific leader}\\ \textcolor{blue}{Manager of WP5} \\ Automotive applications: WP1, WP5 \end{tabular}  & \multicolumn{1}{l|}{ \textbf{4}}   \\ \hline
+\textbf{FAAR} &  SALVATORE &  Enzo  &  Engineer &  \begin{tabular}[c]{@{}l@{}}Automotive applications\\ WP5\end{tabular}  & \multicolumn{1}{l|}{ $\mathbf{2.5}$}                   \\ \hline
+\textbf{FAAR}&  NANG-TCHEE   & Eric  &  Engineer  &  \begin{tabular}[c]{@{}l@{}}Automotive applications\\ WP1, WP5\end{tabular} & \multicolumn{1}{l|}{ $\mathbf{2.5}$}     \\ \hline
+\textbf{FAAR} &  DUTHOIT  &  Melchior  &  Engineer  &  \begin{tabular}[c]{@{}l@{}}Automotive applications\\ WP1, WP5\end{tabular}  & \multicolumn{1}{l|}{ \textbf{2.5}}   \\ \hline
+ \textbf{FAAR}  &  MARCHAND  &  Thomas &  Engineer  &  \begin{tabular}[c]{@{}l@{}}Automotive applications\\ WP1, WP5\end{tabular}   & \multicolumn{1}{l|}{ \textbf{2.5}} \\ 
+ \hline
+ \hline
+ \textbf{LISEC} &  RAJAMANI &Rajesh   &  Professor   &  \begin{tabular}[c]{@{}l@{}}\textbf{LISEC's scientific leader}\\ Expertise $-$ advising on all WPs\end{tabular} & \multicolumn{1}{l|}{ $\mathbf{4}$} \\ 
+\hline
+\hline
+%\rowcolor[gray]{ 0.8} \multirow{5}{*}LITIS & PhD1 & LITIS+ImVIA
+%& PhD student & Work on all the tasks & 36\\ 
+\hline
+\hline
+ %
+ \rowcolor{orange!50}	\bf Partner & %\multicolumn{2}{c|}
+{\bf Requested} & \bf Advisors & \bf Position & \bf Role \& responsibilities in the project 
+& \bf p.m \\
+\hline
+\hline	
+\rowcolor[gray]{0.8} CRAN & PhD1 & {CRAN/IRSEEM}
+& PhD student & Work on the tasks of WP3 and partially on WP2 and WP5 & 36\\ 
+\hline	
+\rowcolor[gray]{ 0.8} IBISC & PhD2 & {IBISC/CRAN}
+& PhD student & Work on the tasks of WP4 and partially on WP2 and WP5 & 36\\ 
+\hline
+\rowcolor[gray]{ 0.6} CRAN & PostDoc1 & {CRAN}
+& PostDoc &  \begin{tabular}[c]{@{}l@{}}Work on the tasks of WP3 and WP5 \\ \it (Collaboration with all partners)\end{tabular} & 18\\ 
+\hline	
+\rowcolor[gray]{ 0.6} IRSEEM & PostDoc2 & {IRSEEM}
+& PostDoc & \begin{tabular}[c]{@{}l@{}}Work on the tasks of WP4 and WP5, and partially on WP2 \\  \it (Collaboration with all partners)\end{tabular}  & 18\\ 
+\hline	
+\rowcolor[gray]{ 0.95} CRAN & 4 Internships & {CRAN}
+& MSc students & Work on WP3, WP5; connection to PhD1 and PostDoc1 & 24\\ 
+\hline	
+\rowcolor[gray]{ 0.95} IRSEEM & 4 Internships & {IRSEEM}
+& MSc students & Work on WP2, WP5; connection to PhD1 and PostDoc2 & 24\\ 
+\hline	
+\rowcolor[gray]{ 0.95} IBISC & 4 Internships & {IBISC}
+& MSc students & Work on WP4, WP5; connection to PhD2 and PostDoc2 & 24\\ 
+\hline
+ %
+\end{tabular}
+%}
+\caption{{\bf Summary table of persons involved in the project}.
+ {\footnotesize ({\bf p.m}): {\it Involvement (person.month)  throughout the  project's total duration.}}} % , which is calculated in research time
+\label{tab:my-table}
+\end{center}
+\end{table}
+%\end{longtable}
+%\end{comment}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%\newpage
+
+
+%\begin{comment}
+
+%\newpage
+\vspace{-0.8cm}
+
+
+\section*{Changes Compared to the Pre-proposal}
+%\vspace{-0.4cm}
+{
+%\small
+%\begin{enumerate}
+%\item \underline{\it Requested grant amount:} the grant amount is very slightly increased from 580 000,00\euro~to \underline{\bf 580 092,10\euro}.
+\vspace{-0.2cm}
+%\item \underline{\it Additional members:} 
+Three members have been added in this full proposal to strengthen the consortium: {Latifa {\sc BOUTAT-BADDAS} from \textcolor{blue}{\bf CRAN}, Associate Professor}; 
+%
+{Khaled {\sc LAHIANI} from \textcolor{blue}{\bf IBISC}, Engineer/PhD};
+%
+{Dam {\sc Quang Truc} from \textcolor{blue}{\bf IRSEEM}, PhD student}. Our industrial partner, \textcolor{blue}{\bf FAAR}, puts at the disposal of the project 4 engineers~(E. Salvator, E. Nang-Tchee, M. Duthoit, T. Marchand) to work on the instrumentation and validation on real vehicles and with FAAR facilities.
+%\end{enumerate}
+}
+
+
+
+%\newpage
+{
+\small
+\bigskip
+\hrule
+\setcounter{tocdepth}{2}
+\tableofcontents
+\bigskip
+\hrule
+}
+
+
+%\vspace{-0.5cm}
+\section{Proposal's Context, Positioning and Objectives}
+%
+%\vspace{-0.2cm}
+%
+\vspace{-0.3cm}
+%\subsection{Objectives and research hypotheses}
+\subsection{Objectives and research hypotheses}
+%-----
+\vspace{-0.3cm}
+\subsubsection{Context}\label{s1.1}
+
+%Autonomous and connected vehicles require the development of several technologies, such as computer vision, artificial intelligence, advanced perception and estimation, real-time information databases, processing systems, and advanced control. This proposal is devoted to the estimation problems for vehicle stability. This area plays an important role on the safety of autonomous vehicles. Indeed, vehicle instability, such as rollovers and yaw instability, accounts significant percentage of highway traffic fatalities~\cite{RajamaniBOOK}. Hence, there is significant research being conducted on the development of stability control systems, namely active rollover prevention systems, yaw stability control systems, vehicle lateral control, platooning and longitudinal control. For instance, an active rollover prevention system typically utilizes differential braking to reduce the yaw rate of the vehicle and to slow down the vehicle speed. Both of these factors contribute to reducing the propensity of the vehicle to roll over. An important challenge in the design of an active rollover prevention system is the calculation of the rollover index, which indicates the likelihood of the vehicle to roll over and is used to trigger differential braking to prevent rollover. Many other control problems are encountered in autonomous vehicles. All these control systems need real-time estimation of many variables. Measurement of some variables is significant and very expensive. The estimation problem for platooning and longitudinal control involves decentralized systems with minimal or zero connections between the systems.  The estimation problem is particularly difficult in this case.
+
+The development of controllers with high performance and reliability for autonomous and connected vehicles will require real-time measurements or estimates of many variables on each vehicle~\cite{RajamaniBOOK}. Examples of variables that are needed for feedback include: longitudinal distances, velocities and accelerations of other nearby vehicles; lateral position of the vehicle in its own lane; vehicle yaw angle; slip angle; yaw rate; steering angle; lateral acceleration; and roll angle. There are also environmental variables which need to be measured such as tire-road friction coefficient, snow cover on road, and the presence of unexpected obstacles.
+%
+Measurement of all of the above variables requires significant expense. Indeed, some of the sensors above, such as slip angle and roll angle, can be extremely expensive to measure, requiring sensors that cost thousands of dollars. For example the Datron optical sensor for measurement of slip angle has a price over 10k\euro. In addition, several variables cannot be measured due to unavailability of sensors (at any cost). Examples include positions, and accelerations of cars which are further upstream~({\it e.g.} lead car of a platoon). Only the position of the immediately preceding car ahead can currently be measured. 
+%
+Furthermore, autonomous and connected vehicle requires highly reliable sensors and actuators. Failure of any one sensor or actuator, due to faults, cyber-attacks or denial of service, can cause a disastrous accident. Hence reliable fault diagnostic and fault handling systems are also needed. Such systems cannot be based on hardware redundancy which requires many extra copies of the same sensors. Instead, they need to rely on estimation algorithms and analytical redundancy. For all the above reasons, the development of intelligent estimation algorithms is highly important for autonomous vehicles. %Hence,  {\bf the overall objectives of the proposal consist in developing efficient estimation algorithms to reconstruct the unmeasurable state variables, which are required for the controllers and diagnostic modules.}
+
+
+%-----
+\subsubsection{Objectives}\label{s1.2}
+
+Throughout this project we propose original ideas on estimation, which is a necessary and crucial step for reliability, resilience, and safety of connected and autonomous vehicles~(CAVs). The overall objectives of the proposal consist in developing efficient estimation algorithms to reconstruct the unmeasurable state variables, which are required to design controllers and fault diagnostic schemes for CAVs. More specifically, the considered issues are safe and stable trajectory, estimation of faults in sensors and actuators, and cyber-attack detection. Below, we will describe the proposed ideas in detail.
+%\vspace{-0.3cm}
+\subsubsubsection{Learning-based neuro-adaptive observers for vehicle tracking}
+%\vspace*{-0.3cm}
+
+The idea we will explore in this project is the development and use of learning-based nonlinear observers. Several components on a vehicle~({\it e.g.} tires) have highly complex models whose parameters are difficult to obtain and also vary significantly with time.
+%The idea consists in using a data-driven neuro-adaptive observer if we have two sources of measurement data. However, if for any reason we have access to only one source of data, we will estimate the states based on a mathematical model by constructing a regular observer. The idea is depicted in Figure~\ref{fig.neuro}.
+%%
+% \begin{figure*}[htpb]
+%    \centering
+%    \includegraphics[height = 3cm, width = 8cm]{fig_neuro2} %proposed
+%   % \vspace{-0.7cm}
+%    \caption{The proposed neuro-adaptive estimation strategy.}\label{fig.neuro}
+%\end{figure*}
+%%
+%Such a strategy may be used in several vehicle applications such as, for instance, rollover prevention problem, adaptive cruise control, and vehicle tracking problem. In the next subsection, we explain how such a strategy can be applied to the vehicle tracking problem in general for autonomous and connected vehicles.
+%
+%\vspace{-0.3cm}
+%\subsubsubsection{Vehicle tracking by using data-driven nonlinear observers}
+%\vspace*{-0.3cm}
+%
+This proposal will therefore use a modeling approach consisting of a {\bf combination of physically meaningful differential equations and adaptive online-learning-based neural networks to represent the vehicle dynamics}. In particular, well understood phenomena such as force balances, mechanical motion per Newton's laws, aerodynamic drag, rolling resistance, road grade, combined acceleration terms for lateral and roll accelerations and road bank angle influence will be modeled using analytical differential equations. Tire models for both lateral and longitudinal forces, the friction circle, engine maps, and suspension stiffness and damping characteristics will be modeled using neural networks whose weights can be initially obtained using training via back-propagation. In addition to initial training, model parameters for the neural networks and a subset of parameters for the physically meaningful differential equations will also be updated automatically online during regular vehicle use. The strategy is depicted in Figure~\ref{fig.neuro-tracking}, where $y_1$ represents measurements provided from radar reading and on-board sensors and $y_2$ are informations arising from wireless communication.
+
+
+%
+ \begin{figure}[htpb]
+    \centering
+    \subfigure[Vehicle tracking /neuro-adaptive observer.]  {\includegraphics[width=0.5\textwidth]{neuro_obs_v2}\label{fig.neuro-tracking}}
+    \hspace{0.5cm}
+     \subfigure[Towards Artificial Intelligence based software sensors.]{\includegraphics[width=0.45\textwidth]{smart-neuro}\label{smart}}
+   % \vspace{-0.3cm}
+    \caption{Intelligent estimation strategies for vehicle tracking.}\label{neuro1}
+\end{figure}
+%%
+
+
+%
+%% Figure~\ref{fig.neuro}
+% \begin{figure*}[htpb]
+%    \centering
+%    \includegraphics[height = 4cm, width = 10cm]{neuro-small} %proposed
+%    \vspace{-0.3cm}
+%    \caption{Neuro-adaptive estimation strategy.}\label{fig.neuro}
+%\end{figure*}
+%% \subfigure[first caption.]{\includegraphics[width=0.2\textwidth]{fig1a}}\label{fig:1a}
+%
+{\bf The overall objective of this part is to develop the architecture for the combined modeling approach, to develop rigorous estimation algorithms for both parameter and state estimation}, to enable dynamic changes in observer structure based on real-time vehicle maneuver and measurement availability and to validate the complete model and estimation system using data from CARSIM and from real vehicle experimental measurements provided by partners of the project. 
+The above learning-based strategy requires significant new developments in estimation algorithms. It leads to several mathematical challenges that we describe in the developed methodology in Section~\ref{methodology}.
+
+
+
+
+
+
+
+%\vspace{-0.3cm}
+%
+\subsubsubsection{Towards intelligent estimation algorithms}
+%\vspace{-0.2cm}
+Another objective of this proposal consists in proposing a {\bf new and full system of software-enabled estimation algorithms to be included in many control strategies and diagnosis schemes to improve stability, reliability, and safety of connected vehicles}. To this end, as depicted in Figure~\ref{smart}, the aim is to combine the nice properties of statistical predictors~\cite{Ghani-doi:10.1080/02664763.2019.1633286}, model-based methods~\cite{Jeon8610212}, neuro-adaptive observers~\cite{ChakrabartyCDC2019,Kim1997}, and learning-based techniques like the extremum seeking algorithm~\cite{benosmanACC19} to enhance the estimation and increase resilience, performances, and robustness of any control strategy related to connected vehicles. 
+
+%The challenge is to develop a smart connection protocol between all these estimation algorithms allowing the best estimation. The combination of all these estimation techniques is worthily interesting for models with unknown inputs and/or unknown parameters. Among the problematics of connected vehicles~(in addition to issues mentioned in the previous sections) where such intelligent estimation algorithms are crucial, we can cite the problem of cyber-attack or denial of service detection.
+%The challenge is to develop a smart connection protocol between all these estimation algorithms allowing the best estimation. The combination of all these estimation techniques is worthily interesting for systems in presence of unknown inputs and/or unknown parameters.
+% Ghani-doi:10.1080/03610926.2018.1472789
+
+\begin{comment}
+%
+ \begin{figure*}[htpb]
+    \centering
+   % \includegraphics[height = 5cm, width = 15cm]{smart-neuro} %proposed
+     \includegraphics[height = 2.5cm, width = 9cm]{smart-neuro} %proposed
+   % \vspace{-0.7cm}
+    \caption{Towards Artificial Intelligence based software sensors by using multi-stages estimation.}\label{smart}
+\end{figure*}
+%
+\end{comment}
+
+
+
+%\vspace{2cm}
+%\vspace{-0.2cm}
+The challenge is to develop a smart connection protocol between the set of observers/estimators/predictors allowing the most accurate and reliable estimation. The combination of all these estimation techniques is worthily interesting for models with unknown inputs and/or unknown parameters. Among the problematics of autonomous and connected vehicles~(in addition to the tracking problem mentioned above) where such intelligent estimation algorithms are crucial, we can cite the problem of cyber physical attacks or denial of service detection, disturbance and fault rejection, and data loss. Hence, estimating all the variables related to those factors may considerably increase resilience and reliability of interconnected vehicles. Due to the high sensitivity of autonomous vehicles to the above undesired factors, the development of smart estimation schemes is crucial and essential.
+
+
+
+
+
+
+
+
+
+
+
+
+
+\vspace{-0.3cm}
+%
+%\subsubsubsection{Cyber-Attack detection and fault diagnostic in connected and autonomous vehicles}
+
+\subsubsubsection{Improving Resilience, Robustness, and Reliability of automated vehicles in a platoon}
+
+In the operation of interconnected vehicles, the network-based environment provides many advantages such as easy installation, maintenance with low cost, and high efficiency, so, combined with recent advanced communication technology, future controlled, connected vehicles are under network-based environment which also causes several undesired factors. These factors may be as follows:
+\begin{itemize}
+\vspace{-0.3cm}
+\item \underline{\it Disturbances and fault:} faults of digital devices cause serious problems like degradation of system performance and even loss of human life. Therefore, the diagnosis of faults is needed by considering several engineering concepts like fault tolerant and fault diagnosis.
+%
+\vspace{-0.3cm}
+\item \underline{\it Cyber-attacks:} it is essential to develop some criteria for the vehicle systems to detect and counter cyber-attacks. We aim to consider several cyber-attack architectures involving nonlinear dynamics.
+%
+\vspace{-0.3cm}
+\item \underline{\it Data loss:} the influence of packet dropout will be strong when packet dropout and sampling are simultaneously occurred because, if packet dropout is occurred at a sampling instant, data will be missing during a sampling period. Therefore, we prepare some solutions for this complex situation. Specifically for this issue, the use and development of new statistical predictors will be of great interest.
+\end{itemize}
+
+\vspace{-0.3cm}
+Until now, many existing works solved the above stated problems individually. In this project, we will work on a unified solution counteracting all factors caused by the presence of network-based environments. We will investigate stability of the interconnected vehicle systems subject to those network-based factors. The objective is to develop a comprehensive theory from estimation viewpoint to improve resilience, robustness, and reliability of a large class of (inter)-connected nonlinear vehicle dynamics. The investigation of learning-based or data-driven based estimation algorithms and combining Unknown Input Observers~(UIO) with nonlinear approximators will be raised in this proposal. Indeed, due to the smartness of new integrated technologies, the use of artificial intelligence-based algorithms may help to improve estimation and thus resilience and reliability of control systems in smart mobility. Combining analytical model-based techniques with learning-based algorithms~\cite{ChakrabartyCDC2019} and statistical predictors~\cite{Ghani-doi:10.1080/02664763.2019.1633286} will enhance significantly the estimation quality.%\\
+
+
+
+
+
+
+
+
+
+
+
+
+%\subsubsubsection{$\pmb{\mathbb{R}^{3}}-$control systems for automated vehicles operating in a platoon}
+
+Cars in a platoon (or cars in an arbitrary string of vehicles on a section of a highway) constitute inter-connected dynamic systems, as depicted in Figure~\ref{platoon}. The overall objective consists in developing complete $\pmb{\mathbb{R}}$esilient $\pmb{\mathbb{R}}$obust and $\pmb{\mathbb{R}}$eliable~($\pmb{\mathbb{R}^{3}}$) control systems to face any problems in automated vehicles including vehicles operating in a platoon.
+%
+ \begin{figure}[htpb]
+    \centering
+    \subfigure[Cars in a platoon.]{\includegraphics[width=0.4\textwidth]{figures/platoon1}\label{platoon1}}
+    \hspace{0.5cm}
+     \subfigure[Automated Highway Demonstration in 1997 with Platoon Buick Le Saber Cars.]{\includegraphics[width=0.35\textwidth]{figures/platoon2}\label{platoon2}}
+   % \vspace{-0.3cm}
+    \caption{Automated vehicles operating in a platoon.}\label{platoon}
+\end{figure}
+%%
+%In a platoon, each car can obtain:
+%\begin{itemize}
+%\item The distance to the preceding car using a radar or laser sensor;
+%\vspace{-0.2cm}
+%\item Wireless communication from the lead car regarding its position, velocity and acceleration;
+%\vspace{-0.2cm}
+%\item Wireless communication from the preceding car regarding its position, velocity, acceleration and the radar reading from its preceding vehicle;
+%\vspace{-0.2cm}
+%\item Wireless communication from all other intermediate vehicles between preceding and lead car regarding the position, velocity, acceleration and the radar reading of each vehicle.
+%\end{itemize}
+%For the other cars other than preceding car, only wireless communication is available.
+
+If for any reason wireless communication links are lost or significantly disturbed with some cars~(cyber-attacks, sensor faults, or other external factors), but not with other cars, then estimation can be done by using the partial wireless signals obtained and making up for the wireless signals missed, to get $\pmb{\mathbb{R}^{3}}-$Controllers. This is especially possible because the radar signal of each car is also being transmitted by it wirelessly.
+
+
+
+%\newpage
+
+
+%\vspace{-0.3cm}
+%
+\subsection[Position of the project as it relates to the state of the art]{Position of the project as it relates to the state of the art}
+%
+%\vspace{-0.3cm}
+%
+\subsubsection{Originality and novelty of the proposal}
+%\subsubsection{Innovative nature of the project, ambitiousness and originality of the objectives and the methodology}\label{I.3}
+%
+The innovative character of the proposal lies in the development of general intelligent and sophisticated estimation algorithms compared to those existing in the literature for smart mobility. These algorithms will be specifically developed motivated by models issued from autonomous and connected vehicle problems. Developing a unified theory to face a large class of autonomous and connected vehicle issues related to estimation, by using fully nonlinear dynamics, is an original idea. 
+%Given the weakness of current estimation algorithms, the proposals presented in the previous section are novel. 
+{\bf All the limitations of standard estimation algorithms will be overcome by developing learning based neuro-adaptive observers combined with approximators and statistical prediction approaches. This will lead to highly intelligent estimation algorithms}. The proposed ideas {\bf will provide a complete and unique estimation system} covering a large class of estimation issues related to smart mobility.
+%
+
+
+% ~\cite{AleRossi15}, \cite{kalman1960new}, \cite{CanuSlo91}, \cite{Rajamani-7930581}
+%
+\subsubsection{Position of the proposal in relation to the state of the art}
+
+Among the known methods for the estimation of inter-vehicle variables in the field of autonomous and connected vehicles in general, we find the techniques based on well-known dynamic models (Slip angle, roll angle, etc), namely nonlinear observers based on LMIs, high-gain methodology, sliding mode, and extended Kalman filtering. 
+These methods are efficient in good conditions, however, on the other hand, they fail in inconvenient situations~(difficulty in obtaining a precise model, presence of external uncertainties and disturbances, measurement and actuator noise, etc). Although several methods have been developed to overcome the problem of disturbances and measurement and actuator noise,
+the availability of a precise dynamical model is necessary and constitutes a major drawback of model-based estimation methods. On the other hand, in the real-world applications, generally, we have a lot of data but no exact mathematical model for some components, or it is difficult to get a precise model in the presence of unexpected environmental conditions. %{\bf To overcome this limitation, we propose in this project to develop learning based neuro-adaptive observer techniques that we will combine with other estimation and statistical prediction approaches to get more intelligent estimation algorithms}. 
+Data-driven based methods have been used in the past for control and identification, however little attention has been paid to data-based nonlinear estimation.%~\cite{Liu2018}.
+
+
+%\begin{itemize}
+
+%\item \underline{\bf State of the art on learning-observers:}
+\noindent
+\underline{$\circ$~\bf State of the art on learning-observers:} More and more learning-based observers attract the attention of the automatic control community because of their benefits and their strength in the face of complex systems including new technologies, namely connected vehicles. Some early investigations into neuro-observers, for example, in~\cite{theocharis1994neural}, the authors assume model availability. However, the current wave of data-driven control has demonstrated the effectiveness of approximators in controlling systems in a model-free manner. Neuro-adaptive observers in the model-free setting were explored almost two decades ago in~\cite{Kim1997}, where the authors proposed an adaptation rule for learning the weights of a linear-in-parameter neural network (LPNN) that results in uniformly ultimately bounded estimation error dynamics. Although this work has been adopted in multiple applications such as robot control, rotors, and more recently, wind turbines~\cite{Rahimilarki2019}, the inherent assumptions and theory have hardly evolved. In most of these methodologies, the activation functions are considered to be radial basis functions, there is no measurement noise, and the theoretical guarantees of learning performance remain the same. 
+A recent work has been proposed in~\cite{ChakrabartyCDC2019} {\bf by the scientific coordinator}~({Ali \sc Zemouche}) of this proposal and {\bf the partner leader}~(Rajesh {\sc Rajamani}), and their coworkers. Such a result has improved significantly the previous work in the literature on data-driven neuro-adaptive observers by using nonlinear activation functions, however, the topic still remains open until now. {\bf This proposal aims to enhance the existing algorithms for data-based learning and apply it to intelligent transportation systems}.
+
+
+
+
+
+
+
+
+%\item \underline{\bf State of the art on UIOs and approximators:}
+
+
+
+
+
+% ~\cite{mukhtar2015vehicle,widmann2000comparison}
+
+%\item \underline{\bf State of the art on vehicle tracking:}
+
+\noindent
+\underline{$\circ$~\bf State of the art on vehicle tracking:} Tracking of the motion of other vehicles on the road is an important problem that is frequently encountered in autonomous driving, as well as in collision avoidance and Adaptive Cruise Control~(ACC) applications. There has been significant recent interest in the autonomous control of vehicles~\cite{kommuri2016robust}, but the topic of estimating the trajectories of other vehicles on a road in order to track them or avoid conflicts with them has not been sufficiently addressed. Collision avoidance and ACC systems typically use radar or laser sensors for measuring distances and azimuth angles to vehicles. With such sensors, radial distances and azimuth angles can be measured. In the case of vehicles in urban traffic, including vehicles at traffic intersections, the radar-measured variables are inadequate in order to fully predict the trajectories of vehicles. Both lateral and longitudinal distances and orientation of the vehicles are needed in order to accurately predict vehicle motion and provide appropriate warnings or automated driving actuation. Previous work in vehicle tracking has typically utilized interacting multiple model (IMM) filters~\cite{jeon2017rear}. The models used in the IMM filter typically include a ``straight line driving" model and a ``constant turn rate" model. Each model can be used for its respective driving scenario and is not applicable for the other scenario. To overcome the use of IMM, a new observer design has been proposed by W. {\sc Jeon}, {A. \sc Zemouche}, and R. {\sc Rajamani} in~\cite{RAJAMANI2020108814} by using an hybrid observer switching between different regions of monotonicity. Although the technique is efficient, however, the stability guarantee requires certain conservative dwell-time conditions, which depend on the vehicle motion. {\it We first aim to enhance the result and propose novel techniques, before combining with learning-based neuro-adaptive observers.} The consortium has a long experience in vehicle dynamics, estimation, stability, applied mathematics and optimization, to address these issues.
+
+
+
+
+
+
+%\item \underline{\bf State of the art on cyber-attacks:}
+
+\noindent
+\underline{$\circ$~\bf State of the art on cyber-attacks:} Potential cyber-attack threats on inter-vehicular communication systems and on sensor systems have been discussed previously in the literature~\cite{Parkinson_7872388}. False data injection (FDI) and Denial of Service (DoS) attacks can lead to significant problems in autonomous vehicles and connected vehicle systems that use inter-vehicular communication. An attacker can obtain access to the internal system of the vehicle or transmit false data to the control system. Also, sensor faults can be a serious source of problems for many intelligent transportation systems~\cite{oh2018functional_proba_Microsys_Techno},~\cite{Boukhari_18061893}. Hence, it is necessary to have a resilient system for autonomous and/or connected vehicles that can be secure against cyber-attacks and sensor faults.
+Several other works in the literature have focused on cyber-attacks and sensor fault problems for connected vehicle systems. False data injection on acceleration information via V2V communication is considered and a Hidden Markov Model-based attack detection method is proposed for cooperative adaptive cruise control applications in~\cite{Matthew_10.1145/3212480.3212492}. Most of these works handle either cyber-attacks or sensor faults, but do not allow for both failures. This challenge motivated {\bf the scientific coordinator}~({Ali \sc Zemouche}) and {\bf the partner leader}~(Rajesh {\sc Rajamani}), with their coworkers, to propose a unified estimation technique to handle simultaneously cyber-attack detection and sensor faults estimation~\cite{Jeon_10.1115/DSCC2019-9096}. Although the proposed algorithm has been evaluated by using experimental data from a real vehicle on the I-94 Highway in Minnesota~(data obtained from sensors along an instrumented section of the I-94 westbound in Downtown Minneapolis), it concerns only linear systems. {\bf In this project, we will develop a full nonlinear model-based estimators to address $\pmb{\mathbb{R}^{3}}$-software sensors}. {\bf Several cyber-attack architectures will be considered. Indeed, the estimation, in this case, uses data from wireless communication, which may be corrupted by malicious intruders}.
+
+
+
+
+%\item \underline{\bf State of the art on vehicle tracking:}
+
+%\end{itemize}
+
+
+%%
+% \begin{figure}[htpb]
+%    \centering
+%    \subfigure[Neuro-adaptive estimation strategy.]{\includegraphics[width=0.35\textwidth]{neuro-small}\label{fig.neuro}}
+%    \hspace{0.5cm}
+%     \subfigure[Towards Artificial Intelligence based software sensors.]{\includegraphics[width=0.45\textwidth]{smart-neuro}\label{smart}}
+%    \vspace{-0.3cm}
+%    \caption{Intelligent estimation strategies.}\label{fig.neuro-smart}
+%\end{figure}
+
+
+
+
+
+
+
+%\newpage
+
+\vspace{-0.3cm}
+%
+\subsection[Methodology and risk management]{Methodology and risk management}\label{methodology}
+%
+
+%The project will solve key problems inherent in estimation of nonlinear systems for connected and autonomous vehicle tracking that will lead to a comprehensive theory on resilience, robustness, and reliability of control design schemes integrated in smart mobility. 
+
+%
+%\vspace{-0.4cm}
+%% ===============  Section I.3.1 ============================
+%\subsubsection{Project provisional planning with Work Packages}
+\vspace{-0.2cm}
+\textcolor{black}{We will structure the project for optimal management. A Gantt chart will be used to ensure daily management of human and material resources ({\it i.e.}, deadlines management, budget, intermediate targets and project review)}. The working plan we propose is based on a set of 5 work packages~(WP), described below in detail. %\textcolor{red}{We will also use agile management: 1. Consortium agreement, 2. Webpages and online platform for deliverables sharing, quality assurance plan. 3. Annual Project management review. 4. Annual meetings: One week meeting as boot-camp per year and per partner}. 
+The global project provisional planning through Gantt chart is presented in Table~\ref{table1_gantt}.
+%\begin{comment}
+ \begin{table*}[h!]
+ %\begin{minipage}{1\textwidth}
+    \centering
+   % \includegraphics[height = 5cm, width = 15cm]{smart-neuro} %proposed
+     %\includegraphics[height = 9cm, width = 16.5cm]{Gantt_v12} %proposed % Gantt_ArtISMO
+     %\includegraphics[height = 7.5cm, width = 16cm]{Gantt_v12} %proposed % Gantt_ArtISMO
+      \includegraphics[width=1\textwidth]{Gantt4_pdf} %proposed % Gantt_ArtISMO
+    \vspace{-0.5cm}
+    \caption{Project provisional planning with WPs (Gantt).}\label{table1_gantt}
+   % \end{minipage}
+\end{table*}
+%\end{comment}
+
+\smallskip
+\begin{itemize}[leftmargin=.2in,noitemsep,nolistsep]
+%\vspace{-0.2cm}
+\item \textcolor{blue}{\bf WP1: Project Management and Communication}\\
+\vspace{-0.4cm}
+\begin{tcolorbox}[breakable, enhanced,  colback=blue!2!white,
+title = \bf Contributors$-$Deadlines$-$Objectives, coltitle= black, colbacktitle=orange!60!white, halign title=center]
+
+{ \bf {Leader}:} Ali {\sc Zemouche}~({\bf CRAN})
+
+{ \bf {Contributors}:} {\bf CRAN}~(\textcolor{navyblue}{6 p.m}), IRSEEM~(\textcolor{navyblue}{1 p.m}), IBISC~(\textcolor{navyblue}{1 p.m}), FAAR~(\textcolor{navyblue}{1 p.m})
+
+{ \bf {Deadlines (Start $-$ End)}:} T0~$-$~T0+48
+
+{ \bf {Objectives}:} This WP will be devoted to the methodology which will be followed by the partners to manage the project. The WP1 contains 3 tasks: T1.1$-$T1.2$-$T1.3.
+
+\end{tcolorbox}
+%\vspace*{0.1cm}
+\begin{comment}
+
+{\bf$\circ$ Partners:} \underline{\bf CRAN}~(\textcolor{red}{3 P.M}), IRSEEM~(\textcolor{red}{1 P.M}), IBISC~(\textcolor{red}{1 P.M}), FAAR~(\textcolor{red}{1 P.M}), LISEC~(\textcolor{red}{0 P.M})\\
+{\bf$\circ$ Objectives:}  This WP will be devoted to the methodology which will be followed by the partners to manage the project.  
+%
+\end{comment}
+{
+\subitem$-$ \underline{\it T1.1. Project Management:}
+%% Redouane start ===
+\textcolor{black}{The lead partner, in collaboration of the other partners, will use hybrid management-based on both V cycle and Agile management in order to improve the quality of project management. In this task, we will carry out different actions which represent a high quality tools for the project management: 1. Consortium agreement, 2. Gantt planning updated one time per week, 3. Website of the project updated continuously during the project at each time news are produced, 4. Risk analysis study, 5. Project management review at the end of each WP in order to validate the developments done.% and to prepare the next WP.
+}
+%% Redouane Fin ====
+\subitem$-$  \underline{\it T1.2. Communication and Results Dissemination:}
+%% Redouane Start ===
+\textcolor{black}{Communication is very important in the success of our project. 
+%\textcolor{red}{We aim to disseminate our results continuously and through a wide range of channels: webpage, open source repository, publications at international conferences and journals, interaction with several types of stakeholders, each partner will do internal knowledge transfer in learning, research, and industrial activities to feed the cycle of innovation.}
+The lead partner will organise one first meeting as a Kick-Off meeting in order to present the project to partners through a provisional planning, budget, risk analysis, etc. The lead partner will organize on week meeting as a boot-camp per year and per partner in order to discuss about the progress of the project and the different contributions to develop by the consortium. Both administrative and scientific details will be studied in this annual meeting. In this WP, we will produce the whole of conferences that partners will make contribution to promote more the project. Review papers will also be presented and shared between the consortium partners. The lead partner, with the help of the other partners, will make available all intermediate progress report related to the project. We will also produce the final report to be submitted to the ANR office. The involved partners will provide the project with a cloud-based online platform for the collaborative dataset for smart mobility. The collaborative dataset will include data/images/videos and relevant informations. 
+%All data will be analyzed with not only classical approaches but also with artificial intelligence and processed to provide open source R3 platform. To improve security, the platform to be developed should include a prototype of smart software sensors.
+%\textcolor{red}{This project must therefore show the feasibility of scientific and technological concepts that affect intelligent estimation for smart mobility.}
+}
+%% Redouane Fin ====
+\subitem$-$  \underline{\it Task 1.3. Open Innovation \& Companies Transfer:}
+%\textcolor{red}{
+Finally, we will also engage with professional bodies and with the ANR team to identify other opportunities for exploitation by considering ways to transfer this innovation to companies collaborating with our organizations and specifically through our industrial partner, FAAR, willing that their potential customers that they are currently in contact with will integrate the outcome of this project for their products. 
+%FAAR considers that only explainable AI can enable commercialization of autonomous vehicles on a large scale. 
+%}
+}
+%% Redouane Fin ====
+
+%% Ali =================================
+%%{
+%%\color{red}{
+%%{\bf$\circ$ WP1 Deliverables and deadlines:}
+%%\begin{itemize}
+    %%\item {\bf D1.1} (T0$-$T0+48): 
+    %%\item {\bf D1.1} (T0$-$T0+48: 
+    %%\item {\bf D1.1} (T0$-$T0+48: 
+  %%  \item {\bf D1.1} (T0$-$T0+48: 
+%%\end{itemize}
+%%}
+%%}
+
+\begin{comment}
+
+%% Redouane proposition =================
+\textcolor{red}{
+{\bf WP1 Deliverables:} D1.1. (CRAN/IRSEEM, T0+48) Communication and management tools: Gantt, budget, risk analysis, project web site. D1.2. (CRAN/IBISC, T0+3, T0+12, T0+36, and T0+48) 1st project meeting (kick-koff), Annual meeting organization (boot-camp) per partner, conference papers, intermediate report of progress, and project final report. D1.3. (FAAR/CRAN, T0+48) Interaction between research laboratory and companies through professional meeting.  
+\\
+\textbf{Risk and Fallback solutions:} critical risk about the deadline of partners deliverable which could not be respected. As a fallback solution is the updating the Gantt and the reorganization of resources.    
+}
+%% Redouane proposition =================
+
+\end{comment}
+
+\begin{tcolorbox}[breakable, enhanced,  colback=yellow!2!white,
+title = \bf Deliverables$-$Risks and Fallback Solutions, coltitle= black, colbacktitle=yellow!7!white, halign title=center]
+
+{ \bf \underline{Deliverables}}
+
+\begin{itemize}[leftmargin=.2in,noitemsep,nolistsep]
+\item Website and internal communication tool
+\item Intermediate reports of progress at the end of every year, and final report 
+\item Organization of meetings and a workshop
+\item Organization of professional meetings for interaction with companies
+\end{itemize}
+
+{ \bf \underline{Risks and Fallback Solutions}:} In general, a risk can occur in the delivery deadline of the partners which could not be respected. However, this risk is very minor because some partners have already collaborated together~(IRSEEM/FAAR, CRAN/LISEC, CRAN/IRSEEM) and then there are good relationships between them. As a fallback solution, if a moderate risk is occurred, is updating the Gantt chart and reorganization of resources between WPs. The role of master students will be useful for that. The work of PhD students and Postdocs will be closely monitored.
+
+\end{tcolorbox}
+
+
+
+
+
+
+
+
+
+
+
+
+
+%
+%\vspace{-0.2cm}
+%\item \textcolor{blue}{\bf WP2: Problem Formulation, Benchmarking, and Modeling}\\
+\item \textcolor{blue}{\bf WP2: Vehicle Modeling, Environment Perception and Deep-Learning}\\
+%
+\vspace{-0.4cm}
+\begin{tcolorbox}[breakable, enhanced,  colback=blue!2!white,
+title = \bf Contributors$-$Deadlines$-$Objectives, coltitle= black, colbacktitle=blue!40!white, halign title=center]
+
+{ \bf {Leader}:} Sofiane {\sc Ahmed Ali}~({\bf IRSEEM})
+
+{ \bf {Contributors}:} {\small CRAN~(\textcolor{navyblue}{30p.m}), {\bf IRSEEM}~(\textcolor{navyblue}{50.8p.m}), IBISC~(\textcolor{navyblue}{20p.m}), FAAR~(\textcolor{navyblue}{3p.m}), LISEC~(\textcolor{navyblue}{1p.m})}
+
+{ \bf {Deadlines (Start $-$ End)}:} T0~$-$~T0+45
+
+{ \bf {Objectives}:} This WP will be devoted to benchmarking, modeling and environment perception in the goal to provide necessary informations for the development of estimation algorithms. First, we will construct a full nonlinear model which describes accurately the vehicle dynamic. Second, we will use computer vision and deep-learning to generate additional measurements for the observer design to enhance the estimation and to verify correctness of some measurements provided by LIDAR sensors. The WP2 contains 3 tasks: T2.1$-$T2.2$-$T2.3.
+
+\end{tcolorbox}
+%\vspace*{0.1cm}
+\begin{comment}
+{\bf$\circ$ Partners:} \underline{\bf IRSEEM}~(\textcolor{red}{50 P.M}), CRAN~(\textcolor{red}{20 P.M}), IBISC~(\textcolor{red}{20 P.M}), LISEC~(\textcolor{red}{0 P.M}), FAAR~(\textcolor{red}{0 P.M})\\
+{\bf$\circ$ Objectives:}  This WP will be devoted to benchmarking, modeling and environment perception in the goal to provide necessary informations for the development of estimation algorithms. First, we will construct a full nonlinear model which describes accurately the vehicle dynamic. Second, we will use computer vision and deep-learning to generate additional measurements for the observer design to enhance the estimation and to verify correctness of some measurements provided by LIDAR sensors. %and improve the environment perception of the vehicle. 
+\end{comment}
+%
+\subitem$-$ \underline{\it T2.1. State of the Art and Benchmarking:} %\\
+ \textcolor{black}{In this task, the 3 partners CRAN, IRSEEM and IBISC will dedicate themselves to  perform a state of the art on the tracking vehicle projects in the field of smart mobility. The goal of this task is to compare the different vehicle tracking projects currently implemented by the different car manufacturer. The next step is the benchmarking regarding existing solutions and projects. Subsequently, the sharing of knowledge bases in machine learning-based AI and neuro adaptive estimation algorithms for autonomous vehicles would be an essential step so that all partners can communicate their results. %Besides, the different scenarios that involve validation tests on the understanding road scenes should be the key step of disseminating and sharing results. This could eventually constitute a generic platform for smart mobility, which will be used to experiment/validate scientific and technological concepts of both national and European scientific community.
+ }   
+ 
+\subitem$-$  \underline{\it T2.2. Vehicle Modelling:} 
+\textcolor{black}{In this task, the partners will dedicate themselves to develop a full nonlinear vehicle dynamics model upon which  our intelligent estimation algorithms will be designed. This full nonlinear model will combine  3 different types of vehicle modelling approaches. The first model will describe the  Kinematic and dynamic models for lateral vehicle dynamics. This model will be useful to ensure that the vehicle will stay in its center of line. The second model the partners  concerns the vehicle longitudinal dynamics, which will be used for several applications such as  radar-based collision avoidance systems, adaptive cruise control systems. The third model we aim to develop is an Power train model for either  Gasoline, Diesel engines or hybrid vehicle. This model will be complementary to the  previous longitudinal vehicle dynamic model, in order to enhance longitudinal control applications which will be carried out in the project. Finally the partners will put together these 3 models in one  full nonlinear model which  will be the base to achieve WP3 and WP4.}
+%
+%\subitem$-$  \underline{\it Task 2.3. Perception and Computer vision:}
+\subitem$-$  \underline{\it T2.3. Environment Perception-based Deep-Learning:}
+%% Debut Redouane
+\textcolor{black}{
+%Since the main objectives is to develop intelligent estimation algorithms to estimate unmeasurable vehicle variables, the development of innovative approaches for environment perception represents a very added value to this project. 
+\textcolor{black}{
+The main contribution in this task is to develop deep learning platform applied to road smart mobility, which will allow improving the quality of the estimation algorithms by generating additional output measurements. Indeed, observers need measurements, which could be collected from different sensors like RADAR, LIDAR, etc. This task is devoted to the environment perception-based computer vision and deep learning~\cite{mauri2020deep}. Usually, we measure distances and azimuth angles using radar and/or LIDAR sensors. The aims is to make new computer vision based measurements~\cite{khemmar2019real} as outputs in the observers to enhance estimation. Also, the computer vision data will serve to verify whether our measurements from radar are correctly associated with the correct cars, which lanes the cars are in, etc. In addition, computer vision can provide lateral position inside each lane. Deep-learning algorithms will also be used in the development of data-driven neuro-adaptive observers of WP3 and their generalization.
+%It means that we will make multi-sensor fusion system in which we will combine different kind of measurements from different sensors like LIDAR, RADAR and Cameras. Perception-based deep learning tasks are able to extract more information from the environment-based localization and tracking~(vehicle detection, vehicle distances, vehicle location, lateral location, etc.)~\cite{mauri2020deep}. The perception task will be used also to verify whether our measurements from the RADAR and/or LIDAR are correctly associated with the correct vehicle, which lanes the vehicles are in, etc. In addition, the perception task will provide lateral position inside each lane of the road. %As an example, one scenarios could be investigated to assess the performance of the proposed approach is Road scenes measurements: detection of objects along with their localization and their tracking in order to predict the behavior of moving vehicles in the scene.
+}
+}
+%% Fin Redouane
+
+
+%%{
+%%\color{red}{
+%%{\bf $\circ$ Deliverables and deadlines:}
+%%\begin{itemize}
+  %%  \item {D2.1} (T0$-$T0+48): 
+    %%\item {D2.1} (T0$-$T0+48: 
+    %%\item {D2.1} (T0$-$T0+48: 
+    %%\item {D2.1} (T0$-$T0+48: 
+%%\end{itemize}
+%%}
+%%}
+
+%
+%\subitem$-$  \underline{\it Task 2.4. Scenario and Methodologies:}\\
+ %   In this task,  we will investigate for  the  autonomous vehicle fleet  the  different scenario  that will be considered in order to validate our proposed intelligent estimation algorithm. Cyber attacks, sensors faults and data loss scenarios are one of the several scenarios that will be investigated in this task.
+    
+%
+
+%% Redouane proposition =================
+%\textcolor{red}{
+%{\bf WP2 Deliverables:} D2.1 (IRSEEM, T0+6, T0+36, T0+48) State of the art report for estimation algorithms, Benchamrking report about vehicle tracking projects for smart mobility. D2.2. (IBISC, T0+18) Vehicle model and Report. D2.3. (IRSEEM, T0+30) Object detection, localization and tracking, Report. \\
+%\textbf{Risk and Fallback solutions:} Availability of dataset under which we will build and train our computer vision-based deep learning model.}
+%% Redouane proposition =================
+
+
+\begin{tcolorbox}[breakable, enhanced,  colback=yellow!2!white,
+title = \bf Deliverables$-$Risks and Fallback Solutions, coltitle= black, colbacktitle=yellow!7!white, halign title=center]
+
+{ \bf \underline{Deliverables}}
+
+\begin{itemize}[leftmargin=.2in,noitemsep,nolistsep]
+\item Open-source library on the developed model in Matlab \& Python, released on github
+\item Open-source library on computer vision based dataset collection/camera RGB-D and radar measurements
+\item Publications in journals~(IEEE Sensors, IEEE TVT) and in conf. proceedings~(ASME, IEEE)
+\end{itemize}
+
+{ \bf \underline{Risks and Fallback Solutions}:} The natural risk is the unavailability of dataset under which we will build and train our computer vision-based deep learning model. However, this risk vanishes because the consortium can cover this issue. Data can be generated by using vehicle platforms from FAAR, IRSEEM, and IBISC. Also our partner LISEC can collect enough data from sensors along an instrumented section of the I-94 westbound in Downtown Minneapolis.
+
+\end{tcolorbox}
+
+
+
+
+
+%% ============================================
+%\vspace{-0.2cm}
+\item \textcolor{blue}{\bf WP3: Intelligent Software Sensors for Vehicle Tracking}\\
+%
+%
+\vspace{-0.5cm}
+\begin{tcolorbox}[breakable, enhanced,  colback=blue!2!white,
+title = \bf Contributors$-$Deadlines$-$Objectives, coltitle= black, colbacktitle=purple!40!white, halign title=center]
+
+{ \bf {Leader}:} Ali {\sc Zemouche}~({\bf CRAN})
+
+{ \bf {Partner contributors}:} {\bf CRAN}~(\textcolor{navyblue}{70p.m}), IRSEEM~(\textcolor{navyblue}{24p.m}), IBISC~(\textcolor{navyblue}{19p.m}), LISEC~(\textcolor{navyblue}{2p.m})
+
+{ \bf {Deadlines (Start $-$ End)}:} T0+6~$-$~T0+45
+
+{ \bf {Objectives}:} This work package is dedicated to development of novel intelligent software sensors for vehicle tracking problem. The overall objective is to introduce a new architecture of combined modeling approach consisting of a combination of physically meaningful differential equations and adaptive online-learning-based neural networks to represent vehicle dynamics. This work package will offer a basis of a new unified theory on nonlinear estimation for vehicle tracking, which will be used in the other work packages. The experience of the research team in the field of nonlinear estimation and autonomous vehicles allows to handle this WP3 without any significant risk issue. The WP3 contains 4 tasks: T3.1$-$T3.2$-$T3.3$-$T3.4.
+
+\end{tcolorbox}
+%\vspace*{0.1cm}
+\begin{comment}
+{\bf$\circ$ Partners:} \underline{\bf CRAN}~(\textcolor{red}{50 P.M}), IRSEEM~(\textcolor{red}{20 P.M}), LISEC~(\textcolor{red}{1 P.M}), IBISC~(\textcolor{red}{20 P.M}), FAAR~(\textcolor{red}{0 P.M})\\
+
+{\bf$\circ$ Objectives:} This work package is dedicated to development of novel intelligent software sensors for vehicle tracking problem. The overall objective is to introduce a new architecture of combined modeling approach consisting of a combination of physically meaningful differential equations and adaptive online-learning-based neural networks to represent vehicle dynamics. This work package will offer a basis of a new unified theory on nonlinear estimation for vehicle tracking, which will be used in the other work packages. The experience of the research team in the field of nonlinear estimation and autonomous vehicles allows to handle this WP3 without any significant risk issue.
+\end{comment}
+%
+\subitem$-$ \underline{\it T3.1. Regular Nonlinear Observer Design~(RNOD):} Before tackling the strategy depicted in Figure~\ref{fig.neuro-tracking}, the development of a model-based observer for the dynamical model developed in WP1 should be investigated. Namely, we will work on nonlinear observer design for a model using nonlinear coupled tire force~\cite{RajamaniBOOK}. Usually the full nonlinear model is very large and complex, then we will study this full model and adapt it to our situation, namely vehicle tracking as presented in this project.
+%All the nonlinear LMI-based observer design methods existing in the literature have failed. We realized that this is due to the fact that all the nonlinearities of the model are non-monotonic, and then we proposed a solution in~\cite{RAJAMANI2020108814}. However, such a solution is constrained by conservative conditions. The idea we plan to explore consists in introducing specific transformations to overcome the non-monotonicity and avoid infeasibility of the LMI-based design conditions, as far as the observability criterion is satisfied. 
+Resilience and robustness of the observer, with respect to some time-varying parameters, will be investigated.
+LMI-based techniques with time-varying observer gains are one of the planned tracks. A general theory will be developed in this context. Also, as demonstrated in~~\cite{RAJAMANI2020108814}, the non-monotonicity of some nonlinearities affects feasibility of LMI conditions. The idea we plan to explore consists in introducing transformations to overcome the non-monotonicity and avoid infeasibility of the LMI-based design conditions. The use of a general hybrid observer to switch between several regions of monotonicity is also a solution. %However, in this case, the convergence analysis is a challenge.
+%, as far as the observability criterion is satisfied.
+%
+\subitem$-$ \underline{\it T3.2. Neuro-Adaptive Nonlinear Software Sensors~(NANS):} Data-driven neuro-adaptive observers are not developed enough to address the tracking problem described in previous sections. Indeed, the vehicle tracking problem will involve several parameters so that the available methods are unable to provide solutions. The model is under the form
+\begin{subequations}\label{eq:plant}
+\begin{align}%\label{eq:plant_a}
+\dot x & = \varphi(x, u)\\
+y & = Cx
+\end{align}
+\end{subequations}
+where the unknown nonlinearity $\varphi(x):\mathbb R^{n}\to \mathbb R^{n}$ represents the unmodeled dynamics of the system. Under some assumptions, we can invoke neural network approximability results to represent the unknown nonlinearity as 
+\begin{equation}\label{eq:nn_representation_of_g}
+\varphi(x,u) = W \sigma(x,u) + \varepsilon(x,u),
+\end{equation}
+where $W\in\mathbb R^{n\times N}$ is a constant but unknown matrix of weights in the output layer of a neural network with $N$ neurons, $\sigma(\cdot, \cdot): \mathbb R^{n}\times\mathbb{R}^{n_u}\to \mathbb R^N$ denotes the vector of activation functions. The quantity $\varepsilon(\cdot,\cdot): \mathbb R^{n}\times\mathbb{R}^{n_u}\to \mathbb R^{n}$ represents the bounded neural network approximation error.
+
+In this proposal, we aim to develop new data-driven neuro-adaptive observer techniques which can solve the problem of the presence of several unknown parameters $W$, compared to the available number of system states. The use of learning techniques may reinforce the classical methods and will allow overcoming the obstacle by reducing the number of unknown parameters to consider in the adaptive observer. On the other hand, we aim to overcome the presence of some conservative and unrealistic constraints generally involved in design conditions, like equality constraints, presence of linear dependence of $x$ and $W$.
+%
+\subitem$-$  \underline{\it T3.3. Combined modeling approach~(RNOD\&NANS):} Once T~3.1 and T~3.2 are achieved, we will tackle the strategy depicted in Figure~\ref{fig.neuro-tracking}, which consists in combining the regular nonlinear observer and the data-driven neuro-adaptive observer. Indeed, when the vehicle is connected, we have access to informations which can lead to more accurate dynamic models. Then updating the model online by using neural networks will improve the estimation and its resilience and robustness. This combined modeling architecture will lead to issues on global convergence of the combined estimation. The modeling can be viewed as hybrid system for which global stability requires some conditions like dwell-time. In this task, we will work on developing switched strategies based on vehicle assumptions.
+%
+\subitem$-$  \underline{\it T3.4. Multi-Connected Intelligent Software Sensors~(MCIS):}
+The objective of this task consists in constructing cooperative nonlinear estimators capable to exchange informations with each other by using a connection protocol as depicted in Figure~\ref{smart}. A connection protocol means a mathematical relation between several observers/estimators/predictors. Recently, we developed a novel approach for discrete-time Linear Parameter Varying~(LPV) systems 
+{
+\scriptsize
+\begin{subequations}\label{s2.e1}
+  \begin{gather}
+    x_{k+1} = \left( A_0 + \sum^{i=n_\rho}_{i=1}\xi^{i}(\rho_{k})A_i \right)x_{k}+Bu_{k}\label{s2.e1.1}\\
+    y_{k} = Cx_{k}\label{s2.e1.2}
+  \end{gather}
+\end{subequations}
+}
+capable to give an exact estimation of the states in finite-time. Indeed, it has been demonstrated in~\cite{chaib2019state} that if the following matrix exists and is invertible for a given integer $m \geq 1$ and gains $K_j, L_j$
+{
+\scriptsize
+\begin{equation}\label{Ek.lem}
+\mathbb{E}_m(k) \triangleq \left [ \prod^{m}_{i=1} \left( \sum^{n_\rho}_{j=0}\xi^{j}_{k-i}\big( A_j-L_j C\big)\right) \right ]^{-1}
+- \left [ \prod^{m}_{i=1} \left( \sum^{n_\rho}_{j=0}\xi^{j}_{k-i}\big( A_j-K_j C\big)\right) \right ]^{-1}
+\end{equation}
+}
+then two LPV observers with gains $K_j$ and $L_j$, respectively, provide an exact and finite-time estimation of $x_k$ for $k\geq m$. The criterion~\eqref{Ek.lem} is the {\it connection protocol} between the two observers. This task aims to generalize the idea to nonlinear systems under the form~\eqref{eq:plant} and establish accordingly {\it smart connection protocols}. The first method we plan to follow consists in transforming the nonlinear system into an LPV one with inexact parameters. then, in addition to the connection protocol~\eqref{Ek.lem}, appropriate optimization criteria will be necessary for robustness and performance. The use of {\it modulating functions}, generally used for linear systems, to enhance performances or to get finite-time convergence, is also one of the objectives of this task. In presence of a high number of nonlinearities, standard Luenberger observers may be {\it combined with different types of estimators/predictors}, like moving horizon estimator or other stochastic predictors, to reduce the number of unknown LPV parameters. All these ideas will be {\it exploited to tackle fully nonlinear models} without transformation. Also, the work in~\cite{bako2019interval} is promising.
+
+%
+%%{
+%%\color{red}{
+%%{\bf$\circ$ Deliverables and deadlines:}
+%%\begin{itemize}
+  %%  \item {\bf D3.1} (T0$-$T0+48): ???
+%%    \item {\bf D3.1} (T0$-$T0+48: ???
+ %%   \item {\bf D3.1} (T0$-$T0+48: ???
+  %%  \item {\bf D3.1} (T0$-$T0+48: ???
+%%\end{itemize}
+%%}
+%%}
+%
+
+
+
+\begin{tcolorbox}[breakable, enhanced,  colback=yellow!2!white,
+title = \bf Deliverables$-$Risks and Fallback Solutions, coltitle= black, colbacktitle=yellow!7!white, halign title=center]
+
+{ \bf \underline{Deliverables}}
+
+\begin{itemize}[leftmargin=.2in,noitemsep,nolistsep]
+\item Open-source library of the implemented algorithms in Matlab \& Python, released on github
+\item Graphical software interface or Toolbox for the established methodologies, posted online on the project's website
+\item Publications in methodological~(Automatica, IEEE TAC, SIAM-SICON, SCL) and vehicle oriented~~(IEEE Trans. VT, IEEE Trans. ITS) journals and in conf. proceedings~(IEEE CDC, IEEE ACC, ECC, IFAC) %\\
+\end{itemize}
+{ \bf \underline{Risks and Fallback Solutions}:} WP3 is the core of the project and is the most "at risk" WP. The risk could come from overly ambitious objectives, namely the development of several rigorous methodologies that would work on the established vehicle model. To minimize the risk, the objectives are divided into several steps to guarantee the progress of the project. On the other hand, promising preliminary results for the objectives have been developed by the main contributors~(with long experience in fundamental research) of this WP3~\cite{ChakrabartyCDC2019,RAJAMANI2020108814,chaib2019state,Zemouche-8540946,ZEMOUCHE2017412}. Another issue is the computational complexity due to the combined methodology based on radar measurements, computer vision, deep-learning, and the use of smart connection protocol. However, the risk related to this issue is low: IRSEEM can use the CRIANN platform~(Centre Régional Informatique et d'Applications Numériques de Normandie). Also, Professor Rajamani will use powerful computational resources from his laboratory. Besides, we will also work on the development of fast optimization algorithms to reduce the computational complexity.
+% Theoretical methodologies
+% Computational complexity
+% Stochastic predictors
+% Fast decision making algorithms, work on offline algorithms and study their robustness, 
+\end{tcolorbox}
+
+
+
+
+
+
+%\vspace{-0.2cm}
+\item \textcolor{blue}{\bf WP4: $\pmb{\mathbb{R}^{3}}$ Software Sensors for Vehicle Tracking in a Platoon}\\
+%
+\vspace{-0.5cm}
+\begin{tcolorbox}[breakable, enhanced,  colback=blue!2!white,
+title = \bf Contributors$-$Deadlines$-$Objectives, coltitle= black, colbacktitle=green!40!white, halign title=center]
+
+{ \bf {Leader}:} Dalil {\sc Ichalal}~({\bf IBISC})
+
+{ \bf {Partner contributors}:} CRAN~(\textcolor{navyblue}{40p.m}), IRSEEM~(\textcolor{navyblue}{20p.m}), {\bf IBISC}~(\textcolor{navyblue}{50p.m}), LISEC~(\textcolor{navyblue}{1p.m})
+
+{ \bf {Deadlines (Start $-$ End)}:} T0+15~$-$~T0+45
+
+{ \bf {Objectives}:} This work package is devoted to resilient, robust, and reliable estimation algorithms for more complex systems than those investigated in the previous work package. The objective is to enhance more the safety of autonomous vehicles. In addition to the complexity of the nonlinearities, we will consider complex architectures of cyber-attacks, sensor faults, and data loss and develop $\pmb{\mathbb{R}^{3}}-$software sensors covering a high number as possible of complex architectures and failures occurring in automated vehicles in a platoon. The partners have already published advanced algorithms which may be exploited and applied on autonomous vehicles. The WP4 contains 3 tasks: T4.1$-$T4.2$-$T4.3.
+
+\end{tcolorbox}
+%\vspace*{0.1cm}
+\begin{comment}
+{\bf$\circ$ Partners:} \underline{\bf IBISC}~(\textcolor{red}{40 P.M}), CRAN~(\textcolor{red}{30 P.M}), IRSEEM~(\textcolor{red}{20 P.M}), LISEC~(\textcolor{red}{1 P.M}), FAAR~(\textcolor{red}{0 P.M})\\
+{\bf$\circ$ Objectives:} This work package is devoted to resilient, robust, and reliable estimation algorithms for more complex systems than those investigated in the previous work package. The objective is to enhance more the safety of autonomous vehicles. In addition to the complexity of the nonlinearities, we will consider complex architectures of cyber-attacks, sensor faults, and data loss and develop $\pmb{\mathbb{R}^{3}}-$software sensors covering a high number as possible of complex architectures and failures occurring in automated vehicles in a platoon. IBISC will be the leader of this work package due to its advanced expertise in fault diagnostic, fault tolerant control, and unknown input estimation, applied to vehicle dynamics. The involvement of partners CRAN, IRSEEM, and LISEC will help avoiding any risk of non-achievement. The partners have already published advanced algorithms which may be exploited and applied on autonomous vehicles.
+\end{comment}
+%
+% Resilient, Robust, and Reliable~($\pmb{\mathbb{R}^{3}}$) SA$-$ACC Strategies
+\subitem$-$ \underline{\it T4.1. Architectures of cyber-attacks, sensor faults, and data loss:} In this task, we will investigate several architectures of attacks and sensor faults to identify the more important issues affecting dangerously the safety of autonomous vehicles. The case of data loss will also considered here in order to evaluate the impact on estimation. We will be particularly interested by malicious cyber-attacks on variables used in control systems. We mention, for instance, cyber-attacks under the form of injection of time-varying false data; time-varying delays; false data inside the nonlinearities. In a general way, we will study architectures under the form:
+\begin{subequations}\label{UIO}
+\begin{align}\label{UIO.1}
+\dot x & = A x + B_1 f_{ca} + B_2 f_{s} + \kappa(x, f_{ca}, f_s, u)\\
+y & = Cx\big(t-\tau(t)\big) + D_1 f_{ca} + D_2 f_{s}~\text{for}~t\in \mathbb{R}^{+}\setminus [\tau_1~~\tau_2]
+\end{align}
+\end{subequations}
+where $x$ is the system state, $u$ is the control input, $f_{ca}$ and $f_{s}$ are the cyber-attack and sensor fault vectors, respectively. $\tau(t)\geq 0$ is a time-varying delay. The constraint $t\in \mathbb{R}^{+}\setminus [\tau_1~~\tau_2]$ represents the data loss in the interval $[\tau_1~~\tau_2]$, which means unavailability of the measurements $y$ in this interval. The use of a statistical predictor~\cite{Ghani-doi:10.1080/02664763.2019.1633286} allows evaluating the impact of data loss or to estimate it. All these variables are important for the control systems to make decisions.
+%
+\subitem$-$ \underline{\it T4.2. Software Sensors design by using neuro-adaptive UIOs:} %
+As a first step, we aim to follow neuro-adaptive nonlinear observer design technique presented in the previous work package and improve it to deal with the design of $\pmb{\mathbb{R}^{3}}-$software sensors, which lead to $\pmb{\mathbb{R}^{3}}-$controllers. Depending on the cyber-attack architectures and sensor faults, the UIO should developed accordingly. Indeed, the use of a full nonlinear model will lead to complex dynamics for which available standard approaches fail. The strong experience of IBISC, CRAN, and LISEC, in this field allows to handle successfully the issues related to this task. D. Ichalal and S. Mammar published an interesting approach on UIOs for linear systems~\cite{ichalal2019unknown}. Also, A. Zemouche and R. Rajamani published a joint work on resilient semi-autonomous adaptive cruise control by using an adaptive UIO~\cite{Jeon_10.1115/DSCC2019-9096}. These results will be generalized to more complex cyber-attacks architectures and sensor faults for nonlinear models issued from vehicle tracking problem.
+%\subitem$-$ \underline{\it Task 4.2. Software Sensors design by using UIOs and nonlinear approximators:}
+%\subitem$-$  \underline{\it Task 4.3:} $\pmb{\mathbb{R}^{3}}$ NM$-$ACC with UIOs and Nonlinear Approximation
+\subitem$-$  \underline{\it T4.3. Software Sensors design by using multi-stage sensors and learning:} 
+The aim of this task consists in generalizing the concept of multi-connected intelligent estimation algorithms introduced in Task~3.4. This strategy will lead to novel fault diagnostic methods and cyber-attacks detection. In addition, we will face not only fault estimation, cyber-attack detection, and data-loss recovery, but also additional internal parameters coming from the nonlinearities of the model. Indeed, our strategy here is to rewrite the nonlinearity of the system under a quasi-LPV structure with unknown parameters. Due to the number of nonlinearities, the number of unknown time-varying parameters is sufficiently large that it renders the usual necessary rank constraints not satisfied, and the approximation difficult to be achieved. Then, we aim to use learning virtual sensors to estimate such parameters. %Furthermore, nonlinear observers will be combined with the learning estimation to reconstruct the state of the system considered as LPV system due to the estimation of the unknown parameters by learning.
+
+%%{
+%%\color{red}{
+%%{\bf$\circ$ Deliverables and deadlines:}
+%%\begin{itemize}
+  %%  \item {\bf D4.1} (T0$-$T0+48): ???
+    %%\item {\bf D4.1} (T0$-$T0+48: ???
+%%    \item {\bf D4.1} (T0$-$T0+48: ???
+ %%   \item {\bf D4.1} (T0$-$T0+48: ???
+%%\end{itemize}
+%%}
+%%}
+
+\begin{comment}
+
+%% Redouane proposition =================
+\textcolor{red}{
+{\bf WP4 Deliverables and deadlines:} D4.1. (CRAN/LISEC, T0+39) Software sensor based neuro-adaptive UIOs and report. Scenario report of platform validation. D4.2. (IBISC, T0+39) Software sensor based UIOs and report. D4.3. (IBISC, T0+42) Software sensor based multi-stage sensors and learning.    
+\\
+\textbf{Risk and Fallback solutions:} non critical risk about this WP, the deadline should be respected.     
+}
+%% Redouane proposition =================
+\end{comment}
+
+\begin{tcolorbox}[breakable, enhanced,  colback=yellow!2!white,
+title = \bf Deliverables$-$Risks and Fallback Solutions, coltitle= black, colbacktitle=yellow!7!white, halign title=center]
+
+{ \bf \underline{Deliverables}}
+
+\begin{itemize}[leftmargin=.2in,noitemsep,nolistsep]
+\item Open-source library of the implemented algorithms in Matlab \& Python, released on github
+%\item Graphical software interface or Toolbox for the established methodologies, posted online on the project's website
+\item Publications in journals~(IJRNC, IEEE TCST, IEEE TVT, IEEE TITS) and in conf. proceedings~(IEEE CDC, IEEE ACC, ECC, IFAC) %\\
+\end{itemize}
+
+{ \bf \underline{Risks and Fallback Solutions}:} The risks related to this WP4 are quite similar to those encountered in WP3, namely methodological aspect and computational complexity. Then the same fallback solutions are applicable due to the complementarity of the consortium. Another point may be related to the estimation of cyber-attacks and/or faults or to face data-loss. However, the risk related to this issue is low because the contributors have a solid experience in the field and have promising preliminary work~\cite{Jeon_10.1115/DSCC2019-9096,ichalal2019unknown}. The issue related to modeling realistic cyber-attack, fault diagnosis, and data-loss architectures encountered in connected vehicles can be overcame by our partners FAAR and LISEC.
+
+\end{tcolorbox}
+
+
+
+
+%{\it
+%\subitem$-$ \underline{\it Task 4.1:} Nonlinear Modeling of ACC~(NM-ACC)
+%\subitem$-$ \underline{\it Task 4.2:} $\pmb{\mathbb{R}^{3}}$ NM$-$ACC with Neuro-Adaptive UIOs%~(NA-UIO)
+%%\subitem$-$  \underline{\it Task 4.3:} $\pmb{\mathbb{R}^{3}}$ NM$-$ACC with UIOs and Nonlinear Approximation
+%\subitem$-$  \underline{\it Task 4.3:} $\pmb{\mathbb{R}^{3}}$ NM$-$ACC by using multi-stage sensors and learning
+%}
+%
+%\vspace{-0.2cm}
+\item \textcolor{blue}{\bf WP5: Validation, Tests, and Integration of Algorithms}\\
+%
+\vspace{-0.5cm}
+\begin{tcolorbox}[breakable, enhanced,  colback=blue!2!white,
+title = \bf Contributors$-$Deadlines$-$Objectives, coltitle= black, colbacktitle=brown!90!white, halign title=center]
+
+{ \bf {Leader}:} Randolph {\sc Toom}~({\bf FAAR})
+
+{ \bf {Contributors}:} {\small CRAN~(\textcolor{navyblue}{20.8p.m}), IRSEEM~(\textcolor{navyblue}{30p.m}), IBISC~(\textcolor{navyblue}{30p.m}), {\bf FAAR}~(\textcolor{navyblue}{10p.m}), LISEC~(\textcolor{navyblue}{1p.m})}
+
+{ \bf {Deadlines (Start $-$ End)}:} T0+12~$-$~T0+48
+
+{ \bf {Objectives}:} All the methods developed in the previous work packages will be integrated and implemented, and they will be applied and validated on systems acquired by the research team~(FAAR, IRSEEM, IBISC) as well as new platforms of scaled vehicles to be acquired~(CRAN). The validation task will also consider implementation of the estimation algorithms on some control systems related to automated vehicles in a platoon, namely: following one of the target vehicles, changing lanes in order to avoid a stalled vehicle in the same lane. The goal here will consists in switching from the standard controller to another one when cyber-attacks or faults are detected. This controller will use the $\pmb{\mathbb{R}^{3}}$ software sensors established in the previous work packages. The multidisciplinarity of partners is essentially very benefit for this work package. Indeed, the 5 partners will work together and exchange their experience on vehicle modeling, instrumentation and integration, deep-learning and computer vision, and nonlinear estimation. The WP5 contains 3 tasks: T5.1$-$T5.2$-$T5.3.
+
+\end{tcolorbox}
+%\vspace*{0.1cm}
+\begin{comment}
+{\bf$\circ$ Partners:} \underline{\bf FAAR}~(\textcolor{red}{6 P.M}), CRAN~(\textcolor{red}{16 P.M}), IRSEEM~(\textcolor{red}{20 P.M}), LISEC~(\textcolor{red}{1 P.M}), IBISC~(\textcolor{red}{20 P.M})\\
+{
+{\bf$\circ$ Objectives:} All the methods developed in the previous work packages will be integrated and implemented, and they will be applied and validated on systems acquired by the research team~(FAAR, IRSEEM, IBISC) as well as new platforms of scaled vehicles to be acquired~(CRAN). The validation task will also consider implementation of the estimation algorithms on some control systems related to automated vehicles in a platoon, namely: following one of the target vehicles, changing lanes in order to avoid a stalled vehicle in the same lane. The goal here will consists in switching from the standard controller to another one when cyber-attacks or faults are detected. This controller will use the $\pmb{\mathbb{R}^{3}}$ software sensors established in the previous work packages. 
+%tracking a vehicle in the adjacent lane in order to detect whether it makes a lane change and cuts in so that appropriate fall back longitudinal control action can be taken, tracking vehicles in other lanes in order to do an automated lane change.
+}
+%
+\textcolor{black}{The multidisciplinarity of partners is essentially very benefit for this work package. Indeed, the 5 partners will work together and exchange their experience on vehicle modeling, instrumentation and integration, deep-learning and computer vision, and nonlinear estimation.}
+\end{comment}
+%
+\subitem$-$ \underline{\it T5.1. Validation in 3D simulation environments:} All the algorithms developed during the project will be first tested and validated in simulation using high fidelity simulators and virtual reality environments as the one developed by LISEC~({\bf AutoControl}). 3D simulators are also available from FAAR and IRSEEM. A CARSIM software is requested in this project by CRAN in the goal to facilitate testing algorithms by PhD and Master students. Simulations with experimental data from LISEC will also be performed.
+%
+\subitem$-$  \underline{\it T5.2. Validation in scaled and real vehicles in laboratory:} After the algorithms have been satisfactory tested and validated in simulation, they will be tested in a new experimental platform of scaled vehicles~(requested in the project by CRAN) and in instrumented real vehicles in laboratory~(Renault Espace from IRSEEM; Renault ZOE from IBISC). \textcolor{black}{The Autonomous Navigation Laboratory of IRSEEM will be put under the disposal of the project for the purpose of validating the estimation algorithms developed in the project. The IRSEEM experimental platform (735\euro/day) proposes a complete service including materials, automotive equipments, technicians and engineers according to the needs of the project.}
+% The IRSEEM experimental platform (735\euro/day) proposes a complete service including materials, automotive equipments, technicians and engineers, and processing of data formatting according to the needs of the project.
+%
+\subitem$-$  \underline{\it T5.3. Integration and Tests with real vehicles in FAAR SAS facilities:} 
+%After the algorithms are validated in laboratories, they will be integrated by FAAR SAS in highly advanced real platform of instrumented vehicles. {\bf Self-e-Car{\footnotesize$^{\circledR}$}} is the innovation platform, of FAAR, open to the development of autonomous and connected vehicle technologies intended to accommodate its technological bricks and those of its partners (large groups: PSA, startups). This powerful tool allows testing and improving environmental perception technologies, intersection management and vehicle control. Hence the complementarity of FAAR with the other partners of the ArtISMo project. The provision of the platform for testing is 1k\euro/day, and it is available for sale at 450k\euro. This platform will be made available to the ArtISMo project free of charge, which is a precious advantage for the success of the project.
+%\begin{figure}[h!]
+%    \centering
+%     \includegraphics[width=0.5\textwidth]{platform_FAAR2.png}
+%     \vspace{-0.2cm}
+%    \caption{Complementarity of the consortium in ArtISMo project.}\label{diagram_artismo}
+%\end{figure}
+After the algorithms are validated in laboratories, they will be integrated by FAAR in advanced real platform of instrumented vehicles.
+
+\noindent%
+\begin{minipage}{.49\textwidth}%
+%After the algorithms are validated in laboratories, they will be integrated by FAAR SAS in highly advanced real platform of instrumented vehicles.
+ {\bf Self-e-Car{\footnotesize$^{\circledR}$}} is the innovation platform, of FAAR, open to the development of autonomous and connected vehicle technologies intended to accommodate its technological bricks and those of its partners (large groups, startups). This powerful tool allows testing and improving environmental perception technologies, intersection management and vehicle control. Hence the complementarity of FAAR with the other partners of the ArtISMo project. The provision of the platform for testing is 1k\euro/day, and it is available for sale at 450k\euro. \textcolor{navyblue}{This platform will be made available to the ArtISMo project free of charge, which is a precious advantage for the success of the project.}
+\end{minipage}%
+\hfill
+%\begin{figure}[H]
+\begin{minipage}{.47\textwidth}%
+%\includegraphics[width=1\textwidth]{platform_FAAR3}
+\includegraphics[height=6cm, width=0.9\textwidth]{platform_FAAR3}
+\captionof{figure}{{\bf Self-e-Car{\footnotesize$^{\circledR}$}} FAAR platform}
+% {\bf Self-e-Car{\footnotesize$^{\circledR}$}} FAAR platform
+\end{minipage}%
+%\caption{???} 
+%\end{figure}
+
+
+
+\noindent
+%This platform will be made available to the ArtISMo project free of charge, which is a precious advantage for the success of the project.
+
+%This platform will be put at free at the disposal of ArtISMo project, which a high advantage.
+%\textcolor{red}{Give some technical details on the platform; a picture of the platform if possible;...}
+%
+\end{itemize}
+
+% where each WP is shared into several Tasks
+%%{
+%%\color{red}{
+%%{\bf$\circ$ Deliverables and deadlines:}
+%%\begin{itemize}
+  %%  \item {\bf D5.1} (T0$-$T0+48): ???
+%%    \item {\bf D5.1} (T0$-$T0+48: ???
+  %%  \item {\bf D5.1} (T0$-$T0+48: ???
+%%    \item {\bf D5.1} (T0$-$T0+48: ???
+%%\end{itemize}
+%%}
+%%}
+
+%\smallskip
+\begin{tcolorbox}[breakable, enhanced,  colback=yellow!2!white,
+title = \bf Deliverables$-$Risks and Fallback Solutions, coltitle= black, colbacktitle=yellow!7!white, halign title=center]
+
+{ \bf \underline{Deliverables}}
+
+\begin{itemize}[leftmargin=.2in,noitemsep,nolistsep]
+\item Open-source library on the validation results, including CARSIM simulations and codes
+\item Tutorial on the experimental platform with scale vehicles~(instrumentation, algorithms, and results)
+\item Final software sensors system for vehicle tracking as handled in ArtISMo project
+\item Implementation of the algorithms in the FAAR electronic communication calculator~(TCU),which will be equipped with 5G and LiFi
+\item Publication of a survey paper in IEEE Control Systems Magazine or in Technology journal %\\
+%\item Report on commercialization strategies and companies transfer
+\end{itemize}
+
+{ \bf \underline{Risks and Fallback Solutions}:} In general, the critical risks related to integration and testing steps are the unavailability of realistic instrumented platforms and lack of human resources~(Engineers). However, in our case , the consortium involves the industrial company FAAR, which puts at the disposal of ArtISMo project: 2 instrumented vehicles; 4 engineers expert in instrumentation, testing, and validation. Experimental platforms are also available from the partners IBISC and IRSEEM. The engineers will be closely supported by the contributors of the estimation theory to adapt the methodological algorithms and improve them to avoid any risk. The risk related to the computational complexity is low since FAAR puts enough computer science resources at the disposal of the project. FAAR has contact with manufacturers in order to update its range of products. Today several of these manufacturers already allow neural networks to run on ECU thanks to the latest processors (nvidia, Horizon, Baidu, NXP, ST, Kalray). This will migrate the software developed within this project to these platforms.
+%
+% Complexity
+% assister les ingénieurs poru adapter les méthodes d'estimation
+\end{tcolorbox}
+
+
+
+
+
+
+
+
+
+
+
+
+
+%\vspace{-0.5cm}
+
+\section[Organisation and Implementation of the Project]{Organisation and Implementation of the Project}
+%\vspace*{-0.3cm}
+
+%The project brings together four research laboratories: \textcolor{blue}{CRAN$-$Universit\'e de Lorraine}~(Centre de Recherche en Automatique de Nancy, UMR 7039), \textcolor{blue}{IBISC$-$Universit\'e d'Evry Val-d'Essonne}~(Informatique, Bio-informatique et Syst\`emes Complexes, EA 4526), \textcolor{blue}{IRSEEM$-$ESIGELEC}~(Institut de Recherche en Syst\`emes Electroniques Embarqu\'es, EA 4353) and \textcolor{blue}{LISEC$-$University of Minnesota}~(Laboratory for Innovations in Sensing, Estimation and Control), and a company:~\textcolor{blue}{FAAR SAS}~({\footnotesize\url{https://www.faar-industry.com/}}).
+
+
+\subsection[Scientific coordinator and its consortium]{Scientific coordinator and its consortium / its team}
+
+
+
+
+\subsubsection{Scientific coordinator and his experience}
+
+
+Ali {Z\sc emouche}, from CRAN, is experienced in nonlinear observer design and estimation with application to autonomous vehicles. He will be involved in all aspects of the project to ensure the successful delivery of the project. He will provide the overall coordination and leadership of the program. He will specifically focus on the development of intelligent neuro-adaptive estimation algorithms for connected vehicle applications~(vehicle tracking, cyber-attacks detection, estimation of unexpected obstacles, etc). He will also be involved in the validation and integration of the developed algorithms, on simulation/experimental platforms~(CARSIM, instrumented vehicles).
+He is involved in scientific projects and published papers~(related to the proposal) in top international journals like~\cite{Jeon8610212,Rajamani-7930581,Zemouche-8540946,ZEMOUCHE2017412}. He is very well cited in the literature and his papers have became famous in the field of nonlinear estimation. He is invited by many universities to give plenary presentations on nonlinear observers. Ali {Z\sc emouche} is involved and works on the following past and current projects:
+ \begin{small}
+\begin{enumerate}[leftmargin=.2in,noitemsep,nolistsep]
+%\item {\bf CHIST$-$ERA~(submitted, \underline{scientific manager}):} {\it Explainable machine learning-based artificial intelligence for smart mobility.}
+\item {\bf PHC$-$SIAM 42844ZK~(2019$-$2020, \underline{coordinator}):} {\it Observers for vehicle tripped rollover prevention.}
+\item {\bf Contract with SEGULA Technologies~(03/2020$-$08/2020, \underline{coordinator}):} {\it Vehicle tracking, observers.}
+%collaboration with {\it smart mobility center} of Chulalongkorn University.
+\item {\bf Partnership with University of Minnesota~(2017$-$2020):} {\it Autonomous and connected vehicle.}
+\item {\bf ANR GLMAV~(2010--2013, \underline{involved - supervision of a Postdoc}):} {\it Gun Launched Micro Aerial Vehicle.}
+\item {\bf DGA project~(2007--2010, \underline{involved - PhD supervision}):} {\it Position and attitude estimation of a projectile.}
+%\item
+\end{enumerate}
+%%
+%\item {\bf 3 selected publications:}
+%\begin{enumerate}
+%\item {\bf A. Zemouche}, F. Zhang, F. Mazenc and R. Rajamani, "High Gain Nonlinear Observer with Lower Tuning Parameter. {\it IEEE Transactions on Automatic Control, full paper, , vol. 64, n°8, pp.  3194--3209, August 2019.}
+%\item W. Jeon, {\bf A. Zemouche}, R. Rajamani. Tracking of Vehicle Motion on Highways and Urban Roads Using A Nonlinear Observer. {\it IEEE/ASME Transactions on Mechatronics, vol. 24, n°2, pp. 644-655, April 2019.} 
+%\item R. Rajamani, Y. Wang, G. Nelson, R. Madson, {\bf A. Zemouche}. Observers with Dual Spatially Separated Sensors  for Enhanced Estimation - Industrial, Automotive and Biomedical Applications. {\it IEEE Control Systems Magazine, vol. 37, n°3 : 42-58, 2017.}
+%%\item
+%%\item
+%\end{enumerate}
+%\end{itemize}
+ \end{small} %footnotesize
+ 
+As project coordinator, he will lead the steering committee of the ArtISMo project to ensure the evolution of the different tasks and the synergy between the partners, monitor planning and ensure deadlines for the completion of deliverables, and organize meetings.. Since nonlinear observer design and estimation are the main research topics of the project coordinator, he will secure {\bf 50\%} of his research activities to work actively on all the WPs of this project.
+
+\vspace{-0.4cm}
+\subsubsection{Presentation of the consortium and its complementarity}
+
+%This section is devoted to the description of the consortium and its quality and complementary to reach the objectives of the proposal and the relevance of the methodology.
+
+\subsubsubsection*{Presentation of the consortium}
+
+%\begin{enumerate}
+\underline{\textcolor{blue}{1. \bf CRAN:}} {\small A. Zemouche~(\underline{coordinator}), M. Zasadzinski, C. Delattre, H. Rafaralahy, M. Alma, L. Boutat-Baddas}. \\
+%\begin{itemize}
+%\item {\bf Members (6):} Ali Zemouche~(\underline{sc. coordinator}), Michel Zasadzinski, C\'edric Delattre, Hugues Rafaralahy, Marouane Alma, Latifa Boutat-Baddas.
+%\vspace{-0.2cm}
+%
+%\item {\bf Description:} 
+CRAN~(Research Center for Automatic Control of Nancy, UMR 7039) is a research laboratory with high experience on automatic control theory and its applications. In particular, the members from CRAN involved in this project are internationally recognized in  the field of nonlinear estimation and observer design with application on several real-world models, namely UAV, projectiles, biogas processes, robotics, and autonomous vehicles. The team has been and is involved in numerous projects; we can mention the recent projects like {DGA-REI 2008/2011}, {ANR-09--SECU-12--GLMAV}, ANR Emergence-11-EMMA-035 PROTHERMOVERRE, {PHC SIAM 42844ZK}. For five years, the team have worked closely with University of Minnesota on project on autonomous and connected vehicles. Hence, the team covers a large number scientific topics related to the proposal, namely nonlinear observer design, adaptive observers, stochastic systems, unknown input estimation, optimization, and application to autonomous and connected vehicles. \textcolor{black}{CRAN is the coordinator of the project and the leader of both WP1 and WP3}.\\
+%\end{itemize}
+%
+\underline{\textcolor{blue}{2. \bf IRSEEM:}} {\small S. Ahmed Ali~(\underline{leader}), R. Khemmar, A. Cabani, Y. Dupuis, R. Hajri El Houda, N. Langlois, D. Quangtruc}.\\
+%\begin{itemize}
+%\item {\bf Members (6):} Sofiane Ahmed Ali~(\underline{leader}), Redouane Khemmar, .
+%\vspace{-0.2cm}
+%
+%\item {\bf Description:} IRSEEM team conducts a research partnership, with an application purpose. The industrial sectors of the automobile, aeronautics, renewable energies, telecommunications and health are thus targeted. The IRSEEM laboratory conducts research aiming at bringing new embedded intelligence functionalities for intelligent transportation systems and mobile robotics in order to make them autonomous and cooperating. Research work related to embedded vision and multi-sensor perception for driving assistance and autonomous navigation have been conducted for several years. IRSEEM has conducted several research projects as a lead partner such as: ADAPT\footnote{http://adapt-project.com/}, SAVEMORE\footnote{http://sites.esigelec.fr/SAVEMORE/}, VIRTUOSE\footnote{https://tinyurl.com/VirtuoseProject}, ARGOS\footnote{https://tinyurl.com/ChallengeArgos}, etc. \textcolor{black}{IRSEEM is the leader of WP2}.
+%\item {\bf Description:} 
+IRSEEM team conducts a research partnership, with an application purpose. The industrial sectors of the automobile, aeronautics, renewable energies, telecommunications and healthcare are thus targeted. The IRSEEM laboratory conducts research aiming at bringing new embedded smart functionalities for intelligent transportation systems and mobile robotics in order to make them autonomous and cooperating. Research work related to embedded vision and multi-sensor perception for driving assistance and autonomous navigation have been conducted for several years. IRSEEM has conducted several research projects as a lead partner such as: ADAPT, SAVEMORE, VIRTUOSE, ARGOS, etc. \textcolor{black}{IRSEEM is the leader of WP2}.\\
+%\end{itemize}
+%
+%
+%
+\underline{\textcolor{blue}{3. \bf IBISC:}} D. Ichalal~(\underline{leader}), S. Mammar, L. Nouveli\`ere, K. Lahiani.\\
+% Dalil Ichalal~(\underline{leader}), Sa\"\i d Mammar, Lydie Nouveli\`ere, Khaled Lahiani.
+%\begin{itemize}
+%\item {\bf Members (4):} Dalil Ichalal~(\underline{leader}), Saïd Mammar, Lydie Nouveli\`ere, Khaled Lahiani.
+%\vspace{-0.2cm}
+%
+%\item {\bf Description:} 
+The IBISC laboratory (Informatique, BioInformatique, Syst\`emes Complexes EA 4526) is a laboratory of the University of Evry Paris-Saclay which is structured into 4 research teams: AROBAS, COSMO, IRA2 and SIAM. The members enrolled in the project are part of the SIAM team (Signal, Image, AutoMatique). This team is developing automatic methods (Control, observation, diagnosis) but also signal, image and perception processing based on artificial intelligence approaches. These methods are developed for applications in the transport, vehicles and biomedical fields. The members involved in this project are recognized for work on driver assistance systems using automatic control tools. \textcolor{black}{IBISC is the leader of WP4}.\\
+%\end{itemize}
+%
+%
+\underline{\textcolor{blue}{4. \bf LISEC--Minnesota:}} Rajesh Rajamani~(\underline{leader}).\\
+%\begin{itemize}
+%\item {\bf Members (1):} Rajesh Rajamani~(\underline{leader}).
+%\vspace{-0.2cm}
+%
+%\item {\bf Description:} 
+The research in LISEC laboratory focuses on the design of devices, estimation algorithms and controllers for smart and autonomous systems. Specific major areas of research in LISEC lab have included: Estimation algorithms and control systems for intelligent vehicles, active sensing and estimation on smart bicycles, imminent collision detection sensors, tracking systems for complex traffic on urban roads and highways, and road condition monitoring transducers. The head of the lab is Professor Rajesh Rajamani, an international leader in vehicle dynamics and control. He is author of 16 patents and he got more than 50 significant grants. He is the co-founder of the start-up {\it Innotronics} based on technologies developed in LISEC.\\
+%\end{itemize}
+%
+%
+\underline{\textcolor{blue}{5. \bf FAAR SAS:}} R. Toom~(\underline{leader}), E. Salvator, E. Nang-Tchee, M. Duthoit, T. Marchand.\\ 
+%\begin{itemize}
+%\item {\bf Members (1+ 2 Engineers):} Randolph Toom~(\underline{leader}).
+%\vspace{-0.2cm}
+%
+%\item {\bf Description:} 
+FAAR is specialized in the development of electronic embedded systems, from prototyping to production programs. FAAR SAS is a great company with a turnover of {\bf 8 M\euro}. FAAR works mainly on the development of new technologies for smart mobility. The main partners of FAAR are automotive companies and industrials like \textcolor{black}{Renault, PSA, Safran, Thales, Alstom, nVidia}. FAAR has a long experience in commercialization of new technologies related to autonomous vehicle, namely \textcolor{black}{SELF--e--CAR, CROSS--DRIVE, EASY CAN, and several electronic control units and configurable displays}. FAAR has the expertise, the skills and the partners to go beyond the state of the art and respond to the objectives of smart mobility addressed in this project. \textcolor{black}{FAAR is the leader of WP5 and offers a high technology vehicle platform~({\it details in T5.3})}. Today, FAAR is involved in various autonomous driving projects: vehicle automation, design of the electronic and electrical architecture, and development of specific computers monitoring an autonomous vehicle.
+%\end{itemize}
+%\end{enumerate}
+
+
+
+\subsubsubsection*{Complementarity of the consortium}
+
+The proposal revolves around four main points: \textcolor{black}{\it modeling, benchmarking, deep-learning, computer vision}; \textcolor{black}{\it estimation theory for nonlinear systems}; \textcolor{black}{\it fault diagnostic, vehicle dynamics, and embedded  systems}; \textcolor{black}{\it connectivity, companies transfer, and commercialization}.
+%
+%{\bf The makeup and balance of the consortium is ideal for this project as it covers all aspects of estimation and control with real-implementation on autonomous vehicles, and allows multiple tasks to be run in parallel.}
+{The makeup and balance of the consortium is essential for the successful delivery of the project as the consortium covers all important aspects of estimation in intelligent transportation systems and allows several inter-related work-packages running in parallel thus achieving maximum possible outcomes within the specified timeframe.}
+%
+Each scientist involved in the project is expert in a field, covering the whole project from the development of comprehensive theory to the integration of the algorithms on instrumented vehicles and commercialization of the product. %The experience of these scientists will increase the relevance of the methodology.
+%
+The five partners complement each other. The company ``\textcolor{black}{FAAR}'' will bring its expertise in integrating new technologies for autonomously running transport~(Control systems, automation, connectivity, electronic communication calculator~(TCU)) and its \textcolor{black}{\it strategy in commercialization of products for industrial partners and major automotive groups like PSA, Renault, Safran, Thales, Alstom, nVidia}. ``\textcolor{black}{IBISC}'' has a long expertise in \textcolor{black}{\it fault diangostic and control design for vehicle applications}; ``\textcolor{black}{IRSEEM}'' has an \textcolor{black}{\it autonomous navigation platform} and has a strong background in \textcolor{black}{\it modeling and benchmarking of  several applications, deep-learning and environment perception}, namely for autonomous navigation within \textcolor{black}{\it embedded computer vision algorithms}. ``\textcolor{black}{CRAN}'' has a \textcolor{black}{\it solid experience in nonlinear estimation from theoretical and real-world application}~(\underline{\it autonomous vehicles}) viewpoints. Finally, Professor R. {\sc Rajamani}, from `` \textcolor{black}{LISEC$-$University of Minnesota}", who is \textcolor{black}{\it internationally recognized in vehicle control dynamics}, will participate to the implementation of new estimation algorithms and \textcolor{black}{\it will strengthen the project in innovations related to vehicle dynamics and control}. He will share his highly recognized experience. A research project as multidisciplinary as {ArtISMo}, can only succeed if it combines competences of these five partners. Such a complementarity may be represented as in Figure~\ref{complementarity_ArtISMo}, which shows connections between the 5 partners~(thin arrows) and the main expertise of each partner~(thick arrows). Our industrial partner, FAAR, is a main key of complementarity. %It is worth to notice also that the consortium is involved in 20 patents~(LISEC, FAAR) and 2 start-up companies~({\it Innotronics}, {\it TechnOptiz}).
+
+%-------- BEGIN DIAGRAM ------
+
+\begin{figure*}[h!]
+%\begin{small}
+\centering
+\resizebox{0.6\textwidth}{!}
+{
+%%%%  Shapes Definition %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tikzstyle{startstop} = [rectangle, rounded corners,  text width=3.2cm, minimum height=1cm,text  centered, draw=grey!30, fill=uscgold!40]
+\tikzstyle{process} = [rectangle,fill=cyan!25, rounded corners, text width=3.2cm, minimum height=1cm, text centered, draw=grey!30]
+\tikzstyle{process3} = [rectangle,fill=orange!40, rounded corners, text width=3.2cm, minimum height=1cm, text centered, draw=grey!30]
+\tikzstyle{process4} = [rectangle,fill=green!25, rounded corners, text width=3.2cm, minimum height=1cm, text centered, draw=grey!30]
+\tikzstyle{process1} = [rectangle, text width=3cm, minimum height=0.7cm, text centered, draw=grey!30, fill=red!30,rounded corners]
+\tikzstyle{process2} = [rectangle, rounded corners,text width=3cm, minimum height=0.7cm, text centered, draw=grey!30, fill=brown(web)!30]
+\tikzstyle{Project} = [ellipse, minimum width=2.5cm, minimum height=0.7cm, text centered, draw=grey!30 ]
+\tikzstyle{arrow} = [dotted,thick, black,->]
+
+%%% Tasks %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tikzpicture}[node distance=1.2cm]
+\node(task1)[startstop] { {Vehicle modeling, Perception, Deep-Learning} };
+\node(task2)[process, right of=task1, xshift=2.6cm] {{Nonlinear estimation, Stability, vehicle applications}};
+\node(task3)[process3, below of=task1, yshift=-1.5cm] {{Fault diagnostic, UIO, cyber-attack, Vehicle dynamics}};
+\node(task4)[process4, below of=task2, yshift=-1.5cm] {{Integration, Open innovation, companies transfer}};
+%********partners *************************************
+\node(partner2)[process1, left of=task1, xshift=-3.3cm] {\textbf{IRSEEM}};
+\node(partner1)[process1, above of=partner2] {\textbf{CRAN}};
+\node(partner3)[process1, below of=partner2] {\textbf{IBISC}};
+\node(partner4)[process1, below of=partner3] {\textbf{FAAR}};
+\node(partner5)[process1, below of=partner4] {\textbf{LISEC}};
+%********contributors**************************************
+\node(contributor2)[process2, left of=task2, xshift=5.7cm] {\textbf{PhD2}};
+\node(contributor1)[process2, above of=contributor2] {\textbf{PhD1}};
+\node(contributor3)[process2, below of=contributor2] {\textbf{Postdoc1}};
+\node(contributor4)[process2, below of=contributor3] {\textbf{Postdoc2}};
+\node(contributor5)[process2, below of=contributor4] {\textbf{MSc Students}};
+%********************************************
+\node(project)[Project, below of=task4, xshift=-2cm, yshift=-0.5cm] {\color{red} \textbf{ArtISMo}};
+%\node(project)[Project, below of=task3, xshift=1.9cm, yshift=-1.2cm] { \textbf{ArtiSMo}};
+
+%%%%%%  LINKS partners %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%partner 1
+ \path[->] (partner1) edge[bend left, below, thick,  dashed, black] node{} (task2);
+ \path[->] (partner1) edge[bend left, below,  dotted, black] node{} (task4);
+ \draw [arrow] (partner1) -- (task1);
+ \draw [arrow] (partner1) -- (task3);
+ %\draw [arrow] (partner1) - +(12mm,-12mm) |- (task4);
+  \path[->] (partner1) edge[bend left, below,  dotted, black] node{} (task4);
+ %partner 2
+ \draw[arrow, black,dashed, thick] (partner2) --(task1);
+ \draw[arrow, dotted] (partner2) --(task3);
+  \path[->] (partner2) edge[bend left, below, dotted, black] node{} (task2);
+  \path[->] (partner2) edge[bend left, below, dotted, black] node{} (task4);
+ %partner 3
+\draw [arrow, dashed,  thick] (partner3) -- (task3);
+\draw [arrow] (partner3) -- (task1);
+\path[->] (partner3) edge[bend right, below, dotted] node{} (task4);
+%partner 4
+\path[->] (partner4) edge[bend right, below, thick,  dashed] node{} (task4);
+%partner5
+ \path[->] (partner5)edge[bend right=45, below, thick,  dashed] node{} (task2);
+\draw [arrow] (partner5) -- (task4);
+\draw [arrow] (partner5) -- (task3);
+\draw [arrow] (partner5) -- (task1);
+% Links Contributor %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Contributor 1
+\draw[arrow, black,dashed,  thick] (contributor1) --(task2);
+\path[->] (contributor1) edge[bend right, below,dotted] node{} (task1);
+\path[->] (contributor1) edge[bend right, below,dotted] node{} (task4);
+%Contributor 2
+\draw[arrow, black,dashed,  thick] (contributor2) --(task3);
+\path[->] (contributor2) edge[bend right, above,dotted] node{} (task2);
+\path[->] (contributor2) edge[bend right, below,dotted] node{} (task4);
+%Contributor 3
+\draw[arrow, black,dashed, thick] (contributor3) --(task2);
+\path[->] (contributor3) edge[bend right, below,dotted] node{} (task4);
+%Contributor 4
+\draw[arrow] (contributor4) --(task4);
+\path[->] (contributor4) edge[bend right=20, below,dashed, thick ] node{} (task3);
+%Contributor 5
+\path[->] (contributor5) edge[bend right, below,dotted] node{} (task1);
+\path[->] (contributor5) edge[bend right, below,dotted] node{} (task2);
+\path[->] (contributor5) edge[bend right, below,dotted] node{} (task3);
+\path[->] (contributor5) edge[bend right, below,dotted] node{} (task4);
+%%%%%%%%%%%%Links label%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%\draw [arrow] (plant) -- (sensor);
+%\draw [arrow] (sensor) -- node[anchor=west] {$y$}(delay1);
+%\draw [arrow] (delay1) -- node[anchor=north] {$y_c\;$} (controller);
+%\draw [arrow] (controller) -- node[anchor=north] {$u$}(delay2);
+%\draw [arrow] (delay2) -- node[anchor=east] {$u_c$} (actuator);
+
+%%%%%%%Contours%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\draw[ ultra thick, rounded corners, color=grey ]
+($(task1.south west)+(-.2,-2.9)$) rectangle ($(task2.north east)+(.2,.2)$)
+ ;
+\draw[ ultra thick, rounded corners, color=red] ($(partner1.south west)+(-.2,1)$) rectangle ($(partner5.north east)+(.2,-1)$);
+\draw[ ultra thick, rounded corners, color=brown(web)] ($(contributor1.south west)+(-.2,1)$) rectangle ($(contributor5.north east)+(.2,-1)$);
+
+\end{tikzpicture}
+}
+\vspace{-0.5cm}
+\caption{Complementarity of the consortium in ArtISMo project covering all the WPs.}\label{complementarity_ArtISMo}
+%\end{small}
+\end{figure*}
+
+
+%\begin{figure}[h!]
+%    \centering
+%     \includegraphics[width=0.6\textwidth]{diagram_artismo.png}
+%     \vspace{-0.2cm}
+%    \caption{Complementarity of the consortium in ArtISMo project.}\label{diagram_artismo}
+%\end{figure}
+
+%\begin{center}
+%    \smartdiagram[constellation diagram]
+%    {
+%    {\small\textbf{\textcolor{red}{ArtISMo project\\ Nonlinear estimation theory}}
+%    }, \textbf{CRAN},
+%    \textbf{FAAR SAS}
+%    }
+%    \end{center} 
+%  %  
+ %-------- END DIAGRAM ------
+
+%A research project as multidisciplinary as {\bf ArtISMo}, can only succeed if it combines competences in complementary areas, such as instrumentation and embedded systems~(FAAR SAS, IRSEEM, IBISC); nonlinear estimation theory~(CRAN); vehicle dynamics and sensing~(LISEC); perception, deep-learning, and artificial intelligence~(IRSEEM). 
+%\textcolor{blue}{Redouane to be deleted:The pooling of these complementary competences gives the consortium a great added-value that will allow an optimal fulfillment of the project at both the scientific and applied viewpoints}. 
+%\textcolor{black}{The added values of our contribution in the overall collaboration are: 1. The pooling of complementary of the partners competences will allow an optimal fulfillment of the project at both the scientific and applied viewpoints. 2. The generic aspect of the platform to be developed as well as the fact that it is an experimental platform on which academic and industrial partners can validate their scientific and technological concepts represents a real valorization of the project. 3. Expertise in the field of machine learning, estimation and observers, autonomous vehicle, mobile robotics, and system control. 4. Strategic application that enhances smart mobility safety, including an innovative solution-based on unifying themes between national academic and industrial partners.} 
+
+\vspace{-0.3cm}
+
+\subsubsubsection*{Requested human resources for the project}
+To reach the all scientific objectives of the ArtISMo project, we would like to hire: 2 PhD students, 2 Postdoc researchers, and 12 Master interns. The PhD1 will work on the design of learning-based neuro-adaptive observers for vehicle tracking~(WP3), under the co-supervision of Ali {\sc Zemouche} \& C\'edric  {\sc Delattre}~(CRAN) and Redouane {\sc Khemmar}~(IRSEEM). The PhD2 will work on the design of $\pmb{\mathbb{R}^{3}}$-software sensors by considering faults, complex cyber-attack architectures, and data-loss~(WP4), under the co-supervision of Dalil {\sc Ichalal} \& Said {\sc Mammar}~(IBISC) and {Marouane \sc Alma}~(CRAN). The PostDoc1 will work on the task T3.4 to strengthen and complete the objectives of the WP3 and WP5 and develop multi-connected intelligent software sensors by integrating stochastic predictors and optimization-based estimators. The PostDoc2 will work on complex cyber-attacks architectures by considering virtual sensors and learning. Both PostDoc1 and PostDoc2 will work in collaboration with the all partners. As for MSc students, some of them will work with PhD1, PhD2, PostDoc1, and PostDoc2. The other MSc students will strengthen the instrumentation and validation tasks.
+
+\vspace{-0.3cm}
+\subsubsubsection*{Collaborations related to the proposal's topic}
+This project will take advantage of ongoing collaborations with international partners:
+\begin{itemize}[leftmargin=.25in,noitemsep,nolistsep]
+\item {Ankush \sc Chakrabarty} and {Mouhacine \sc Benosman} from Mitsubishi Electric Research Laboratories, USA, working on learning-based observers.
+\item {Gridsada \sc Phanomchoeng} from {\it smart mobility research center}, University of Chulalongkorn, Thailand, who is involved in a common PHC$-$SIAM grant for 2 years~(2019/2020), with {Ali \sc Zemouche} on observer design for vehicle tripped rollover prevention.
+%\item {Hieu \sc Trinh} from Deakin University, Australia,???
+\end{itemize}
+These collaborations will strengthen the project through commun discussions on the topic and will offer opportunities for the recruited PhD students and PostDoc researchers to have scientific stays. In order to support trips, we will use PHC projects and funding provided by our labs.
+%%-------- BEGIN DIAGRAM ------
+%
+%
+%\begin{figure*}[h!]
+%%\begin{small}
+%\centering
+%%\resizebox{2cm}{!}{\input{temp.tikz}}
+%%%%%  Shapes Definition %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tikzstyle{startstop} = [rectangle, rounded corners,  text width=3.2cm, minimum height=1cm,text  centered, draw=grey!30, fill=uscgold!40]
+%\tikzstyle{process} = [rectangle,fill=cyan!25, rounded corners, text width=3.2cm, minimum height=1cm, text centered, draw=grey!30]
+%\tikzstyle{process3} = [rectangle,fill=orange!40, rounded corners, text width=3.2cm, minimum height=1cm, text centered, draw=grey!30]
+%\tikzstyle{process4} = [rectangle,fill=green!25, rounded corners, text width=3.2cm, minimum height=1cm, text centered, draw=grey!30]
+%\tikzstyle{process1} = [rectangle, text width=3cm, minimum height=0.7cm, text centered, draw=grey!30, fill=red!30,rounded corners]
+%\tikzstyle{process2} = [rectangle, rounded corners,text width=3cm, minimum height=0.7cm, text centered, draw=grey!30, fill=brown(web)!30]
+%\tikzstyle{Project} = [ellipse, minimum width=2.5cm, minimum height=0.7cm, text centered, draw=grey!30 ]
+%\tikzstyle{arrow} = [dotted,thick, black,->]
+%
+%%%% Tasks %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{tikzpicture}[node distance=1.2cm]
+%\node(task1)[startstop] { {Vehicle modeling, Perception, Deep-Learning} };
+%\node(task2)[process, right of=task1, xshift=2.6cm] {{Nonlinear estimation, Stability, vehicle applications}};
+%\node(task3)[process3, below of=task1, yshift=-1.5cm] {{Fault diagnostic, UIO, cyber-attack, Vehicle dynamics}};
+%\node(task4)[process4, below of=task2, yshift=-1.5cm] {{Integration, Open innovation, companies transfer}};
+%%********partners *************************************
+%\node(partner2)[process1, left of=task1, xshift=-3.3cm] {\textbf{IRSEEM}};
+%\node(partner1)[process1, above of=partner2] {\textbf{CRAN}};
+%\node(partner3)[process1, below of=partner2] {\textbf{IBISC}};
+%\node(partner4)[process1, below of=partner3] {\textbf{FAAR}};
+%\node(partner5)[process1, below of=partner4] {\textbf{LISEC}};
+%%********contributors**************************************
+%\node(contributor2)[process2, left of=task2, xshift=5.7cm] {\textbf{PhD2}};
+%\node(contributor1)[process2, above of=contributor2] {\textbf{PhD1}};
+%\node(contributor3)[process2, below of=contributor2] {\textbf{Postdoc1}};
+%\node(contributor4)[process2, below of=contributor3] {\textbf{Postdoc2}};
+%\node(contributor5)[process2, below of=contributor4] {\textbf{MSc Students}};
+%%********************************************
+%\node(project)[Project, below of=task4, xshift=0cm, yshift=-0.2cm] {\color{red} \textbf{ArtiSMo}};
+%%\node(project)[Project, below of=task3, xshift=1.9cm, yshift=-1.2cm] { \textbf{ArtiSMo}};
+%
+%%%%%%%  LINKS partners %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%partner 1
+% \path[->] (partner1) edge[bend left, below,ultra thick,  dashed, black] node{} (task2);
+%  \path[->] (partner1) edge[bend left, below,  dotted, black] node{} (task4);
+% \draw [arrow] (partner1) -- (task1);
+% \draw [arrow] (partner1) -- (task3);
+% %\draw [arrow] (partner1) - +(12mm,-12mm) |- (task4);
+%  \path[->] (partner1) edge[bend left, below,  dotted, black] node{} (task4);
+% %partner 2
+% \draw[arrow, black,dashed, ultra thick] (partner2) --(task1);
+% \draw[arrow, dotted] (partner2) --(task3);
+%  \path[->] (partner2) edge[bend left, below, dotted, black] node{} (task2);
+%  \path[->] (partner2) edge[bend left, below, dotted, black] node{} (task4);
+% %partner 3
+%\draw [arrow, dashed, ultra thick] (partner3) -- (task3);
+%\draw [arrow] (partner3) -- (task1);
+%\path[->] (partner3) edge[bend right, below, dotted] node{} (task4);
+%%partner 4
+%\path[->] (partner4) edge[bend right, below,ultra thick,  dashed] node{} (task4);
+%%partner5
+% \path[->] (partner5)edge[bend right=45, below,ultra thick,  dashed] node{} (task2);
+%\draw [arrow] (partner5) -- (task4);
+%\draw [arrow] (partner5) -- (task3);
+%\draw [arrow] (partner5) -- (task1);
+%% Links Contributor %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%Contributor 1
+%\draw[arrow, black,dashed, ultra thick] (contributor1) --(task2);
+%\path[->] (contributor1) edge[bend right, below,dotted] node{} (task1);
+%\path[->] (contributor1) edge[bend right, below,dotted] node{} (task4);
+%%Contributor 2
+%\draw[arrow, black,dashed, ultra thick] (contributor2) --(task3);
+%\path[->] (contributor2) edge[bend right, above,dotted] node{} (task2);
+%\path[->] (contributor2) edge[bend right, below,dotted] node{} (task4);
+%%Contributor 3
+%\draw[arrow, black,dashed, ultra thick] (contributor3) --(task2);
+%\path[->] (contributor3) edge[bend right, below,dotted] node{} (task4);
+%%Contributor 4
+%\draw[arrow] (contributor4) --(task4);
+%\path[->] (contributor4) edge[bend right=20, below,dashed, ultra thick ] node{} (task3);
+%%Contributor 5
+%\path[->] (contributor5) edge[bend right, below,dotted] node{} (task1);
+%\path[->] (contributor5) edge[bend right, below,dotted] node{} (task2);
+%\path[->] (contributor5) edge[bend right, below,dotted] node{} (task3);
+%\path[->] (contributor5) edge[bend right, below,dotted] node{} (task4);
+%%\draw [arrow] (plant) -- (sensor);
+%%\draw [arrow] (sensor) -- node[anchor=west] {$y$}(delay1);
+%%\draw [arrow] (delay1) -- node[anchor=north] {$y_c\;$} (controller);
+%%\draw [arrow] (controller) -- node[anchor=north] {$u$}(delay2);
+%%\draw [arrow] (delay2) -- node[anchor=east] {$u_c$} (actuator);
+%
+%%%%%%%%Contours%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%%\draw[ ultra thick, rounded corners, color=grey ]
+%%($(task1.south west)+(-.2,-2.9)$) rectangle ($(task2.north east)+(.2,.2)$)
+%% ;
+%%\draw[ ultra thick, rounded corners, color=red] ($(partner1.south west)+(-.2,1.3)$) rectangle ($(partner5.north east)+(.2,-1)$);
+%%\draw[ ultra thick, rounded corners, color=brown(web)] ($(contributor1.south west)+(-.2,1)$) rectangle ($(contributor5.north east)+(.2,-1.3)$);
+%\draw[ ultra thick, rounded corners, color=grey ]
+%($(task1.south west)+(-.2,-2.9)$) rectangle ($(task2.north east)+(.2,.2)$)
+% ;
+%\draw[ ultra thick, rounded corners, color=red] ($(partner1.south west)+(-.2,1)$) rectangle ($(partner5.north east)+(.2,-1)$);
+%\draw[ ultra thick, rounded corners, color=brown(web)] ($(contributor1.south west)+(-.2,1)$) rectangle ($(contributor5.north east)+(.2,-1)$);
+%
+%\end{tikzpicture}
+%\caption{Complementarity of the consortium in ArtISMo project covering all the WPs.}\label{complementarity_ArtISMo}
+%%\end{small}
+%\end{figure*}
+
+    
+    
+
+%$$
+%\text{??? On doit monter très clairement la complémentarité - \textcolor{red}{Critique en Phase 1} ???}
+%$$
+
+%The added values of our contribution in the overall collaboration are: 1. Transparency and interpretability of our AI platform which improve its acceptability and confidence by users, developers, researchers, and society. 2. The generic aspect of the platform to be developed as well as the fact that it is an experimental platform on which academic and industrial partners can validate their scientific and technological concepts represents a real valorization of the project. 3. Expertise in the field of machine learning, autonomous vehicle, mobile robotics, and system control. 4. Strategic application that enhances smart mobility safety, including an innovative solution-based on unifying themes between European and Canadian partners. 
+
+
+
+\subsubsection{Implication of the scientific coordinator and partner's scientific leader in on-going projects}
+
+
+The following Table~\ref{tab_ongoing} includes informations concerning the involvement of the scientific coordinator and partner's scientific leader in regional, national and international on-going projects:
+
+
+
+%\vspace*{-0.3cm}
+%-----
+{\centering
+\begin{table*}[h!]%\label{tab.T2}
+%\hspace{10mm}
+%\scriptsize
+\footnotesize
+%\begin{tabular}{|l||c||c||c||c||c||c||}%\label{tab.T2}
+\begin{tabular}{|l|c|c|c|c|c|c|}%\label{tab.T2}
+  \hline%\hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+ % &  ~~ & ~~  & ~~\\
+\rowcolor{orange!50}\bf{Name of the} & \textbf{P.M} & \bf{Call, funding agency,} & \textbf{Project's title} & \textbf{Name of the} & \textbf{Start$-$End} \\
+\rowcolor{orange!50}{\bf researcher} & ~ & \bf{grant allocated} & ~ & \textbf{coordinator} & ~ \\
+\hline\hline
+Ali Zemouche & 10 & PHC, Campus France, 15 300\euro & SIAM$-$42844ZK & Ali Zemouche & 01/2019$-$12/2020\\
+%~ & ~ & 15 300\euro & ? & ? & ?\\
+\hline\hline
+Sofiane Ahmed Ali & 3.8 & Normandy region, 2216.4 K \euro & THESIS project & Romain Dupperier & 11/2017$-$09/2020\\
+%% Redouane : à voir car je ne suis pas partner scientific leader
+\hline\hline
+Dalil Ichalal & $\times$ & $\times$ & $\times$ & $\times$ & $\times$\\
+\hline\hline
+Randolph Toom & $\times$ & $\times$ & $\times$ & $\times$ & $\times$\\
+\hline\hline
+%Rajesh Rajamani & ? & ? & ? & ? & ?\\
+Rajesh Rajamani & \begin{tabular}{@{}c@{}}4 \\ 3 \\ 2.5\end{tabular} & \begin{tabular}{@{}c@{}} NSF:BIC$-$ \$999 731 \\ NIH$-$\$508 000 \\ NSF, EFRI C3 SoRo \$ 550 189 \end{tabular} & \begin{tabular}{@{}c@{}}PFI$-$1631133 \\ BRAIN Initiative \\ EFRI$-$18309585 \end{tabular} & \begin{tabular}{@{}c@{}}Rajesh Rajamani \\ Rajesh Rajamani \\ Rajesh Rajamani\end{tabular} & \begin{tabular}{@{}c@{}}09/2016$-$08/2020 \\ 09/2016$-$06/2021 \\ 08/2018$-$07/2022\end{tabular}\\
+ \hline%\hline
+\end{tabular}
+\vspace*{-0.3cm}
+\caption{Implication of the scientific coordinator and partner's scientific leader in on-going projects. The symbol ``$\times$" means that the corresponding scientific leaders have no ongoing projects. Their projects were completed this year.}\label{tab_ongoing}
+\end{table*}
+% \footnotemark[1]
+\begin{comment}
+\footnotetext[1]{\tiny Observer design for vehicle tripped rollover detection and prevention.}
+\footnotetext[2]{\tiny THermoplastic Erosion Shield for new generation Ice protection System.}
+\footnotetext[3]{\tiny Human-Centered Bicycle Collision Prevention System and Field Operational Test.}
+\footnotetext[4]{\tiny Magneto-electroactive Soft, Continuum, Compliant, Configurable (MESo-C3) Robots for Med Applns Across Scales.}
+\footnotetext[5]{\tiny Foundations of Non-Invasive Functional Human Brain Imaging and Recording- Bridging Scales and Modalities.}
+\end{comment}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\vspace{-0.7cm}
+
+
+\subsection[Implemented and requested resources to reach the objectives]{Implemented and requested resources to reach the objectives}
+
+Table~\ref{table_budget} summarizes the global requested funds in accordance with the information filled out on the website and with ANR's grant allocation rules. More details on the staff expenses, travel costs are given in Table~\ref{tab:euro}.
+
+%------------------------------- BEGIN TABLE ------------------------------
+%------------------------------- BEGIN TABLE ------------------------------
+
+
+
+\begin{table}[h!]
+\centering
+
+{
+%\small 
+\scriptsize
+%\begin{tabular}{|l|l|l|l|l|p{1.5cm}|p{1.42cm}|} 
+\begin{tabular}{|l|l|l|l|l|p{1.6cm}|p{1.42cm}|}
+\cline{3-7}
+%\hline
+\multicolumn{2}{l|}{} 
+ & \cellcolor{yellow!50}\textbf{\begin{tabular}[c]{@{}l@{}}Partner $1$\\CRAN\end{tabular}} & \cellcolor{yellow!50} \textbf{\begin{tabular}[c]{@{}l@{}}Partner $2$ \\ IRSEEM \end{tabular}} & \cellcolor{yellow!50} \textbf{\begin{tabular}[c]{@{}l@{}}Partner $3$\\IBISC\end{tabular}} & \cellcolor{yellow!50} \textbf{\begin{tabular}[c]{@{}l@{}}Partner $4$\\ FAAR SAS\end{tabular}} & \cellcolor{yellow!50} \textbf{\begin{tabular}[c]{@{}l@{}}Partner $5$\\ LISEC \end{tabular}} \\
+\hline
+\hline
+\multicolumn{2}{|l|}{\cellcolor{gray!50}\textbf{Staff expenses} } &
+ 166~ 700,16\euro &  \begin{tabular}[c]{@{}l@{}}$180~923\times 50 \%$ \\ = 90~461,50\euro\end{tabular}&  110~702,88\euro   
+&  \begin{tabular}[c]{@{}l@{}} $42500\times 45\%$ \\ = 19 125\euro \end{tabular}      &  0.00\euro       \\ 
+\hline
+\multicolumn{2}{|l|}{\cellcolor{gray!50}\begin{tabular}[c]{@{}l@{}}
+\textbf{Instruments and material }\\ \textbf{costs (including the }\\
+\textbf{scientifc consumables) }\end{tabular} }      &  $7 ~000$\euro& 
+\begin{tabular}[c]{@{}l@{}}$5000 \times 50\%$ \\ $=2~500$\euro\end{tabular} &	$5~ 000$\euro    &            \begin{tabular}[c]{@{}l@{}} $15000\times 45\%$ \\ = 6 750\euro \end{tabular}  &    $0.00$\euro   \\ 
+\hline
+\multicolumn{2}{|l|}{\cellcolor{gray!50}\textbf{Building and ground costs} }                           &  $0.00$\euro                                                      &   $0.00$\euro    &    $0.00$\euro     &     $0.00$\euro       &   $0.00$\euro                                                            \\ 
+\hline
+\multicolumn{2}{|l|}{\cellcolor{gray!50}\textbf{Outsourcing / subcontracting }}  &             $12~ 000$\euro & $0.00$\euro   & $2 ~000$\euro  & $0.00$\euro    &$0.00$\euro   \\ 
+\hline
+\cellcolor{gray!50}\multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}\textbf{General and Admin.} \\  \cellcolor{gray!50} \textbf{costs \& other} \\ \cellcolor{gray!50} \textbf{operating expenses} \\ \cellcolor{gray!50} ~ \\ \cellcolor{gray!50} ~ \end{tabular}} & \cellcolor{gray!50}\textbf{Travel costs} &  $30~000$\euro & \begin{tabular}[c]{@{}l@{}} $10~ 000 \times 50\%$ \\ $=5 ~000$\euro\end{tabular}    & $12~000$\euro  & \begin{tabular}[c]{@{}l@{}} $16 000\times 45\%$ \\ = 7 200\euro \end{tabular}  &$0.00$\euro \\ 
+\cline{2-7}& \cellcolor{gray!50}\begin{tabular}[c]{@{}l@{}} \textbf{Administrative}\\ \textbf{management \&} \\
+\textbf{structure costs} \end{tabular} &  
+$17~256,01$\euro& \begin{tabular}[c]{@{}l@{}}$124 078\times 50\%$ \\ = 62 039\euro \end{tabular}& $10 376,23$\euro & \begin{tabular}[c]{@{}l@{}} $31070\times 45\%$ \\ = 13 981,50\euro \end{tabular}  &$0.00$\euro \\ 
+\hline\hline
+\multicolumn{2}{|l|}{\cellcolor{gray!50}\textbf{\textcolor{black}{Sub-total}}}  &  {\bf 232~ 956,17\euro}  &      {\bf 160~ 000,32\euro}   &   {\bf 140~079.11\euro}    &  {\bf 47 056.50\euro}   &  {\bf 0.00\euro}  \\ 
+\hline
+\multicolumn{2}{|l|}{\cellcolor{gray!50}\textbf{\textcolor{black}{Requested funding}} }  & \multicolumn{5}{l|}{\bf 580 092.10\euro} \\
+\hline
+\end{tabular}}
+\vspace{-0.2cm}
+\caption{Requested means by item of expenditure and by partner.}\label{table_budget}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%------------------------------- END TABLE ------------------------------
+%------------------------------- END TABLE ------------------------------
+
+
+%\begin{table}[h!]
+%%\footnotesize
+%\scriptsize
+%\begin{center}
+%%\small
+%%\red
+%\renewcommand{\arraystretch}{1.}
+%\begin{tabular}{p{6cm}rrrrr}
+%%\hline\hline
+%%\cline{2-4}%\hline
+%%\cline{2-4}%\hline
+%\multicolumn{1}{c}{} & \multicolumn{1}{c}{\bf~~~CRAN~~~} & \multicolumn{1}{c}{\bf~~~~IRSEEM~~~~} &  \multicolumn{1}{c}{\bf~~~IBISC~~~} &  \multicolumn{1}{c}{\bf~~~FAAR~~~} &  \multicolumn{1}{c}{\bf~~~LISEC~~~}\\
+%\hline 
+%\multicolumn{1}{l}{\it Nb of permanent researchers} & \multicolumn{1}{c}{\it~~~6~~~} & \multicolumn{1}{c}{\it~~~~6~~~~} & \multicolumn{1}{c}{\it~~~4~~~} & \multicolumn{1}{c}{\it~~~5~~~} & \multicolumn{1}{c}{\it~~~1~~~}\\
+%\multicolumn{1}{l}{\it Nb of non-permanent researchers} & \multicolumn{1}{c}{\it~~~-~~~} & \multicolumn{1}{c}{\it~~~~1~~~~} & \multicolumn{1}{c}{\it~~~-~~~} & \multicolumn{1}{c}{\it~~~-~~~} & \multicolumn{1}{c}{\it~~~-~~~}\\
+%\hline \hline
+%
+% %\rowcolor[gray]{ 0.9} 
+%% \gray Full cost & \gray 589.310 & \gray 357.961 & \gray 302.283 \\ \hline\hline
+%\textcolor{blue}{\bf Staff expenses:} & && \\%153\phantom{.000} & 103\phantom{.000} & 103\phantom{.000} \\
+%~~ --- PhD grant &  92\phantom{.000} & -\phantom{.000} & 96\phantom{.000} & -\phantom{.000} & -\phantom{.000}
+%\\
+%~~ --- PostDoc grant & 60.3\phantom{.000} &  41.25\phantom{.000} &  -\phantom{.000} &  -\phantom{.000} &  -\phantom{.000} \\ %PostDoc: $82.5 \times 50\%$ = 41.25 % Master: $16.8 \times 50\%$ = 8.4
+%~~ --- Internship grant & ~\newline 14.4\phantom{00} & 8.4\phantom{00} & 14.4\phantom{00} &  -\phantom{.000} &  -\phantom{.000} \\ 
+%~~ --- Permanent staff expenses for full cost structures  & ~\newline -\phantom{00} & 40.812\phantom{00} & -\phantom{00} &  19.125\phantom{.000} &  -\phantom{.000} \\ 
+%~~~~~~ (Requested: 50\% for IRSEEM, 45\% for FAAR) & ~\newline \phantom{00} & \phantom{00} & \phantom{00} &  \phantom{.000} &  \phantom{.000} \\ 
+%%--
+%\hline
+%\textcolor{red}{\bf Sub-total} & \bf 166.7 \! & \bf 90.462\! & \bf 110.4\! & \bf 19.125\! \phantom{.000} & - \phantom{.000}\\ 
+%\hline
+%\hline
+%%Staff expenses \newline PhD grant \newline PostDoc grant & ~\newline 153\phantom{.000} & 103\phantom{.000} & 103\phantom{.000} \\ \hline
+%%Workstations \newline (including the scientific consumables) & 2\phantom{.000} & 2\phantom{.000} & 2\phantom{.000} \\ \hline
+%%Building and ground costs & -\phantom{.000}& -\phantom{.000}&-\phantom{.000} \\ \hline
+%%Outsourcing / subcontracting & -\phantom{.000}& -\phantom{.000}&-\phantom{.000} \\ \hline
+%\textcolor{blue}{\bf Travel costs:} & \phantom{.000} & \phantom{.000} & \phantom{.000} \\ 
+%~~ --- Meetings& 4\phantom{.000} & 1\phantom{.000} & 4\phantom{.000} & 3.6 \phantom{.000} & - \phantom{.000} \\ 
+%~~ --- Meeting CRAN/LISEC - Minneapolis& 2\phantom{.000} & - \phantom{.000} & - \phantom{.000} & - \phantom{.000} & - \phantom{.000} \\
+%~~ --- Organization of Workshop& 8\phantom{.000} & - \phantom{.000} & - \phantom{.000} & - \phantom{.000} & - \phantom{.000} \\ 
+%~~ --- International Conferences & 16\phantom{.000} & 4\phantom{.000} & 8\phantom{.000} & 3.6\phantom{.000} &- \phantom{.000} \\ 
+%%~~ --- Organization of Workshop& 16\phantom{.000} & 4 \phantom{.000} & - \phantom{.000} & - \phantom{.000} & - \phantom{.000} \\ 
+%\hline
+%%Administrative management \newline and structure costs (8\%) & 10.528 & 9.328  &  5.616  \\ \hline
+%\textcolor{red}{\bf Sub-total} & \bf 30.00 \! & \bf 5.00\! & \bf 12.00\! &\bf  7.2\! & \bf 0.00\\ \hline
+%%{\bf Requested} & \multicolumn{3}{c|}{ \bf 497.880 k\euro} \\ 
+%%\textcolor{red}{\bf Total} & \multicolumn{3}{c}{ \bf 343.872 k\euro} \\ 
+% \hline
+% %\hline
+%\end{tabular} 
+%\vspace{-0.3cm}
+%\caption{Details on staff expenses and travel costs in k\euro.}\label{tab:euro}
+%\end{center}
+%\end{table}
+
+\begin{table}[h!]
+%\footnotesize
+\scriptsize
+\begin{center}
+%\small
+%\red
+\renewcommand{\arraystretch}{1.}
+\begin{tabular}{p{6cm}rrrrr}
+%\hline\hline
+%\cline{2-4}%\hline
+%\cline{2-4}%\hline
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{\bf~~~CRAN~~~} & \multicolumn{1}{c}{\bf~~~~IRSEEM~~~~} &  \multicolumn{1}{c}{\bf~~~IBISC~~~} &  \multicolumn{1}{c}{\bf~~~FAAR~~~} &  \multicolumn{1}{c}{\bf~~~LISEC~~~}\\
+\hline 
+\multicolumn{1}{l}{\it Nb of permanent researchers} & \multicolumn{1}{c}{\it~~~6~~~} & \multicolumn{1}{c}{\it~~~~6~~~~} & \multicolumn{1}{c}{\it~~~4~~~} & \multicolumn{1}{c}{\it~~~5~~~} & \multicolumn{1}{c}{\it~~~1~~~}\\
+\multicolumn{1}{l}{\it Nb of non-permanent researchers} & \multicolumn{1}{c}{\it~~~-~~~} & \multicolumn{1}{c}{\it~~~~1~~~~} & \multicolumn{1}{c}{\it~~~-~~~} & \multicolumn{1}{c}{\it~~~-~~~} & \multicolumn{1}{c}{\it~~~-~~~}\\
+\hline \hline
+
+ %\rowcolor[gray]{ 0.9} 
+% \gray Full cost & \gray 589.310 & \gray 357.961 & \gray 302.283 \\ \hline\hline
+\textcolor{blue}{\bf Staff expenses:} & && \\%153\phantom{.000} & 103\phantom{.000} & 103\phantom{.000} \\
+~~ --- PhD grant &  92\phantom{.000} & -\phantom{.000} & 96\phantom{.000} & -\phantom{.000} & -\phantom{.000}
+\\
+~~ --- PostDoc grant & 60.3\phantom{.000} &  41.25\phantom{.000} &  -\phantom{.000} &  -\phantom{.000} &  -\phantom{.000} \\ %PostDoc: $82.5 \times 50\%$ = 41.25 % Master: $16.8 \times 50\%$ = 8.4
+~~ --- Internship grant & ~\newline 14.4\phantom{00} & 8.4\phantom{00} & 14.4\phantom{00} &  -\phantom{.000} &  -\phantom{.000} \\ 
+~~ --- Permanent staff expenses for full cost structures  & ~\newline -\phantom{00} & 40.812\phantom{00} & -\phantom{00} &  19.125\phantom{.000} &  -\phantom{.000} \\ 
+~~~~~~ (Requested: 50\% for IRSEEM, 45\% for FAAR) & ~\newline \phantom{00} & \phantom{00} & \phantom{00} &  \phantom{.000} &  \phantom{.000} \\ 
+%--
+\hline
+\textcolor{red}{\bf Sub-total} & \bf 166.7 \! & \bf 90.462\! & \bf 110.4\! & \bf 19.125\! \phantom{.000} & - \phantom{.000}\\ 
+\hline
+\hline
+%Staff expenses \newline PhD grant \newline PostDoc grant & ~\newline 153\phantom{.000} & 103\phantom{.000} & 103\phantom{.000} \\ \hline
+%Workstations \newline (including the scientific consumables) & 2\phantom{.000} & 2\phantom{.000} & 2\phantom{.000} \\ \hline
+%Building and ground costs & -\phantom{.000}& -\phantom{.000}&-\phantom{.000} \\ \hline
+%Outsourcing / subcontracting & -\phantom{.000}& -\phantom{.000}&-\phantom{.000} \\ \hline
+\textcolor{blue}{\bf Travel costs:} & \phantom{.000} & \phantom{.000} & \phantom{.000} \\ 
+~~ --- Meetings& 4\phantom{.000} & 1\phantom{.000} & 4\phantom{.000} & 3.6 \phantom{.000} & - \phantom{.000} \\ 
+~~ --- Meeting CRAN/LISEC - Minneapolis& 2\phantom{.000} & - \phantom{.000} & - \phantom{.000} & - \phantom{.000} & - \phantom{.000} \\
+~~ --- Organization of Workshop& 8\phantom{.000} & - \phantom{.000} & - \phantom{.000} & - \phantom{.000} & - \phantom{.000} \\ 
+~~ --- International Conferences & 16\phantom{.000} & 4\phantom{.000} & 8\phantom{.000} & 3.6\phantom{.000} &- \phantom{.000} \\ 
+%~~ --- Organization of Workshop& 16\phantom{.000} & 4 \phantom{.000} & - \phantom{.000} & - \phantom{.000} & - \phantom{.000} \\ 
+\hline
+%Administrative management \newline and structure costs (8\%) & 10.528 & 9.328  &  5.616  \\ \hline
+\textcolor{red}{\bf Sub-total} & \bf 30.00 \! & \bf 5.00\! & \bf 12.00\! &\bf  7.2\! & \bf 0.00\\ \hline
+%{\bf Requested} & \multicolumn{3}{c|}{ \bf 497.880 k\euro} \\ 
+%\textcolor{red}{\bf Total} & \multicolumn{3}{c}{ \bf 343.872 k\euro} \\ 
+ \hline
+ %\hline
+\end{tabular} 
+\vspace{-0.3cm}
+\caption{Details on staff expenses and travel costs in k\euro. The symbol ``$-$" means that there is no cost requested by the corresponding partner / no non-permanent researchers involved in the corresponding partner.}\label{tab:euro}
+\end{center}
+\end{table}
+
+
+\noindent
+\underline{\textbf{Staff expenses}} - CRAN and IBISC will each hire a PhD student (36 p.m), each working on a specific WP. To ensure collaboration between partners, the PhD will be  co-supervised by two different partners. The CRAN and IRSEEM will each hire a PostDoc (18 p.m): 
+\begin{itemize}[leftmargin=.25in,noitemsep,nolistsep]
+\item PhD1 at CRAN will work on WP2/WP3/WP5, under the joint supervision CRAN and IRSEEM.
+\item PhD2 at IBISC will work on WP2/WP4/WP5, under the joint supervision IBISC and CRAN.
+\item PostDoc1 (18 months) at CRAN will work on WP3/WP5, more specifically on T3.4, T5.1 and T5.2.
+\item PostDoc2 (18 months) at IRSEEM will work on WP4/WP5 in collaboration with IBISC and FAAR.
+\item 12 MSc interns will be hired (12 $\times$ 6 p.m): the CRAN, IRSEEM, and IBISC will hire each 4 interns~(1 intern per year). The MSc students will work on the instrumentation task (T5.2); and to investigate performances of estimation algorithms by real-time simulations under 3D simulation environments~(CARSIM,... etc). They will participate and help on the four workpackages WP2$-$WP5.
+\item The two partners IRSEEM and FAAR are full cost structures. Then staff expenses are included in the requested budget: 6 and 5 permanents for IRSEEM and FAAR, respectively, as depicted in Table~\ref{table_budget} and Table~\ref{tab:euro}. The IRSEEM and FAAR request respectively 50\% and 45\% of the budget.
+%1 MSc intern will work at t on xxxx 1 MSc intern will work on xxxx1 MSc intern will work on xxxx1 MSc intern will work on xxxx1 MSc intern will work on xxxx1 MSc intern will work on xxxx1 MSc intern will work on xxxx1 MSc intern will work on xxxx1 MSc intern will work on xxxx1 MSc intern will work on xxxx1 MSc intern will work on xxxx in order to investigate different 
+%\item Prior to each PhD and postdoc position, a MSc internship will be hired (3 $\times$ 6 p.m).
+\end{itemize}
+%
+
+%
+\noindent
+\underline{\textbf{\bf Travel expenses}} - The travel expenses will cover:
+\textcolor{black}{
+\begin{itemize}[leftmargin=.25in,noitemsep,nolistsep]
+\item {\it plenary meetings at Longwy, Rouen, or Evry, where the partners are located:} 3 per year for 8 people from CRAN, 5 people from IBISC, 3 people from IRSEEM and 5 people from FAAR. 
+\item {\it meetings for open innovation \& companies transfer as explained in T1.3:} FAAR will manage this task and requests 1.8 k\euro.
+\item {\it meeting at LISEC in Minneapolis:} between the coordinator {Ali \sc Zemouche} and {Rajesh \sc Rajamani}.
+\item {\it organization of an international workshop at CRAN (8 k\euro):} A two-days Workshop will be organized at the end of the project. We plan to invite 4 international experts~(4 k\euro~for travel costs, 2.4 k\euro~for accommodation, 1.6 k\euro~for catering and coffee breaks)~$\approx$~\underline{30 participants}.
+\item {\it participation to international conferences with an estimated cost of 2 k{\euro} per mission:} 2 missions per year for CRAN; 1 mission per year for IRSEEM, IBISC, and FAAR, respectively.
+%\item {\it meetings for :}
+\end{itemize}
+}
+
+%\noindent 
+%\textcolor{red}{
+%The overall travel demand is 26 k{\euro} for the LITIS, which will take in charge the workshop, and 11 k{\euro} for both the LMI and ImVIA.
+%}
+
+\noindent
+\underline{\textbf{Instruments and material costs}} 
+\begin{itemize}[leftmargin=.25in,noitemsep,nolistsep]
+\item We require a workstation for each PhD and the 2 postdoctoral students with an estimated cost of 2~k{\euro} each.
+\item Each partner requires a workstation for each experimental platform of 2~k{\euro} each.
+\item The CRAN requires {2$\times$ 1/8 scale vehicle \& their instrumentation~(Cables, connectors, etc) for real-time validation~(\underline{\bf \color{black}{WP5}})}:~2~k{\euro}. The IRSEEM requires instrumentation material for the autonomous navigation platform: 2~k{\euro}. The IBISC requests 3~k{\euro} for its instrumented vehicle~(Cables, connectors, electronics, radars). FAAR company requests 6.75~k{\euro} for Sensors~(LIDAR, RADAR, Long rage RADAR, and Cameras) and for the instrumentation of the autonomous navigation platform~(Cables, connectors, electronics boards, etc).
+\end{itemize}
+
+\noindent
+\underline{\textbf{Outsourcing / subcontracting}} 
+\begin{itemize}[leftmargin=.25in,noitemsep,nolistsep]
+\item The CRAN requests a CARSIM software licence for real-time simulation:~10 k{\euro}~$\leadsto$~~for task \underline{\bf \textcolor{black}{T5.3}}.
+\item The IBISC and CRAN request fees of 2 k{\euro} for each, for extra pages and open access publications.
+\end{itemize}
+
+
+
+
+
+
+
+%\newpage
+
+%----- Impact ---------------------------------------------------
+
+\section{Impact and Benefits of the Project}
+%
+%???
+%
+%\textcolor{blue}{\it
+%Describe in what scientific fields and eventually economic, social or cultural field project results may have an impact, in the short, medium or long term. Detail the initiatives covering relations between science and society (e.g. media initiatives, participation at science festivals, etc.) jointly organized with professionals working in the fields of scientific, technical and industrial culture (i.e. mediators, journalists, etc.) and that will be held throughout the duration of the project and after completion.
+%}
+\vspace{-0.3cm}
+%\noindent
+\subsection[Scientific impact]{Scientific impact}
+%
+This project will make the following fundamental contributions to the development of estimation algorithms for smart autonomous systems:
+\vspace{-0.3cm}
+\begin{itemize}
+\item The project will develop estimation algorithms for nonlinear dynamic systems without resorting to linearization.
+\vspace{-0.3cm}
+\item The project will enable simultaneous online updates of both plant model parameters and state variables by utilizing neuro-adaptive observers.  The neuro-adaptive observers will be developed in a rigorous analytical framework with global stability guarantees.
+\vspace{-0.3cm}
+\item The project will enable estimation in connected systems, considering a number of network architectures that include both nearest neighbor and centralized leader type of connections. 
+\vspace{-0.3cm}
+\item The project will enable automated monitoring of cyber-attacks and fault occurrences in a connected nonlinear systems architecture.
+\end{itemize}
+%\vspace{-0.5cm}
+All of the above fundamental contributions will have a significant impact on enabling new functions and performance in autonomous systems.  As automation, instrumentation, feedback and autonomous monitoring continue to increase everyday all around us, these fundamental contributions to estimation algorithms have the potential to significantly play an increasingly important role in the modern world.
+In terms of the scientific impact on the world of autonomous and connected vehicles, the developed algorithms have a very real potential of making autonomous transportation viable, of making autonomous vehicles reliable through monitoring of cyber-attacks and sensor/actuator faults, of increasing traffic capacity of roads through enabling closer spacing between vehicles for higher traffic capacity, and of increasing safety by assisting humans to ensure a much lower accident rate compared to today where over 90\% of accidents are caused by human error.
+
+%
+%
+%%
+\subsection{\textcolor{blue}{Social, Health, Economic, and Environmental Impact}}
+%%
+
+Enhancing the safe control and operation of autonomous and connected vehicles will have a great impact in many aspects. Achieving safe control and operation of autonomous vehicles has great benefits, such as minimizing traffic accidents by taking humans out of the driving task, improving the lives of citizens with low physical mobility by providing door-to-door transportation services, reducing congestion via route sharing, decreasing energy consumption and pollution using electric vehicles.  Hence, the improvements introduced in this project will not only have a profound impact on human health, but also will have great social and economic benefits.
+
+
+
+\subsection{Actions to transfer technology and innovation to the social and economic world}
+%
+Several of the algorithms developed in this project can lead to commercializable products.  For instance, development of estimation algorithms that predict trajectories of other downstream vehicles on the highway have a large number of applications beyond autonomous vehicles.  Such algorithms can be used to predict the evolution of traffic on roads, to predict the impending developing traffic jams and to potentially disrupt them, to provide accurate future velocity estimates to hybrid electric vehicles in order to improve energy management and fuel economy, and to improve performance of safety-assist systems such as adaptive cruise control and lane-keeping.  Thus a device that provides estimated prediction of downstream vehicle trajectories can be commercialized in the market place due to its significant value in a broad range of applications. {\bf The involvement of FAAR company in this project will allow achievement of this commercialization task. The experience of FAAR in commercialization of new technologies related to vehicle~(for instance: \textcolor{gray}{SELF--e--CAR, CROSS--DRIVE, EASY CAN, and several electronic control units and configurable displays}) will be of great help}. \textcolor{black}{We will also engage with professional bodies and with the ANR team to identify other opportunities for exploitation by considering ways to transfer this innovation to companies collaborating with our organizations and specifically through our industrial partner, FAAR, willing that their potential customers they are currently in contact with will integrate the outcome of this project for their products. FAAR considers that only high quality innovation solution-based on artificial intelligence can enable commercialization of autonomous vehicles on a large scale.} 
+
+In addition to near-term technology spin-offs such as the one described above, the project will also have a significant potential to transfer technology to large automotive companies through licensing of specific algorithms that are likely to be valuable to companies that work on autonomous vehicle technologies. {\bf FAAR partner has commercialized, in the past, products and prototypes for several automotive companies and industrial partners like \textcolor{gray}{Renault, PSA, Safran, Thales, Alstom, nVidia}.} 
+
+It is worthy to notice that Professor {Rajesh \sc Rajamani} from University of Minnesota has a long experience in commercialization of products and innovation in writing several patents related to vehicle dynamics. He is the co-founder of the start-up company ``{\it Innotronics}" based on technologies developed in his lab\footnote{\url{https://ncet2.org/component/sppagebuilder/?view=page&id=51}}. Also, notice that the consortium is involved in 20 patents and is very close to the start-up company {\it TechnOptiz}.
+
+Enhancing the safe control and operation of autonomous and connected vehicles will have a great impact in many societal aspects. Achieving safe control and operation of autonomous vehicles has great benefits, such as minimizing traffic accidents by reducing the burden on humans in the driving task, improving the lives of citizens with low physical mobility by providing them door-to-door transportation services, reducing congestion via route sharing, decreasing energy consumption and pollution using electric vehicles.  Hence, the improvements introduced in this project will not only have a profound impact on human health, but also will have many other great social and economic benefits.
+
+%
+\subsection[Dissemination and valorization of the results]{Dissemination and valorization of the results}
+%
+This project plans to intensively disseminate results while also taking regular steps to protect intellectual property and transfer technology to commercial organizations wherever possible. The dissemination of research results will follow along the following steps:
+%\vspace{-0.3cm}
+\begin{enumerate}
+\vspace{-0.3cm}
+\item Consideration of whether a particular algorithm and estimation system needs to be protected through filing of patents or filing of copyright.
+\vspace{-0.3cm}
+\item Submission of papers to reputed European and international conferences, after having filed for patent applications in the cases where this is necessary.  Publication in proceedings of renowned conferences together with in-person presentation of results at these conferences.
+\vspace{-0.3cm}
+\item Publication of enhanced and complete results through high quality archival journal papers.
+\vspace{-0.3cm}
+\item Copyrighting of estimation algorithms, encryption of software code as needed, and dissemination of software code to the worldwide community.  The objective here is to make the code available to the community that will find it useful while also trying to enhance the reputation of the research group that developed the software.
+\end{enumerate}
+\vspace{-0.3cm}
+%% =================
+In order to improve the quality of the results dissemination (publications, reports, tutorials, etc.) which will be developed through the project and to offer an open access for not only project partners, peer-reviewed but also readers and end-users, we will make within the first work-package the following strategy: 1) sharing publications within an open archive called HAL\footnote{\url{https://hal.archives-ouvertes.fr/}}, where authors can submit research documents from all academic fields; 2) ESIGELEC partner has an online open source platform called forge\footnote{\url{https://forge.esigelec.fr/}} which will be used to share not only all publications, but also technical reports, software development, tutorials, etc. 3) We will use also a project common page within Github.
+%
+
+
+
+
+
+
+%\singlespacing
+\setstretch{0.85}
+
+%\vspace{-0.3cm}
+%********************************* References related to the project
+%\newpage
+%\pagestyle{empty}
+%\vspace{-0.5cm}
+\section[References Related to the Project]{References Related to the Project}
+\vspace*{-1cm}
+ \bibliographystyle{unsrt}
+ \small
+ %\scriptsize
+%\footnotesize
+ \bibliography{bibliographie_ANR_2020}
+ %*********************************
+ 
+%
+\end{document}
+
+
+
+
+
+
+%

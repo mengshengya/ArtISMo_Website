@@ -1,0 +1,100 @@
+
+\section{Task Setting}
+
+\label{sec:1tasksetting}
+\begin{frame}[label={page:background}]{Background}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{Fig/Fig_LFCarFleetScheme.pdf}
+    \label{fig:carfleet1dim}
+\end{figure}
+\begin{block}{Question 1}
+    For each physical car, how to obtain {\color{blue}self-data} despite the {\color{red}modeling error} and {\color{red}measurement noise}?
+\end{block}
+\begin{block}{Question 2}
+    For each follower car or the leader car, how to obtain the {\color{red}Real-Time data} of the {\color{blue}object car}?
+\end{block}
+\end{frame}
+
+\begin{frame}{Task Setting}
+    \begin{block}
+        {Task 1}
+        Use the {\color{blue}High-Gain/Linear Parameter Variable(HG/LPV) Method based observer}\footfullcite{zemouche2018high} or {\color{blue}Neural Network(NN) based observer }\footfullcite{zhuang2025sampled}to estimate the state of each observer.
+    \end{block}
+    \begin{block}
+        {Task 2}
+        Utilize the {\color{blue}Distribute Scheme}\footfullcite{xu2023distributed}\footfullcite{wu2021design} and the local observer in Task 1 to obtain the real-time data of the target car.
+    \end{block}
+\end{frame}
+
+\begin{frame}[label={page:internplan}]{Internship Plan}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.85\linewidth]{Fig/TaskTable.pdf}
+        \caption{Tasks during the Internship}
+        \label{fig:InternshipTask}
+    \end{figure}
+    The main idea here: Use the Distributed Observer Scheme to test two observer design methods on the UGV platform by simulation and real experiment.
+\end{frame}
+
+\section{Ongoing Tasks}
+\begin{frame}{Simple Multi-Car Fleet}
+    follower.py: Initiating the QLab and QCar, use the follower algorithm to connect cars one by one.
+    \vskip 4mm
+     vehicle\_control.py: Uploaded by ACC for controlling the leader car and plotting the control graph, which works with the inside RT model.
+    \vskip 4mm
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.85\linewidth]{Fig/Fig_SimpleAchievement.pdf}
+        \caption{Current Approach}
+        \label{fig:enter-label}
+    \end{figure}
+    {\color{red}This structure is hard to modify and does not offer the API for reading/writing data.}
+\end{frame}
+
+\begin{frame}{To the General Case}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.85\linewidth]{Fig/Fig_GeneralScheme.pdf}
+        \caption{Improved General Approach}
+        \label{fig:enter-label}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[label={page:MainMethod}]{CarFleet Class}
+\label{sec:mainmethod}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.85\linewidth]{Fig/Fig_CarFleetClass.pdf}
+    \label{fig:CarFleetClass}
+\end{figure}
+Tasks:
+\begin{itemize}
+    \item 1. Initiation: Connect the QLab, create, and position the QCars, etc.
+    \item 2. Establish the leader-follower scheme, and create the APIs for different controllers and observers.
+    \item 3. Establish the API for reading the data of all cars in the fleet.
+\end{itemize}
+\end{frame}
+
+
+
+
+\section{Future Plan}
+
+
+\label{sec:futureplan}
+\begin{frame}[label={page:futureplangraph}]{Future Plan}
+
+\begin{itemize}
+    \item Improve the built General Leader-Follower Scheme and test in all simulation environments.  Built the Distributed Observer Scheme corresponding to the Leader-Follower Scheme. \vskip 10mm
+    \item Apply the two Different Observer Techniques in the distributed observer scheme to test the performance of the UGV System. \vskip 10mm
+    \item Test the build scheme in both Simulation and Realistic Environment.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Ending}
+    \begin{center}
+        That's all. Thank you for listening!!
+    \end{center}   
+\end{frame}
+

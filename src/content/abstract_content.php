@@ -85,4 +85,32 @@ return [
             ],
         ],
     ],
+    [
+        'id' => 'workpackages',
+        'title_key' => 'abstract.section_3',
+        'blocks' => [
+            [
+                'type' => 'paragraph',
+                'text_key' => 'abstract.workpackages_intro',
+            ],
+            [
+                'type' => 'html',
+                'text_key' => 'abstract.workpackages_list_html',
+            ],
+        ],
+    ],
+    [
+        'id' => 'partners',
+        'title_key' => 'abstract.section_4',
+        'blocks' => [
+            [
+                'type' => 'paragraph',
+                'text_key' => 'abstract.partners_intro',
+            ],
+            [
+                'type' => 'html',
+                'text_key' => 'abstract.partners_list_html',
+            ],
+        ],
+    ],
 ];

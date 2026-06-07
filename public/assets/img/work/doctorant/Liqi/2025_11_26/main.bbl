@@ -1,0 +1,69 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{wu2021design}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=318114f9e4163bdd2298151c67e99055}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Yuanqing},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=768dee119bbfe62fb387e036f5541f12}{%
+           family={Isidori},
+           familyi={I\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=663b21e97d66eae89e983636d48e4e4b}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Renquan},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{96e5ef48935b26f5408b0dd38eb26746}
+      \strng{fullhash}{96e5ef48935b26f5408b0dd38eb26746}
+      \strng{bibnamehash}{96e5ef48935b26f5408b0dd38eb26746}
+      \strng{authorbibnamehash}{96e5ef48935b26f5408b0dd38eb26746}
+      \strng{authornamehash}{96e5ef48935b26f5408b0dd38eb26746}
+      \strng{authorfullhash}{96e5ef48935b26f5408b0dd38eb26746}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Automatic Control}
+      \field{number}{7}
+      \field{title}{On the design of distributed observers for nonlinear systems}
+      \field{volume}{67}
+      \field{year}{2021}
+      \field{pages}{3229\bibrangedash 3242}
+      \range{pages}{14}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -310,4 +310,31 @@ return [
             <span class="btn-icon">📄</span> Download Summary Report (PDF)
         </a>
     </div>',
+
+    // Hichem Results
+    'results.hichem_summary' => 'Generalized multi-output high-gain observer (HGO) designs and sensor fusion frameworks for vehicle localization. Validated experimentally and in high-fidelity CARLA simulations.',
+    'results.section_hichem' => 'PhD Research: Multi-Output High-Gain Observers and Sensor Fusion (Dr. Hichem Bessafa)',
+    'results.hichem_intro_1' => 'This research presents a novel generalized multi-output high-gain observer (HGO) design for robust state estimation in nonlinear systems. Traditional high-gain observers suffer from high sensitivity to measurement noise. To overcome this limitation, the proposed method leverages multiple independent measurement outputs to optimize observer gains. The gain selection is formulated using Linear Matrix Inequalities (LMIs), mathematically guaranteeing stable error dynamics and providing a rigorous trade-off between speed of convergence and noise sensitivity.',
+    'results.hichem_intro_2' => 'The framework is applied and validated in two major domains: <br>1. **Experimental Validation on Quanser QCar**: Estimating the vehicle\'s position, velocities, and yaw orientation by fusing IMU and steering measurements under straight-line and left-turn trajectories, showing fast convergence and resilience to simulated GPS data gaps. <br>2. **Sensor Fusion of Visual Odometry & HGO**: Integrating monocular visual odometry (VO) with an EKF and the HGO, fusing inertial, satellite, and visual data for continuous vehicle localization under complete satellite signal loss in CARLA roundabout simulations.',
+    'results.hichem_img_traj' => 'Trajectory Tracking Performance: Ground truth and estimated trajectories under multi-output HGO showing high accuracy and fast convergence.',
+    'results.hichem_img_carla' => 'Visual Odometry & Sensor Fusion: High-level overview of the proposed fusion framework combining visual odometry (VO) with the HGO and Extended Kalman Filter (EKF).',
+    'results.hichem_img_results' => 'Simulation Performance in CARLA: Comparison of ground truth and estimation under complete RTK-GNSS satellite signal failure in a roundabout scenario.',
+    'results.hichem_img_error' => 'Estimation Error Performance: Error curves for position, velocity, and orientation under sensory anomalies in CARLA roundabout simulation.',
+    'results.hichem_video_caption' => 'Experimental Validation Video: Real-world visual-odometry loop closure and localization tracking demo video.',
+    'results.hichem_downloads_title' => 'Research Papers & Profiles',
+    'results.hichem_downloads_html' => '
+    <div class="download-container">
+        <a href="assets/img/work/doctorant/Hichem/Automatica_Bessafa_Paper-3.pdf" class="download-btn" target="_blank" rel="noopener noreferrer">
+            <span class="btn-icon">📄</span> Download Automatica Paper (PDF)
+        </a>
+        <a href="assets/img/work/doctorant/Hichem/Sensor_Fusion_of_Visual_Odometry_and_High_Gain_Observer_Paper-10.pdf" class="download-btn" target="_blank" rel="noopener noreferrer">
+            <span class="btn-icon">📄</span> Download Sensor Fusion Paper (PDF)
+        </a>
+        <a href="https://github.com/hichem-bessa/" class="download-btn secondary-btn" target="_blank" rel="noopener noreferrer" style="background-color: #24292e; color: #fff; border-color: #24292e;">
+            <span class="btn-icon">💻</span> Visit GitHub Profile
+        </a>
+        <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=2XIpzbcAAAAJ&sortby=pubdate" class="download-btn secondary-btn" target="_blank" rel="noopener noreferrer" style="background-color: #4285f4; color: #fff; border-color: #4285f4;">
+            <span class="btn-icon">🎓</span> Google Scholar
+        </a>
+    </div>',
 ];

@@ -415,6 +415,407 @@ return [
                 ],
             ],
             [
+                'type' => 'html',
+                'text' => [
+                    'en' => '
+                    <div class="event-details-grid">
+                        <div class="event-detail-item">
+                            <div class="icon-wrapper">📅</div>
+                            <div>
+                                <strong>Date</strong>
+                                <span>October 19 & 20, 2023</span>
+                            </div>
+                        </div>
+                        <div class="event-detail-item">
+                            <div class="icon-wrapper">📍</div>
+                            <div>
+                                <strong>Location</strong>
+                                <span>IUT Henri Poincaré de Longwy, France</span>
+                            </div>
+                        </div>
+                        <div class="event-detail-item">
+                            <div class="icon-wrapper">🏛️</div>
+                            <div>
+                                <strong>Venue</strong>
+                                <span>186 rue de Lorraine, 54400 Cosnes-et-Romain</span>
+                            </div>
+                        </div>
+                    </div>
+                    ',
+                    'fr' => '
+                    <div class="event-details-grid">
+                        <div class="event-detail-item">
+                            <div class="icon-wrapper">📅</div>
+                            <div>
+                                <strong>Date</strong>
+                                <span>19 & 20 Octobre 2023</span>
+                            </div>
+                        </div>
+                        <div class="event-detail-item">
+                            <div class="icon-wrapper">📍</div>
+                            <div>
+                                <strong>Lieu</strong>
+                                <span>IUT Henri Poincaré de Longwy, France</span>
+                            </div>
+                        </div>
+                        <div class="event-detail-item">
+                            <div class="icon-wrapper">🏛️</div>
+                            <div>
+                                <strong>Salle</strong>
+                                <span>186 rue de Lorraine, 54400 Cosnes-et-Romain</span>
+                            </div>
+                        </div>
+                    </div>
+                    ',
+                ],
+            ],
+            [
+                'type' => 'html',
+                'text' => [
+                    'en' => '
+                    <div class="event-download-card">
+                        <div class="event-download-info">
+                            <div class="pdf-icon-wrapper">📄</div>
+                            <div class="event-download-text">
+                                <h4>2nd Workshop Agenda</h4>
+                                <p>Download the complete PDF program with schedules and speaker biographies.</p>
+                            </div>
+                        </div>
+                        <a href="assets/img/event/workshop2_1/Programme_ArtISMo.pdf" target="_blank" class="download-btn">View PDF Agenda</a>
+                    </div>
+                    ',
+                    'fr' => '
+                    <div class="event-download-card">
+                        <div class="event-download-info">
+                            <div class="pdf-icon-wrapper">📄</div>
+                            <div class="event-download-text">
+                                <h4>Programme du 2e Atelier</h4>
+                                <p>Téléchargez le programme complet en PDF avec le calendrier et les biographies des intervenants.</p>
+                            </div>
+                        </div>
+                        <a href="assets/img/event/workshop2_1/Programme_ArtISMo.pdf" target="_blank" class="download-btn">Voir le PDF</a>
+                    </div>
+                    ',
+                ],
+            ],
+            [
+                'type' => 'html',
+                'text' => [
+                    'en' => '
+                    <div class="event-timeline">
+                        <div class="timeline-day-header">Thursday, 19 October 2023</div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">11:30</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Welcome Reception</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">13:00</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Lunch Break</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">14:30</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Opening Speech</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">14:45 - 15:30</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">A New High Gain Observer Based on Artificial Delays</div>
+                                <div class="timeline-speaker">Speaker: Lara Jaber</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">15:30 - 16:15</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Estimation Algorithms applied to Autonomous Connected Vehicles</div>
+                                <div class="timeline-speaker">Speaker: Hichem Bessafa</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">16:15 - 16:45</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Coffee Break</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">16:45 - 17:30</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Challenging Estimation Problems in Vehicle Autonomy</div>
+                                <div class="timeline-speaker">Speaker: Rajesh Rajamani (Online)</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">17:30 - 18:15</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">AI-based Environment Perception for Autonomous Vehicle Parameters Estimation</div>
+                                <div class="timeline-speaker">Speaker: Redouane Khemmar</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">18:15</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Technical Discussions</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-day-header">Friday, 20 October 2023</div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">08:15 - 08:45</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Coffee Break</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">08:45 - 09:30</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Filtered High Gain Interval Observer for LPV Systems with Bounded Uncertainties</div>
+                                <div class="timeline-speaker">Speaker: Rihab El Houda Thabet</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">09:30 - 10:15</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Human-in-the-Loop Driving Control Design for Intelligent Vehicles Under Multiple System Constraints</div>
+                                <div class="timeline-speaker">Speaker: Anh-Tu Nguyen</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">10:15 - 11:00</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">MALE-A: Stimuli and Cause Prediction for Maneuver Planning via Graph Neural Networks in Autonomous Driving</div>
+                                <div class="timeline-speaker">Speaker: Petrit Rama</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">11:00 - 11:45</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Coffee Break & Poster Session</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">11:45 - 13:00</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">How Control Theory Learned to Stop Worrying and Succumbed to AI?</div>
+                                <div class="timeline-speaker">Speaker: Madiha Nadri-Wolf</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">13:00 - 14:30</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Lunch Break</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">14:30 - 15:15</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Safe Coordination of Autonomous Vehicles</div>
+                                <div class="timeline-speaker">Speaker: Vicenç Puig (Online)</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">15:15 - 16:30</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Visit of the IUT Departments</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">16:30 - 17:30</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">ArtISMo Review Meeting</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">17:30</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Workshop Closing</div>
+                            </div>
+                        </div>
+                    </div>
+                    ',
+                    'fr' => '
+                    <div class="event-timeline">
+                        <div class="timeline-day-header">Jeudi 19 Octobre 2023</div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">11:30</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Accueil et Réception</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">13:00</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Pause Déjeuner</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">14:30</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Discours d\'Ouverture</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">14:45 - 15:30</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">A New High Gain Observer Based on Artificial Delays</div>
+                                <div class="timeline-speaker">Orateur : Lara Jaber</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">15:30 - 16:15</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Estimation Algorithms applied to Autonomous Connected Vehicles</div>
+                                <div class="timeline-speaker">Orateur : Hichem Bessafa</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">16:15 - 16:45</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Pause Café</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">16:45 - 17:30</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Challenging Estimation Problems in Vehicle Autonomy</div>
+                                <div class="timeline-speaker">Orateur : Rajesh Rajamani (En ligne)</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">17:30 - 18:15</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">AI-based Environment Perception for Autonomous Vehicle Parameters Estimation</div>
+                                <div class="timeline-speaker">Orateur : Redouane Khemmar</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">18:15</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Discussions Techniques</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-day-header">Vendredi 20 Octobre 2023</div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">08:15 - 08:45</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Pause Café</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">08:45 - 09:30</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Filtered High Gain Interval Observer for LPV Systems with Bounded Uncertainties</div>
+                                <div class="timeline-speaker">Orateur : Rihab El Houda Thabet</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">09:30 - 10:15</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Human-in-the-Loop Driving Control Design for Intelligent Vehicles Under Multiple System Constraints</div>
+                                <div class="timeline-speaker">Orateur : Anh-Tu Nguyen</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">10:15 - 11:00</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">MALE-A: Stimuli and Cause Prediction for Maneuver Planning via Graph Neural Networks in Autonomous Driving</div>
+                                <div class="timeline-speaker">Orateur : Petrit Rama</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">11:00 - 11:45</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Pause Café & Session Posters</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">11:45 - 13:00</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">How Control Theory Learned to Stop Worrying and Succumbed to AI?</div>
+                                <div class="timeline-speaker">Orateur : Madiha Nadri-Wolf</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">13:00 - 14:30</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Pause Déjeuner</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">14:30 - 15:15</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Safe Coordination of Autonomous Vehicles</div>
+                                <div class="timeline-speaker">Orateur : Vicenç Puig (En ligne)</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">15:15 - 16:30</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Visite des Départements de l\'IUT</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">16:30 - 17:30</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Réunion Bilan du Projet ArtISMo</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-time">17:30</span>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Clôture de l\'Atelier</div>
+                            </div>
+                        </div>
+                    </div>
+                    ',
+                ],
+            ],
+            [
                 'type' => 'image_group',
                 'caption' => [
                     'en' => 'Memories from the workshop.',

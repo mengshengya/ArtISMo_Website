@@ -120,4 +120,87 @@ return [
         . 'améliorer l\'estimation et donc la résilience et la fiabilité des systèmes de contrôle dans la mobilité '
         . 'intelligente. La combinaison de techniques analytiques basées sur les modèles avec des algorithmes basés sur '
         . 'l\'apprentissage et des prédicteurs statistiques améliorera considérablement la qualité de l\'estimation.</p>',
+
+    'abstract.section_3' => 'Lots de Travaux (WPs)',
+    'abstract.section_4' => 'Partenaires & Consortium',
+
+    'abstract.workpackages_intro' =>
+        'Pour atteindre les objectifs du projet, la recherche est organisée en cinq lots de travaux (Work Packages - WPs) étroitement intégrés :',
+
+    'abstract.workpackages_list_html' =>
+        '<div class="wp-grid">'
+        . '<div class="wp-card">'
+        . '<div class="wp-card-header"><span class="wp-badge wp1">WP1</span></div>'
+        . '<h4 class="wp-card-title">Gestion de Projet et Communication</h4>'
+        . '<div class="wp-leader-tag"><span class="wp-leader-icon">👤</span> Responsable : Ali Zemouche (CRAN)</div>'
+        . '<p class="wp-card-desc">Ce lot est dédié à la gestion globale du projet, au suivi des plannings (Gantt), aux livrables, à l\'analyse des risques et à l\'organisation des réunions de lancement (Kick-Off) et des workshops annuels. Il coordonne également les transferts de connaissances académiques et industriels.</p>'
+        . '</div>'
+        . '<div class="wp-card">'
+        . '<div class="wp-card-header"><span class="wp-badge wp2">WP2</span></div>'
+        . '<h4 class="wp-card-title">Modélisation Véhicule, Perception de l\'Environnement & Deep-Learning</h4>'
+        . '<div class="wp-leader-tag"><span class="wp-leader-icon">👤</span> Responsable : Sofiane Ahmed Ali (IRSEEM)</div>'
+        . '<p class="wp-card-desc">Ce lot fournit des modèles physiques et cinématiques du véhicule et intègre des techniques de vision par ordinateur et de deep-learning pour estimer les états et vérifier la cohérence des mesures fournies par les capteurs embarqués (ex. LiDAR, Caméra).</p>'
+        . '</div>'
+        . '<div class="wp-card">'
+        . '<div class="wp-card-header"><span class="wp-badge wp3">WP3</span></div>'
+        . '<h4 class="wp-card-title">Capteurs Logiciels Intelligents pour le Suivi de Véhicules</h4>'
+        . '<div class="wp-leader-tag"><span class="wp-leader-icon">👤</span> Responsable : Ali Zemouche (CRAN)</div>'
+        . '<p class="wp-card-desc">Ce lot se concentre sur le suivi de véhicules individuels en concevant des architectures d\'estimateurs et d\'observateurs neuro-adaptatifs basés sur les données. Il traite des défis mathématiques liés aux fonctions d\'activation non linéaires, au rejet du bruit et à l\'apprentissage en ligne.</p>'
+        . '</div>'
+        . '<div class="wp-card">'
+        . '<div class="wp-card-header"><span class="wp-badge wp4">WP4</span></div>'
+        . '<h4 class="wp-card-title">Capteurs Logiciels R³ pour le Suivi de Véhicules en Peloton</h4>'
+        . '<div class="wp-leader-tag"><span class="wp-leader-icon">👤</span> Responsable : Dalil Ichalal (IBISC)</div>'
+        . '<p class="wp-card-desc">Ce lot développe des capteurs logiciels coopératifs et distribués pour garantir un pelotonnage résilient, robuste et fiable (R³). Il cible le diagnostic de défauts, la détection des cyberattaques et l\'atténuation des délais ou pertes de paquets de communication.</p>'
+        . '</div>'
+        . '<div class="wp-card">'
+        . '<div class="wp-card-header"><span class="wp-badge wp5">WP5</span></div>'
+        . '<h4 class="wp-card-title">Validation, Tests et Intégration des Algorithmes</h4>'
+        . '<div class="wp-leader-tag"><span class="wp-leader-icon">👤</span> Responsable : Randolph Toom (FAAR)</div>'
+        . '<p class="wp-card-desc">Ce lot intègre les capteurs logiciels et les lois de contrôle développés sur des robots mobiles (AgileX LIMO), des véhicules à l\'échelle (Quanser QCar) et des véhicules d\'essais industriels réels fournis par FAAR Industry, validant ainsi les résultats théoriques dans des conditions réelles.</p>'
+        . '</div>'
+        . '</div>',
+
+    'abstract.partners_intro' =>
+        'Le projet ArtISMo rassemble un consortium multidisciplinaire composé d’instituts de recherche français de premier plan, '
+        . 'd’un partenaire industriel et d’une collaboration académique internationale :',
+
+    'abstract.partners_list_html' =>
+        '<div class="partners-grid">'
+        . '<div class="partner-card">'
+        . '<div class="partner-logo-wrapper gradient-cran"><img src="assets/img/logo_cran.png" alt="Logo CRAN" class="partner-logo-img">CRAN</div>'
+        . '<h4 class="partner-title">CRAN</h4>'
+        . '<div class="partner-subtitle">Centre de Recherche en Automatique de Nancy — Université de Lorraine & CNRS</div>'
+        . '<span class="partner-role-tag">Coordinateur du Projet</span>'
+        . '<p class="partner-desc">Le CRAN est spécialisé en automatique, observateurs non linéaires, analyse de stabilité et communication réseau.</p>'
+        . '</div>'
+        . '<div class="partner-card">'
+        . '<div class="partner-logo-wrapper gradient-ibisc"><img src="assets/img/logo_evry.png" alt="Logo IBISC" class="partner-logo-img">IBISC</div>'
+        . '<h4 class="partner-title">IBISC</h4>'
+        . '<div class="partner-subtitle">Informatique, Biologie Synthétique et Systèmes Complexes — Université d\'Évry & Université Paris-Saclay</div>'
+        . '<span class="partner-role-tag">Responsable WP4</span>'
+        . '<p class="partner-desc">IBISC apporte son expertise en dynamique des véhicules, systèmes cyber-physiques, observateurs et commande tolérante aux défauts.</p>'
+        . '</div>'
+        . '<div class="partner-card">'
+        . '<div class="partner-logo-wrapper gradient-irseem"><img src="assets/img/logo_esigelec.jpg" alt="Logo IRSEEM" class="partner-logo-img">IRSEEM</div>'
+        . '<h4 class="partner-title">IRSEEM</h4>'
+        . '<div class="partner-subtitle">Institut de Recherche en Systèmes Électroniques Embarqués — ESIGELEC</div>'
+        . '<span class="partner-role-tag">Responsable WP2</span>'
+        . '<p class="partner-desc">L\'IRSEEM apporte ses compétences dans les systèmes mécatroniques, le deep-learning, la vision par ordinateur, la perception et les systèmes multi-agents V2X.</p>'
+        . '</div>'
+        . '<div class="partner-card">'
+        . '<div class="partner-logo-wrapper gradient-faar">FAAR</div>'
+        . '<h4 class="partner-title">FAAR Industry</h4>'
+        . '<div class="partner-subtitle">Partenaire Industriel</div>'
+        . '<span class="partner-role-tag">Responsable WP5 & Validation</span>'
+        . '<p class="partner-desc">FAAR fournit le support ingénierie, les ressources d\'instrumentation et les installations automobiles pour déployer et valider les algorithmes sur des véhicules réels et expérimentaux.</p>'
+        . '</div>'
+        . '<div class="partner-card">'
+        . '<div class="partner-logo-wrapper gradient-lisec"><img src="assets/img/logo_umn.svg" alt="Logo LISEC" class="partner-logo-img">LISEC</div>'
+        . '<h4 class="partner-title">LISEC</h4>'
+        . '<div class="partner-subtitle">Laboratory of Intelligent Systems and Experimental Control — University of Minnesota</div>'
+        . '<span class="partner-role-tag">Conseiller Académique</span>'
+        . '<p class="partner-desc">Collabore sur l\'ensemble des lots de travaux, apportant des conseils scientifiques avancés sur les observateurs intelligents, le pelotonnage de véhicules et les systèmes de contrôle de stabilité.</p>'
+        . '</div>'
+        . '</div>',
 ];

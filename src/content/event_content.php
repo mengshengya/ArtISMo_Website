@@ -941,6 +941,37 @@ return [
             'en' => 'Other Events',
             'fr' => 'Autres événements',
         ],
-        'blocks' => [],
+        'blocks' => [
+            [
+                'type' => 'paragraph',
+                'text' => [
+                    'en' => 'The consortium partners regularly gather for project meetings, scientific seminars, and collaborative workshops to monitor progress, align research goals, and exchange insights on intelligent vehicle technologies and estimation algorithms.',
+                    'fr' => 'Les partenaires du consortium se réunissent régulièrement lors de réunions de projet, de séminaires scientifiques et d\'ateliers collaboratifs pour suivre les progrès, aligner les objectifs de recherche et échanger des idées sur les technologies de véhicules intelligents et les algorithmes d\'estimation.',
+                ],
+            ],
+            [
+                'type' => 'image_group',
+                'caption' => [
+                    'en' => 'Consortium partners during collaborative project meetings and networking sessions.',
+                    'fr' => 'Partenaires du consortium lors de réunions de projet collaboratives et de sessions d\'échange.',
+                ],
+                'images' => [
+                    [
+                        'src' => 'assets/img/event/otherimg.jpeg',
+                        'alt' => [
+                            'en' => 'Consortium partners meeting around a conference table',
+                            'fr' => 'Réunion des partenaires du consortium autour d\'une table de conférence',
+                        ],
+                    ],
+                    [
+                        'src' => 'assets/img/event/team_inter.jpg',
+                        'alt' => [
+                            'en' => 'Consortium team group photo during a break',
+                            'fr' => 'Photo de groupe de l\'équipe du consortium lors d\'une pause',
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
 ];

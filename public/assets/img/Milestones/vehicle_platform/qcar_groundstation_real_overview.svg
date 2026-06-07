@@ -65,7 +65,7 @@
 
   <!-- Real vehicle photo -->
   <rect class="panel" x="52" y="156" width="690" height="580" rx="32"/>
-  <image href="3cars_1062.png" xlink:href="3cars_1062.png" x="72" y="176" width="650" height="520" preserveAspectRatio="xMidYMid slice" clip-path="url(#fleetClip)"/>
+  <image href="3cars_1062.webp" xlink:href="3cars_1062.webp" x="72" y="176" width="650" height="520" preserveAspectRatio="xMidYMid slice" clip-path="url(#fleetClip)"/>
   <rect x="72" y="176" width="650" height="520" rx="26" fill="url(#darkFade)"/>
   <rect x="100" y="205" width="184" height="38" rx="19" fill="#ffffff" opacity=".92"/>
   <text class="pill" x="192" y="230" text-anchor="middle" fill="#0f172a">Physical Platform</text>
@@ -129,6 +129,6 @@
   <text class="small" x="104" y="844">cooperative estimation, web supervision</text>
 
   <line x1="72" y1="866" x2="1528" y2="866" stroke="#cbd5e1"/>
-  <text class="tiny" x="72" y="889">Standalone visual asset using 3cars_1062.png and Groundstation_web.png</text>
+  <text class="tiny" x="72" y="889">Standalone visual asset using 3cars_1062.webp and Groundstation_web.png</text>
   <text class="tiny" x="1528" y="889" text-anchor="end">No website content changes required</text>
 </svg>

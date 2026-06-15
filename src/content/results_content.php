@@ -516,6 +516,87 @@ return [
         ],
     ],
     [
+        'id' => 'internship-zerga-deep-learning-identification',
+        'category_key' => 'results.cat_internship',
+        'date' => [
+            'en' => 'September 2024',
+            'fr' => 'Septembre 2024',
+        ],
+        'summary' => [
+            'en' => 'Deep-learning identification of nonlinear state-space systems using finite observability, neural regression, and autoencoder-based state reduction. Implemented with JAX/Flax and evaluated on benchmark and autonomous-vehicle models.',
+            'fr' => 'Identification de systèmes d\'état non linéaires par apprentissage profond, combinant observabilité finie, régression neuronale et réduction d\'état par autoencodeur. Mise en oeuvre avec JAX/Flax et validation sur des modèles de référence et de véhicule autonome.',
+        ],
+        'preview_image' => 'assets/img/work/intership/Zerga/slides_soutenance_cover.png',
+        'title' => [
+            'en' => 'Master\'s Internship: Deep Learning-Based Identification of Nonlinear State-Space Systems (Mohammed El Hadi Zerga)',
+            'fr' => 'Stage de Master : Identification de systèmes d\'état non linéaires basée sur l\'apprentissage profond (Mohammed El Hadi Zerga)',
+        ],
+        'blocks' => [
+            [
+                'type' => 'paragraph',
+                'text' => [
+                    'en' => 'This internship studies discrete-time nonlinear state-space systems and the conditions under which the system state can be reconstructed from a finite history of inputs and outputs. The identification problem is reformulated as nonlinear regression, where a neural network estimates the output map from measured trajectories.',
+                    'fr' => 'Ce stage étudie des systèmes d\'état non linéaires à temps discret et les conditions permettant de reconstruire l\'état à partir d\'un historique fini d\'entrées et de sorties. Le problème d\'identification est reformulé comme une régression non linéaire, où un réseau neuronal estime la fonction de sortie à partir de trajectoires mesurées.',
+                ],
+            ],
+            [
+                'type' => 'paragraph',
+                'text' => [
+                    'en' => 'The implementation uses gradient-based training with JAX/Flax and introduces an encoder-decoder structure to obtain a more compact state representation. The reported results compare estimated and real outputs with and without the autoencoder, including an autonomous-vehicle model case.',
+                    'fr' => 'La mise en oeuvre utilise un apprentissage par descente de gradient avec JAX/Flax et introduit une structure encodeur-décodeur afin d\'obtenir une représentation d\'état plus compacte. Les résultats comparent les sorties estimées et réelles avec et sans autoencodeur, y compris sur un modèle de véhicule autonome.',
+                ],
+            ],
+            [
+                'type' => 'image',
+                'src' => 'assets/img/work/intership/Zerga/slides_soutenance_autoencoder_result.png',
+                'alt' => [
+                    'en' => 'Estimated and real output comparison with autoencoder.',
+                    'fr' => 'Comparaison des sorties estimées et réelles avec autoencodeur.',
+                ],
+                'caption' => [
+                    'en' => 'Autoencoder result: the estimated output follows the real output on the benchmark state-space model.',
+                    'fr' => 'Résultat avec autoencodeur : la sortie estimée suit la sortie réelle sur le modèle d\'état de référence.',
+                ],
+            ],
+            [
+                'type' => 'image',
+                'src' => 'assets/img/work/intership/Zerga/slides_soutenance_vehicle_result.png',
+                'alt' => [
+                    'en' => 'Autonomous vehicle model output comparison with autoencoder.',
+                    'fr' => 'Comparaison des sorties du modèle de véhicule autonome avec autoencodeur.',
+                ],
+                'caption' => [
+                    'en' => 'Autonomous-vehicle model result with autoencoder-based state reduction.',
+                    'fr' => 'Résultat sur le modèle de véhicule autonome avec réduction d\'état par autoencodeur.',
+                ],
+            ],
+            [
+                'type' => 'heading',
+                'text' => [
+                    'en' => 'Internship Materials',
+                    'fr' => 'Livrables du Stage',
+                ],
+            ],
+            [
+                'type' => 'html',
+                'text' => [
+                    'en' => '
+                    <div class="download-container">
+                        <a href="assets/img/work/intership/Zerga/slides_soutenance.pdf" class="download-btn" target="_blank" rel="noopener noreferrer">
+                            <span class="btn-icon">📄</span> Download Defense Slides (PDF)
+                        </a>
+                    </div>',
+                    'fr' => '
+                    <div class="download-container">
+                        <a href="assets/img/work/intership/Zerga/slides_soutenance.pdf" class="download-btn" target="_blank" rel="noopener noreferrer">
+                            <span class="btn-icon">📄</span> Télécharger les diapositives de soutenance (PDF)
+                        </a>
+                    </div>',
+                ],
+            ],
+        ],
+    ],
+    [
         'id' => 'vehicle-modeling',
         'category_key' => 'results.cat_milestone',
         'date' => [

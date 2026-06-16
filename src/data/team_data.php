@@ -30,7 +30,7 @@ $teamMembers = [
     [
         'name' => 'Cedric DELATTRE',
         'description' => 'Associate Prof.',
-        'photo' => 'assets/img/team/Cedric.webp',
+        'photo' => 'assets/img/team/cedric.jpg',
         'link' => 'https://www.cran.univ-lorraine.fr/detailindividupublic/?appel=annuaire&codetheme=06&codeindividu=00104&codelangue=FR',
         'details' => [
             'Institution' => 'CRAN',
